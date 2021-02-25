@@ -1,25 +1,19 @@
 package com.planetsystems.tela.dto;
 
 public class SchoolStaffDTO extends ParentDTO {
-    private GeneralUserDetailDTO generalUserDetail;
     private String staffCode;
     private String staffType;
-    private SchoolDTO  school;
     private boolean registered;
+
+
+    private GeneralUserDetailDTO generalUserDetailDTO;
+    private SchoolDTO schoolDTO;
 
     public SchoolStaffDTO() {
     }
 
     public SchoolStaffDTO(String id) {
         super(id);
-    }
-
-    public GeneralUserDetailDTO getGeneralUserDetail() {
-        return generalUserDetail;
-    }
-
-    public void setGeneralUserDetail(GeneralUserDetailDTO generalUserDetail) {
-        this.generalUserDetail = generalUserDetail;
     }
 
     public String getStaffCode() {
@@ -38,14 +32,6 @@ public class SchoolStaffDTO extends ParentDTO {
         this.staffType = staffType;
     }
 
-    public SchoolDTO getSchool() {
-        return school;
-    }
-
-    public void setSchool(SchoolDTO school) {
-        this.school = school;
-    }
-
     public boolean isRegistered() {
         return registered;
     }
@@ -54,14 +40,32 @@ public class SchoolStaffDTO extends ParentDTO {
         this.registered = registered;
     }
 
+
+
+    public GeneralUserDetailDTO getGeneralUserDetailDTO() {
+        return generalUserDetailDTO;
+    }
+
+    public void setGeneralUserDetailDTO(GeneralUserDetailDTO generalUserDetailDTO) {
+        this.generalUserDetailDTO = generalUserDetailDTO;
+    }
+
+    public SchoolDTO getSchoolDTO() {
+        return schoolDTO;
+    }
+
+    public void setSchoolDTO(SchoolDTO schoolDTO) {
+        this.schoolDTO = schoolDTO;
+    }
+
     @Override
     public String toString() {
         return "SchoolStaffDTO{" +
-                "generalUserDetail=" + generalUserDetail +
                 ", staffCode='" + staffCode + '\'' +
                 ", staffType='" + staffType + '\'' +
-                ", school=" + school +
                 ", registered=" + registered +
+                ", generalUserDetailDTO=" + generalUserDetailDTO +
+                ", schoolDTO=" + schoolDTO +
                 '}';
     }
 }

@@ -104,6 +104,7 @@ public class SchoolDTO extends ParentDTO{
         this.activationStatus = activationStatus;
     }
 
+
     @Override
     public String toString() {
         return "SchoolDTO{" +
