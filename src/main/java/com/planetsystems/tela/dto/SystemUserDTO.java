@@ -8,8 +8,7 @@ public class SystemUserDTO extends ParentDTO{
     private String password;
     private boolean enabled = true;
     private String configRole;
-    //private SystemUserDTO createdBy;
-    //private SystemUserDTO updatedBy;
+
 
     public SystemUserDTO() {
     }
@@ -49,22 +48,6 @@ public class SystemUserDTO extends ParentDTO{
     public void setConfigRole(String configRole) {
         this.configRole = configRole;
     }
-
-//    public SystemUserDTO getCreatedBy() {
-//        return createdBy;
-//    }
-//
-//    public void setCreatedBy(SystemUserDTO createdBy) {
-//        this.createdBy = createdBy;
-//    }
-
-//    public SystemUserDTO getUpdatedBy() {
-//        return updatedBy;
-//    }
-//
-//    public void setUpdatedBy(SystemUserDTO updatedBy) {
-//        this.updatedBy = updatedBy;
-//    }
 
     @Override
     public String toString() {

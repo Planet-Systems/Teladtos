@@ -1,8 +1,11 @@
 package com.planetsystems.tela.dto;
 
+import java.util.List;
+
 public class SubjectCategoryDTO extends ParentDTO {
     private String code;
     private String name;
+    private List<SubjectDTO> subjectDTOList;
 
     public SubjectCategoryDTO() {
     }
@@ -27,11 +30,20 @@ public class SubjectCategoryDTO extends ParentDTO {
         this.name = name;
     }
 
+    public List<SubjectDTO> getSubjectDTOList() {
+        return subjectDTOList;
+    }
+
+    public void setSubjectDTOList(List<SubjectDTO> subjectDTOList) {
+        this.subjectDTOList = subjectDTOList;
+    }
+
     @Override
     public String toString() {
         return "SubjectCategoryDTO{" +
                 "code='" + code + '\'' +
                 ", name='" + name + '\'' +
+                ", subjectDTOList=" + subjectDTOList +
                 '}';
     }
 }

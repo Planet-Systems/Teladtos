@@ -10,7 +10,8 @@ public class GeneralUserDetailDTO extends ParentDTO {
     private String dob;
     private String nationalId;
     private String gender;
-    private String nameAbrev;
+    private String nameAbbrev;
+
     public GeneralUserDetailDTO() {
     }
 
@@ -74,14 +75,14 @@ public class GeneralUserDetailDTO extends ParentDTO {
         this.gender = gender;
     }
 
-    public String getNameAbrev() {
-        return nameAbrev;
+
+    public String getNameAbbrev() {
+        return nameAbbrev;
     }
 
-    public void setNameAbrev(String nameAbrev) {
-        this.nameAbrev = nameAbrev;
+    public void setNameAbbrev(String nameAbbrev) {
+        this.nameAbbrev = nameAbbrev;
     }
-
 
     @Override
     public String toString() {
@@ -93,7 +94,7 @@ public class GeneralUserDetailDTO extends ParentDTO {
                 ", dob='" + dob + '\'' +
                 ", nationalId='" + nationalId + '\'' +
                 ", gender='" + gender + '\'' +
-                ", nameAbrev='" + nameAbrev + '\'' +
+                ", nameAbbrev='" + nameAbbrev + '\'' +
                 '}';
     }
 }

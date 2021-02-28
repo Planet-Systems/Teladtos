@@ -10,7 +10,8 @@ public class AcademicTermDTO extends ParentDTO{
     private String startDate;
     private String endDate;
 
-    private AcademicYearDTO academicYear;
+    private AcademicYearDTO academicYearDTO;
+
 
     public AcademicTermDTO() {
     }
@@ -60,12 +61,12 @@ public class AcademicTermDTO extends ParentDTO{
         this.endDate = endDate;
     }
 
-    public AcademicYearDTO getAcademicYear() {
-        return academicYear;
+    public AcademicYearDTO getAcademicYearDTO() {
+        return academicYearDTO;
     }
 
-    public void setAcademicYear(AcademicYearDTO academicYear) {
-        this.academicYear = academicYear;
+    public void setAcademicYearDTO(AcademicYearDTO academicYearDTO) {
+        this.academicYearDTO = academicYearDTO;
     }
 
     @Override
@@ -76,7 +77,7 @@ public class AcademicTermDTO extends ParentDTO{
                 ", activationStatus='" + activationStatus + '\'' +
                 ", startDate='" + startDate + '\'' +
                 ", endDate='" + endDate + '\'' +
-                ", academicYear=" + academicYear +
+                ", academicYearDTO=" + academicYearDTO +
                 '}';
     }
 }

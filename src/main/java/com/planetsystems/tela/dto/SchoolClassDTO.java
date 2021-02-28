@@ -3,8 +3,9 @@ package com.planetsystems.tela.dto;
 public class SchoolClassDTO extends ParentDTO {
     private String code;
     private String name;
-    private SchoolDTO school;
-    private AcademicTermDTO  academicTerm;
+    private SchoolDTO schoolDTO;
+    private AcademicTermDTO  academicTermDTO;
+ 
 
     public SchoolClassDTO() {
     }
@@ -29,29 +30,30 @@ public class SchoolClassDTO extends ParentDTO {
         this.name = name;
     }
 
-    public SchoolDTO getSchool() {
-        return school;
+    public SchoolDTO getSchoolDTO() {
+        return schoolDTO;
     }
 
-    public void setSchool(SchoolDTO school) {
-        this.school = school;
+    public void setSchoolDTO(SchoolDTO schoolDTO) {
+        this.schoolDTO = schoolDTO;
     }
 
-    public AcademicTermDTO getAcademicTerm() {
-        return academicTerm;
+    public AcademicTermDTO getAcademicTermDTO() {
+        return academicTermDTO;
     }
 
-    public void setAcademicTerm(AcademicTermDTO academicTerm) {
-        this.academicTerm = academicTerm;
+    public void setAcademicTermDTO(AcademicTermDTO academicTermDTO) {
+        this.academicTermDTO = academicTermDTO;
     }
+
 
     @Override
     public String toString() {
         return "SchoolClassDTO{" +
                 "code='" + code + '\'' +
                 ", name='" + name + '\'' +
-                ", school=" + school +
-                ", academicTerm=" + academicTerm +
+                ", schoolDTO=" + schoolDTO +
+                ", academicTermDTO=" + academicTermDTO +
                 '}';
     }
 }

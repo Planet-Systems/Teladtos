@@ -1,6 +1,6 @@
 package com.planetsystems.tela.dto;
 
-public class StaffEnrollementDto extends ParentDTO {
+public class StaffEnrollmentDto extends ParentDTO {
 
     private SchoolDTO schoolDTO;
 
@@ -13,7 +13,8 @@ public class StaffEnrollementDto extends ParentDTO {
 
     private String status;
 
-    public StaffEnrollementDto() {
+
+    public StaffEnrollmentDto() {
     }
 
     public SchoolDTO getSchoolDTO() {

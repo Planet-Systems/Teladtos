@@ -8,9 +8,10 @@ import java.io.Serializable;
 public class ParentDTO implements Serializable {
     private String id;
 
-    private String dateCreated;
-    private String dateUpdated;
+    private String createdDateTime;
+    private String updatedDateTime;
     private String status;
+
 
     public ParentDTO() {
     }
@@ -27,21 +28,6 @@ public class ParentDTO implements Serializable {
         this.id = id;
     }
 
-    public String getDateCreated() {
-        return dateCreated;
-    }
-
-    public void setDateCreated(String dateCreated) {
-        this.dateCreated = dateCreated;
-    }
-
-    public String getDateUpdated() {
-        return dateUpdated;
-    }
-
-    public void setDateUpdated(String dateUpdated) {
-        this.dateUpdated = dateUpdated;
-    }
 
     public String getStatus() {
         return status;
@@ -51,12 +37,28 @@ public class ParentDTO implements Serializable {
         this.status = status;
     }
 
+    public String getCreatedDateTime() {
+        return createdDateTime;
+    }
+
+    public void setCreatedDateTime(String createdDateTime) {
+        this.createdDateTime = createdDateTime;
+    }
+
+    public String getUpdatedDateTime() {
+        return updatedDateTime;
+    }
+
+    public void setUpdatedDateTime(String updatedDateTime) {
+        this.updatedDateTime = updatedDateTime;
+    }
+
     @Override
     public String toString() {
         return "ParentDTO{" +
                 "id='" + id + '\'' +
-                ", dateCreated='" + dateCreated + '\'' +
-                ", dateUpdated='" + dateUpdated + '\'' +
+                ", createdDateTime='" + createdDateTime + '\'' +
+                ", updatedDateTime='" + updatedDateTime + '\'' +
                 ", status='" + status + '\'' +
                 '}';
     }

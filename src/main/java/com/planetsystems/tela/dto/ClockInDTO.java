@@ -8,7 +8,8 @@ public class ClockInDTO extends ParentDTO{
 
     private SchoolStaffDTO schoolStaffDTO;
 
-    private Date clockInDate;
+    private String clockInDate;
+    private String clockInTime;
     private String comment;
     private String latitude;
     private String longitude;
@@ -33,11 +34,11 @@ public class ClockInDTO extends ParentDTO{
         this.schoolStaffDTO = schoolStaffDTO;
     }
 
-    public Date getClockInDate() {
+    public String getClockInDate() {
         return clockInDate;
     }
 
-    public void setClockInDate(Date clockInDate) {
+    public void setClockInDate(String clockInDate) {
         this.clockInDate = clockInDate;
     }
 
@@ -71,5 +72,28 @@ public class ClockInDTO extends ParentDTO{
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getClockInTime() {
+        return clockInTime;
+    }
+
+    public void setClockInTime(String clockInTime) {
+        this.clockInTime = clockInTime;
+    }
+
+    @Override
+    public String toString() {
+        return "ClockInDTO{" +
+                "academicTermDTO=" + academicTermDTO +
+                ", schoolStaffDTO=" + schoolStaffDTO +
+                ", clockInDate='" + clockInDate + '\'' +
+                ", clockInTime='" + clockInTime + '\'' +
+                ", comment='" + comment + '\'' +
+                ", latitude='" + latitude + '\'' +
+                ", longitude='" + longitude + '\'' +
+                ", status='" + status + '\'' +
+                ", createdDate= "+super.getCreatedDateTime()+
+                '}';
     }
 }

@@ -3,19 +3,20 @@ package com.planetsystems.tela.dto;
 public class SchoolDTO extends ParentDTO{
     private String code;
     private String name;
-    private String location;
-    private SchoolCategoryDTO schoolCategory;
+
+    private SchoolCategoryDTO schoolCategoryDTO;
 
     private String latitude;
     private String longitude;
 
-    private DistrictDTO district;
+    private DistrictDTO districtDTO;
 
     private String deviceNumber; // Phone Serial number
 
     private boolean attendanceTracked = true;
 
     private String activationStatus;
+
 
     public SchoolDTO() {
     }
@@ -40,20 +41,12 @@ public class SchoolDTO extends ParentDTO{
         this.name = name;
     }
 
-    public String getLocation() {
-        return location;
+    public SchoolCategoryDTO getSchoolCategoryDTO() {
+        return schoolCategoryDTO;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public SchoolCategoryDTO getSchoolCategory() {
-        return schoolCategory;
-    }
-
-    public void setSchoolCategory(SchoolCategoryDTO schoolCategory) {
-        this.schoolCategory = schoolCategory;
+    public void setSchoolCategoryDTO(SchoolCategoryDTO schoolCategoryDTO) {
+        this.schoolCategoryDTO = schoolCategoryDTO;
     }
 
     public String getLatitude() {
@@ -72,12 +65,12 @@ public class SchoolDTO extends ParentDTO{
         this.longitude = longitude;
     }
 
-    public DistrictDTO getDistrict() {
-        return district;
+    public DistrictDTO getDistrictDTO() {
+        return districtDTO;
     }
 
-    public void setDistrict(DistrictDTO district) {
-        this.district = district;
+    public void setDistrictDTO(DistrictDTO districtDTO) {
+        this.districtDTO = districtDTO;
     }
 
     public String getDeviceNumber() {
@@ -110,11 +103,10 @@ public class SchoolDTO extends ParentDTO{
         return "SchoolDTO{" +
                 "code='" + code + '\'' +
                 ", name='" + name + '\'' +
-                ", location='" + location + '\'' +
-                ", schoolCategory=" + schoolCategory +
+                ", schoolCategoryDTO=" + schoolCategoryDTO +
                 ", latitude='" + latitude + '\'' +
                 ", longitude='" + longitude + '\'' +
-                ", district=" + district +
+                ", districtDTO=" + districtDTO +
                 ", deviceNumber='" + deviceNumber + '\'' +
                 ", attendanceTracked=" + attendanceTracked +
                 ", activationStatus='" + activationStatus + '\'' +
