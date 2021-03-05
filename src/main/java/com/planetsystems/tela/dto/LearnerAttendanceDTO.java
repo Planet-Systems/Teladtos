@@ -91,4 +91,19 @@ public class LearnerAttendanceDTO extends  ParentDTO {
     public void setComment(String comment) {
         this.comment = comment;
     }
+
+    @Override
+    public String toString() {
+        return "LearnerAttendanceDTO{" +
+                "schoolClassDTO=" + schoolClassDTO +
+                ", academicTermDTO=" + academicTermDTO +
+                ", schoolStaffDTO=" + schoolStaffDTO +
+                ", attendanceDate='" + attendanceDate + '\'' +
+                ", girlsPresent=" + girlsPresent +
+                ", boysPresent=" + boysPresent +
+                ", boysAbsent=" + boysAbsent +
+                ", girlsAbsent=" + girlsAbsent +
+                ", comment='" + comment + '\'' +
+                '}';
+    }
 }
