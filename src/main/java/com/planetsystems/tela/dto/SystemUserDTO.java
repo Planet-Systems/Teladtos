@@ -6,8 +6,10 @@ import io.swagger.annotations.ApiModel;
 public class SystemUserDTO extends ParentDTO{
     private String userName;
     private String password;
-    private boolean enabled = true;
+    private boolean enabled;
     private String configRole;
+
+    private GeneralUserDetailDTO generalUserDetailDTO;
 
 
     public SystemUserDTO() {
@@ -49,6 +51,15 @@ public class SystemUserDTO extends ParentDTO{
         this.configRole = configRole;
     }
 
+
+    public GeneralUserDetailDTO getGeneralUserDetailDTO() {
+        return generalUserDetailDTO;
+    }
+
+    public void setGeneralUserDetailDTO(GeneralUserDetailDTO generalUserDetailDTO) {
+        this.generalUserDetailDTO = generalUserDetailDTO;
+    }
+
     @Override
     public String toString() {
         return "SystemUserDTO{" +
@@ -56,6 +67,7 @@ public class SystemUserDTO extends ParentDTO{
                 ", password='" + password + '\'' +
                 ", enabled=" + enabled +
                 ", configRole='" + configRole + '\'' +
+                ", generalUserDetailDTO=" + generalUserDetailDTO +
                 '}';
     }
 }

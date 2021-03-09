@@ -16,12 +16,16 @@ public class App
     public static void main( String[] args ) throws ParseException {
         String timePattern = "HH:mm:ss";
         String datePattern = "EEEE dd/MM/yyyy HH:mm:ss a";
-        String timeDatePattern = datePattern+" "+timePattern;
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat();
-        simpleDateFormat.applyPattern(datePattern);
+        String datePattern2 = "dd-MM-yyyy";
+        SimpleDateFormat format = new SimpleDateFormat(datePattern);
+       // Date d = format.parse("03/02/2021");
+        System.out.println("DATE "+format.format(new Date()));
 
-        System.out.println(new Date());
-        System.out.println("E DD "+ LocalTime.parse("14:35:55"));
+//        String sDate1="31/12/1998";
+//        Date date1=new SimpleDateFormat("dd/MM/yyyy").parse(sDate1);
+//        System.out.println(sDate1+"\t"+date1);
+
+
 
 
     }
