@@ -1,10 +1,17 @@
 package com.planetsystems.tela.dto;
 
-import java.util.Date;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ClockInDTO extends ParentDTO{
 
-    private AcademicTermDTO academicTermDTO;
+     
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private AcademicTermDTO academicTermDTO;
 
     private SchoolStaffDTO schoolStaffDTO;
     
@@ -92,7 +99,7 @@ public class ClockInDTO extends ParentDTO{
 		this.schoolDTO = schoolDTO;
 	}
 
-	@Override
+	/*@Override
     public String toString() {
         return "ClockInDTO{" +
                 "academicTermDTO=" + academicTermDTO +
@@ -105,5 +112,5 @@ public class ClockInDTO extends ParentDTO{
                 ", status='" + status + '\'' +
                 ", createdDate= "+super.getCreatedDateTime()+
                 '}';
-    }
+    }*/
 }

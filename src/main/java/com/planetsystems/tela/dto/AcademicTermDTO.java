@@ -1,10 +1,15 @@
 package com.planetsystems.tela.dto;
 
-import io.swagger.annotations.ApiModel;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-@ApiModel("Academic term details")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class AcademicTermDTO extends ParentDTO{
-    private String code;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private String code;
     private String term;
     private String activationStatus;
     private String startDate;
@@ -69,7 +74,7 @@ public class AcademicTermDTO extends ParentDTO{
         this.academicYearDTO = academicYearDTO;
     }
 
-    @Override
+   /* @Override
     public String toString() {
         return "AcademicTermDTO{" +
                 "code='" + code + '\'' +
@@ -79,5 +84,5 @@ public class AcademicTermDTO extends ParentDTO{
                 ", endDate='" + endDate + '\'' +
                 ", academicYearDTO=" + academicYearDTO +
                 '}';
-    }
+    }*/
 }
