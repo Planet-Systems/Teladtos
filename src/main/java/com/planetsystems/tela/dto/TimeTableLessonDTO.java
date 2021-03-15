@@ -14,6 +14,8 @@ public class TimeTableLessonDTO extends ParentDTO{
 
     private SchoolStaffDTO schoolStaffDTO;
 
+    private TimeTableDTO timeTableDTO;
+
     public TimeTableLessonDTO() {
     }
 
@@ -65,6 +67,14 @@ public class TimeTableLessonDTO extends ParentDTO{
         this.schoolStaffDTO = schoolStaffDTO;
     }
 
+    public TimeTableDTO getTimeTableDTO() {
+        return timeTableDTO;
+    }
+
+    public void setTimeTableDTO(TimeTableDTO timeTableDTO) {
+        this.timeTableDTO = timeTableDTO;
+    }
+
     @Override
     public String toString() {
         return "TimeTableLessonDTO{" +
@@ -74,6 +84,7 @@ public class TimeTableLessonDTO extends ParentDTO{
                 ", startTime='" + startTime + '\'' +
                 ", endTime='" + endTime + '\'' +
                 ", schoolStaffDTO=" + schoolStaffDTO +
+                ", timeTableDTO=" + timeTableDTO +
                 '}';
     }
 }
