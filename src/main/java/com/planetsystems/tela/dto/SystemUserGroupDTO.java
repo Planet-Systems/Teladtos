@@ -1,11 +1,18 @@
 package com.planetsystems.tela.dto;
 
 public class SystemUserGroupDTO extends ParentDTO {
-    private String code;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private String code;
     private String name;
     private String description;
     private boolean defaultGroup = false;
     private boolean receiveAlerts = false;
+    private boolean administrativeRole= false;
+    
     private SystemUserDTO createdBy;
     private SystemUserDTO updatedBy;
 
@@ -72,7 +79,15 @@ public class SystemUserGroupDTO extends ParentDTO {
         this.updatedBy = updatedBy;
     }
 
-    @Override
+    public boolean isAdministrativeRole() {
+		return administrativeRole;
+	}
+
+	public void setAdministrativeRole(boolean administrativeRole) {
+		this.administrativeRole = administrativeRole;
+	}
+
+	/*@Override
     public String toString() {
         return "SystemUserGroupDTO{" +
                 "code='" + code + '\'' +
@@ -83,5 +98,5 @@ public class SystemUserGroupDTO extends ParentDTO {
                 ", createdBy=" + createdBy +
                 ", updatedBy=" + updatedBy +
                 '}';
-    }
+    }*/
 }
