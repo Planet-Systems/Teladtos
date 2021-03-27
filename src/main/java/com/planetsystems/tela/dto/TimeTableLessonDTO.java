@@ -1,7 +1,7 @@
 package com.planetsystems.tela.dto;
 
 public class TimeTableLessonDTO extends ParentDTO{
-    private String day;
+    private String lessonDate;
 
     private SchoolClassDTO schoolClassDTO;
 
@@ -19,12 +19,12 @@ public class TimeTableLessonDTO extends ParentDTO{
     public TimeTableLessonDTO() {
     }
 
-    public String getDay() {
-        return day;
+    public String getLessonDate() {
+        return lessonDate;
     }
 
-    public void setDay(String day) {
-        this.day = day;
+    public void setLessonDate(String lessonDate) {
+        this.lessonDate = lessonDate;
     }
 
     public SchoolClassDTO getSchoolClassDTO() {
@@ -78,7 +78,7 @@ public class TimeTableLessonDTO extends ParentDTO{
     @Override
     public String toString() {
         return "TimeTableLessonDTO{" +
-                "day='" + day + '\'' +
+                "lessonDate='" + lessonDate + '\'' +
                 ", schoolClassDTO=" + schoolClassDTO +
                 ", subjectDTO=" + subjectDTO +
                 ", startTime='" + startTime + '\'' +
