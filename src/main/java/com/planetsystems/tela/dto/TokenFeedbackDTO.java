@@ -12,7 +12,7 @@ public class TokenFeedbackDTO implements Serializable {
 	private String message;
 	private String token;
 	private boolean response;
-
+	  
 	public TokenFeedbackDTO() {
 		this.message = "An error occurred while creating authorization token. Please try again";
 		this.response = false;

@@ -4,14 +4,16 @@ import io.swagger.annotations.ApiModel;
 
 @ApiModel("System user dto details")
 public class SystemUserDTO extends ParentDTO{
-    private String userName;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private String userName;
     private String password;
     private boolean enabled;
-    private String configRole;
-
-    private GeneralUserDetailDTO generalUserDetailDTO;
-
-
+    private String configRole; 
+ 
     public SystemUserDTO() {
     }
 
@@ -52,13 +54,7 @@ public class SystemUserDTO extends ParentDTO{
     }
 
 
-    public GeneralUserDetailDTO getGeneralUserDetailDTO() {
-        return generalUserDetailDTO;
-    }
-
-    public void setGeneralUserDetailDTO(GeneralUserDetailDTO generalUserDetailDTO) {
-        this.generalUserDetailDTO = generalUserDetailDTO;
-    }
+   
 
     @Override
     public String toString() {
@@ -66,8 +62,7 @@ public class SystemUserDTO extends ParentDTO{
                 "userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", enabled=" + enabled +
-                ", configRole='" + configRole + '\'' +
-                ", generalUserDetailDTO=" + generalUserDetailDTO +
+                ", configRole='" + configRole + '\'' + 
                 '}';
     }
 }

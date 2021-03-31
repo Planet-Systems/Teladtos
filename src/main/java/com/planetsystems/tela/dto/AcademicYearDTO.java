@@ -1,9 +1,14 @@
 package com.planetsystems.tela.dto;
 
-import java.util.Date;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class AcademicYearDTO extends ParentDTO{
-    private String code;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String code;
     private String name;
     private String activationStatus;
     private String startDate;
