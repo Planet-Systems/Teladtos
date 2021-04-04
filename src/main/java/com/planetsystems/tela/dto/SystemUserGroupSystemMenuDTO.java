@@ -7,8 +7,8 @@ public class SystemUserGroupSystemMenuDTO extends ParentDTO {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private SystemUserGroupDTO systemUserGroup;
-	private SystemMenuDTO systemMenu;
+	private SystemUserGroupDTO systemUserGroupDTO;
+	private SystemMenuDTO systemMenuDTO;
 
 	private boolean disabled;
 
@@ -16,20 +16,20 @@ public class SystemUserGroupSystemMenuDTO extends ParentDTO {
 
 	}
 
-	public SystemUserGroupDTO getSystemUserGroup() {
-		return systemUserGroup;
+	public SystemUserGroupDTO getSystemUserGroupDTO() {
+		return systemUserGroupDTO;
 	}
 
-	public void setSystemUserGroup(SystemUserGroupDTO systemUserGroup) {
-		this.systemUserGroup = systemUserGroup;
+	public void setSystemUserGroupDTO(SystemUserGroupDTO systemUserGroupDTO) {
+		this.systemUserGroupDTO = systemUserGroupDTO;
 	}
 
-	public SystemMenuDTO getSystemMenu() {
-		return systemMenu;
+	public SystemMenuDTO getSystemMenuDTO() {
+		return systemMenuDTO;
 	}
 
-	public void setSystemMenu(SystemMenuDTO systemMenu) {
-		this.systemMenu = systemMenu;
+	public void setSystemMenuDTO(SystemMenuDTO systemMenuDTO) {
+		this.systemMenuDTO = systemMenuDTO;
 	}
 
 	public boolean isDisabled() {
@@ -39,5 +39,4 @@ public class SystemUserGroupSystemMenuDTO extends ParentDTO {
 	public void setDisabled(boolean disabled) {
 		this.disabled = disabled;
 	}
-
 }

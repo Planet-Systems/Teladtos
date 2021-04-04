@@ -10,7 +10,7 @@ public class StaffDailyAttendanceDTO extends ParentDTO {
 
     private String comment;
 
-    private String dailyAttendanceDate;
+    private String lessonDay;
 
     private List<StaffDailyAttendanceTaskDTO> staffDailyAttendanceTaskDTOS;
 
@@ -45,13 +45,12 @@ public class StaffDailyAttendanceDTO extends ParentDTO {
         this.comment = comment;
     }
 
-
-    public String getDailyAttendanceDate() {
-        return dailyAttendanceDate;
+    public String getLessonDay() {
+        return lessonDay;
     }
 
-    public void setDailyAttendanceDate(String dailyAttendanceDate) {
-        this.dailyAttendanceDate = dailyAttendanceDate;
+    public void setLessonDay(String lessonDay) {
+        this.lessonDay = lessonDay;
     }
 
     public List<StaffDailyAttendanceTaskDTO> getStaffDailyAttendanceTaskDTOS() {
@@ -68,7 +67,7 @@ public class StaffDailyAttendanceDTO extends ParentDTO {
                 "academicTermDTO=" + academicTermDTO +
                 ", schoolStaffDTO=" + schoolStaffDTO +
                 ", comment='" + comment + '\'' +
-                ", dailyAttendanceDate='" + dailyAttendanceDate + '\'' +
+                ", lessonDay='" + lessonDay + '\'' +
                 ", staffDailyAttendanceTaskDTOS=" + staffDailyAttendanceTaskDTOS +
                 '}';
     }

@@ -9,7 +9,7 @@ public class StaffDailyAttendanceTaskDTO extends ParentDTO{
     private String startTime;
     private String endTime;
     private String attendanceStatus;
-    private String dailyAttendanceDate;
+    private String lessonDay;
 
     private StaffDailyAttendanceDTO staffDailyAttendanceDTO;
 
@@ -36,12 +36,12 @@ public class StaffDailyAttendanceTaskDTO extends ParentDTO{
         this.subjectDTO = subjectDTO;
     }
 
-    public String getDailyAttendanceDate() {
-        return dailyAttendanceDate;
+    public String getLessonDay() {
+        return lessonDay;
     }
 
-    public void setDailyAttendanceDate(String dailyAttendanceDate) {
-        this.dailyAttendanceDate = dailyAttendanceDate;
+    public void setLessonDay(String lessonDay) {
+        this.lessonDay = lessonDay;
     }
 
     public String getStartTime() {
@@ -76,7 +76,6 @@ public class StaffDailyAttendanceTaskDTO extends ParentDTO{
         this.staffDailyAttendanceDTO = staffDailyAttendanceDTO;
     }
 
-
     @Override
     public String toString() {
         return "StaffDailyAttendanceTaskDTO{" +
@@ -85,7 +84,7 @@ public class StaffDailyAttendanceTaskDTO extends ParentDTO{
                 ", startTime='" + startTime + '\'' +
                 ", endTime='" + endTime + '\'' +
                 ", attendanceStatus='" + attendanceStatus + '\'' +
-                ", dailyAttendanceDate='" + dailyAttendanceDate + '\'' +
+                ", lessonDay='" + lessonDay + '\'' +
                 ", staffDailyAttendanceDTO=" + staffDailyAttendanceDTO +
                 '}';
     }

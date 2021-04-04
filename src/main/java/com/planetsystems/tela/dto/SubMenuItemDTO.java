@@ -1,20 +1,20 @@
 package com.planetsystems.tela.dto;
 
 public enum SubMenuItemDTO {
-	
+
 	Dashboard("Dashboard"),
 	AcademicYear("Assessment Periods"),
-	Location("Locations"), 
+	Location("Locations"),
 	Schools("Schools"),
 	Subjects("Subjects"),
 	Staff_Attendance("Staff Attendance"),
 	Learner_Attendance("Learner Attendance"),
-	Head_Teacher_Supervision("Head Teacher Supervision"),
+	Head_Teacher_Supervision("Staff Daily Attendance SuperVision"),
 	Staff_Daily_Task("Staff Daily Lessons"),
-	Staff_Enrollement("Staff Enrollement"),
-	Learner_Enrollement("Learner Enrollement"),
+	Staff_Enrollement("Staff Enrollment"),
+	Learner_Enrollement("Learner Enrollment"),
 	TimeTable("TimeTable"),
-	Users("Users");
+	Users("System Users");
 
 	private String menuItem;
 
@@ -38,5 +38,5 @@ public enum SubMenuItemDTO {
 		}
 		return null;
 	}
-  
+
 }
