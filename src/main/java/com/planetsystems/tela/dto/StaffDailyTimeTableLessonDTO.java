@@ -1,6 +1,6 @@
 package com.planetsystems.tela.dto;
 
-public class StaffDailyAttendanceTaskDTO extends ParentDTO{
+public class StaffDailyTimeTableLessonDTO extends ParentDTO{
 
     private SchoolClassDTO schoolClassDTO;
 
@@ -11,12 +11,12 @@ public class StaffDailyAttendanceTaskDTO extends ParentDTO{
     private String attendanceStatus;
     private String lessonDay;
 
-    private StaffDailyAttendanceDTO staffDailyAttendanceDTO;
+    private StaffDailyTimeTableDTO staffDailyTimeTableDTO;
 
-    public StaffDailyAttendanceTaskDTO() {
+    public StaffDailyTimeTableLessonDTO() {
     }
 
-    public StaffDailyAttendanceTaskDTO(String id) {
+    public StaffDailyTimeTableLessonDTO(String id) {
         super(id);
     }
 
@@ -68,24 +68,24 @@ public class StaffDailyAttendanceTaskDTO extends ParentDTO{
         this.attendanceStatus = attendanceStatus;
     }
 
-    public StaffDailyAttendanceDTO getStaffDailyAttendanceDTO() {
-        return staffDailyAttendanceDTO;
+    public StaffDailyTimeTableDTO getStaffDailyTimeTableDTO() {
+        return staffDailyTimeTableDTO;
     }
 
-    public void setStaffDailyAttendanceDTO(StaffDailyAttendanceDTO staffDailyAttendanceDTO) {
-        this.staffDailyAttendanceDTO = staffDailyAttendanceDTO;
+    public void setStaffDailyTimeTableDTO(StaffDailyTimeTableDTO staffDailyTimeTableDTO) {
+        this.staffDailyTimeTableDTO = staffDailyTimeTableDTO;
     }
 
     @Override
     public String toString() {
-        return "StaffDailyAttendanceTaskDTO{" +
+        return "StaffDailyTimeTableLessonDTO{" +
                 "schoolClassDTO=" + schoolClassDTO +
                 ", subjectDTO=" + subjectDTO +
                 ", startTime='" + startTime + '\'' +
                 ", endTime='" + endTime + '\'' +
                 ", attendanceStatus='" + attendanceStatus + '\'' +
                 ", lessonDay='" + lessonDay + '\'' +
-                ", staffDailyAttendanceDTO=" + staffDailyAttendanceDTO +
+                ", staffDailyTimeTableDTO=" + staffDailyTimeTableDTO +
                 '}';
     }
 }

@@ -4,7 +4,7 @@ public class StaffDailyAttendanceTaskSupervisionDTO extends ParentDTO {
 
    private StaffDailyAttendanceSupervisionDTO staffDailyAttendanceSupervisionDTO;
 
-   private StaffDailyAttendanceDTO staffDailyAttendanceDTO;
+   private StaffDailyTimeTableDTO staffDailyTimeTableDTO;
 
 
     private String teachingStatus;
@@ -26,12 +26,12 @@ public class StaffDailyAttendanceTaskSupervisionDTO extends ParentDTO {
         this.staffDailyAttendanceSupervisionDTO = staffDailyAttendanceSupervisionDTO;
     }
 
-    public StaffDailyAttendanceDTO getStaffDailyAttendanceDTO() {
-        return staffDailyAttendanceDTO;
+    public StaffDailyTimeTableDTO getStaffDailyTimeTableDTO() {
+        return staffDailyTimeTableDTO;
     }
 
-    public void setStaffDailyAttendanceDTO(StaffDailyAttendanceDTO staffDailyAttendanceDTO) {
-        this.staffDailyAttendanceDTO = staffDailyAttendanceDTO;
+    public void setStaffDailyTimeTableDTO(StaffDailyTimeTableDTO staffDailyTimeTableDTO) {
+        this.staffDailyTimeTableDTO = staffDailyTimeTableDTO;
     }
 
     public String getTeachingStatus() {
@@ -54,7 +54,7 @@ public class StaffDailyAttendanceTaskSupervisionDTO extends ParentDTO {
     public String toString() {
         return "StaffDailyAttendanceTaskSupervisionDTO{" +
                 "staffDailyAttendanceSupervisionDTO=" + staffDailyAttendanceSupervisionDTO +
-                ", staffDailyAttendanceDTO=" + staffDailyAttendanceDTO +
+                ", staffDailyTimeTableDTO=" + staffDailyTimeTableDTO +
                 ", teachingStatus='" + teachingStatus + '\'' +
                 ", teachingTimeStatus='" + teachingTimeStatus + '\'' +
                 '}';
