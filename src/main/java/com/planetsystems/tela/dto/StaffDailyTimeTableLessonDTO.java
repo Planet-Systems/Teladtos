@@ -8,8 +8,8 @@ public class StaffDailyTimeTableLessonDTO extends ParentDTO{
 
     private String startTime;
     private String endTime;
-    private String attendanceStatus;
-    private String lessonDay;
+    private String dailyTimeTableLessonStatus;
+    private String lessonDate;
 
     private StaffDailyTimeTableDTO staffDailyTimeTableDTO;
 
@@ -36,12 +36,12 @@ public class StaffDailyTimeTableLessonDTO extends ParentDTO{
         this.subjectDTO = subjectDTO;
     }
 
-    public String getLessonDay() {
-        return lessonDay;
+    public String getLessonDate() {
+        return lessonDate;
     }
 
-    public void setLessonDay(String lessonDay) {
-        this.lessonDay = lessonDay;
+    public void setLessonDate(String lessonDate) {
+        this.lessonDate = lessonDate;
     }
 
     public String getStartTime() {
@@ -60,12 +60,12 @@ public class StaffDailyTimeTableLessonDTO extends ParentDTO{
         this.endTime = endTime;
     }
 
-    public String getAttendanceStatus() {
-        return attendanceStatus;
+    public String getDailyTimeTableLessonStatus() {
+        return dailyTimeTableLessonStatus;
     }
 
-    public void setAttendanceStatus(String attendanceStatus) {
-        this.attendanceStatus = attendanceStatus;
+    public void setDailyTimeTableLessonStatus(String dailyTimeTableLessonStatus) {
+        this.dailyTimeTableLessonStatus = dailyTimeTableLessonStatus;
     }
 
     public StaffDailyTimeTableDTO getStaffDailyTimeTableDTO() {
@@ -83,8 +83,8 @@ public class StaffDailyTimeTableLessonDTO extends ParentDTO{
                 ", subjectDTO=" + subjectDTO +
                 ", startTime='" + startTime + '\'' +
                 ", endTime='" + endTime + '\'' +
-                ", attendanceStatus='" + attendanceStatus + '\'' +
-                ", lessonDay='" + lessonDay + '\'' +
+                ", dailyTimeTableLessonStatus='" + dailyTimeTableLessonStatus + '\'' +
+                ", lessonDate='" + lessonDate + '\'' +
                 ", staffDailyTimeTableDTO=" + staffDailyTimeTableDTO +
                 '}';
     }

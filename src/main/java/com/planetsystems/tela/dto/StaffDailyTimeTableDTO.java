@@ -10,7 +10,7 @@ public class StaffDailyTimeTableDTO extends ParentDTO {
 
     private String comment;
 
-    private String lessonDay;
+    private String lessonDate;
 
     private List<StaffDailyTimeTableLessonDTO> staffDailyTimeTableLessonDTOS;
 
@@ -45,14 +45,6 @@ public class StaffDailyTimeTableDTO extends ParentDTO {
         this.comment = comment;
     }
 
-    public String getLessonDay() {
-        return lessonDay;
-    }
-
-    public void setLessonDay(String lessonDay) {
-        this.lessonDay = lessonDay;
-    }
-
     public List<StaffDailyTimeTableLessonDTO> getStaffDailyTimeTableLessonDTOS() {
         return staffDailyTimeTableLessonDTOS;
     }
@@ -61,13 +53,21 @@ public class StaffDailyTimeTableDTO extends ParentDTO {
         this.staffDailyTimeTableLessonDTOS = staffDailyTimeTableLessonDTOS;
     }
 
+    public String getLessonDate() {
+        return lessonDate;
+    }
+
+    public void setLessonDate(String lessonDate) {
+        this.lessonDate = lessonDate;
+    }
+
     @Override
     public String toString() {
         return "StaffDailyTimeTableDTO{" +
                 "academicTermDTO=" + academicTermDTO +
                 ", schoolStaffDTO=" + schoolStaffDTO +
                 ", comment='" + comment + '\'' +
-                ", lessonDay='" + lessonDay + '\'' +
+                ", lessonDate='" + lessonDate + '\'' +
                 ", staffDailyTimeTableLessonDTOS=" + staffDailyTimeTableLessonDTOS +
                 '}';
     }

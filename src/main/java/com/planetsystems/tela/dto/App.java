@@ -1,5 +1,7 @@
 package com.planetsystems.tela.dto;
 
+import org.apache.commons.lang3.StringUtils;
+
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.text.ParseException;
@@ -25,6 +27,11 @@ public class App
 //        String sDate1="31/12/1998";
 //        Date date1=new SimpleDateFormat("dd/MM/yyyy").parse(sDate1);
 //        System.out.println(sDate1+"\t"+date1);
+        String fullName = "galiwango fahad";
+        String cap = StringUtils.capitalize(fullName);
+        System.out.println("Name "+cap);
+        //StringUtils.cap
+
 
 
 
