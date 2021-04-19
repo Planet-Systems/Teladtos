@@ -2,6 +2,7 @@ package com.planetsystems.tela.dto;
 
 import org.apache.commons.lang3.StringUtils;
 
+import org.apache.commons.text.WordUtils;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.text.ParseException;
@@ -31,10 +32,6 @@ public class App
         String cap = StringUtils.capitalize(fullName);
         System.out.println("Name "+cap);
         //StringUtils.cap
-
-
-
-
 
     }
 }
