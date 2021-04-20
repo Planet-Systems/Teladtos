@@ -1,8 +1,15 @@
 package com.planetsystems.tela.dto;
+
+import org.apache.commons.lang3.StringUtils;
+
+import org.apache.commons.text.WordUtils;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Date;
 
 
@@ -21,15 +28,10 @@ public class App
 //        String sDate1="31/12/1998";
 //        Date date1=new SimpleDateFormat("dd/MM/yyyy").parse(sDate1);
 //        System.out.println(sDate1+"\t"+date1);
-        String fullName = "galiwango fahad wea6SDUIO QWYTSDU QWSUDY  yertyu ertd yug";
-//        String cap = WordUtils.capitalize(fullName);
-//        System.out.println("Name "+cap);
-//        System.out.println("Name "+ WordUtils.capitalizeFully(fullName));
+        String fullName = "galiwango fahad";
+        String cap = StringUtils.capitalize(fullName);
+        System.out.println("Name "+cap);
         //StringUtils.cap
-
-
-
-
 
     }
 }
