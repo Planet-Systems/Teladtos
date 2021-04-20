@@ -14,7 +14,10 @@ public enum SubMenuItemDTO {
 	Staff_Enrollement("Staff Enrollment"),
 	Learner_Enrollement("Learner Enrollment"),
 	TimeTable("TimeTable"),
-	Users("System Users");
+	Users("System Users"),
+	School_Performace("School Performance"),
+	District_Reports("District Performance"),
+	National_Reports("National Performance");
 
 	private String menuItem;
 
