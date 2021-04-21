@@ -18,7 +18,7 @@ public enum SubMenuItem {
 	Head_Teacher_Supervision("Staff Daily Attendance SuperVision"),
 	STAFF_DAILY_TIMETABLE_LESSONS("Staff Daily Timetable Lessons"),
 	STAFF_DAILY_ATTENDANCE_SUPERVISION("Staff Daily Attendance Supervision"),
-//	Staff_Daily_Task("Staff Daily Lessons"),
+	Staff_Daily_Task("Staff Daily Lessons"),
 	Staff_Enrollement("Staff Enrollment"),
 	Learner_Enrollement("Learner Enrollment"),
 	TimeTable("TimeTable"),
