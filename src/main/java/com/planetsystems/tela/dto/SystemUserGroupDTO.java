@@ -13,8 +13,11 @@ public class SystemUserGroupDTO extends ParentDTO {
     private boolean receiveAlerts = false;
     private boolean administrativeRole= false;
     
-    private SystemUserDTO createdBy;
-    private SystemUserDTO updatedBy;
+//    private SystemUserDTO createdBy;
+//    private SystemUserDTO updatedBy;
+
+    private SystemUserProfileDTO createdBy;
+    private SystemUserProfileDTO updatedBy;
 
     public SystemUserGroupDTO() {
     }
@@ -63,19 +66,19 @@ public class SystemUserGroupDTO extends ParentDTO {
         this.receiveAlerts = receiveAlerts;
     }
 
-    public SystemUserDTO getCreatedBy() {
+    public SystemUserProfileDTO getCreatedBy() {
         return createdBy;
     }
 
-    public void setCreatedBy(SystemUserDTO createdBy) {
+    public void setCreatedBy(SystemUserProfileDTO createdBy) {
         this.createdBy = createdBy;
     }
 
-    public SystemUserDTO getUpdatedBy() {
+    public SystemUserProfileDTO getUpdatedBy() {
         return updatedBy;
     }
 
-    public void setUpdatedBy(SystemUserDTO updatedBy) {
+    public void setUpdatedBy(SystemUserProfileDTO updatedBy) {
         this.updatedBy = updatedBy;
     }
 
@@ -87,16 +90,4 @@ public class SystemUserGroupDTO extends ParentDTO {
 		this.administrativeRole = administrativeRole;
 	}
 
-	/*@Override
-    public String toString() {
-        return "SystemUserGroupDTO{" +
-                "code='" + code + '\'' +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", defaultGroup=" + defaultGroup +
-                ", receiveAlerts=" + receiveAlerts +
-                ", createdBy=" + createdBy +
-                ", updatedBy=" + updatedBy +
-                '}';
-    }*/
 }

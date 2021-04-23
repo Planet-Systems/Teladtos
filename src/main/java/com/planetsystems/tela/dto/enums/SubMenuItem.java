@@ -6,26 +6,26 @@ package com.planetsystems.tela.dto.enums;
  *
  *rename to SideNavItem
  */
+@Deprecated
 public enum SubMenuItem {
-	
+
 	Dashboard("Dashboard"),
 	AcademicYear("Assessment Periods"),
-	Location("Locations"), 
+	Location("Locations"),
 	Schools("Schools"),
 	Subjects("Subjects"),
 	Staff_Attendance("Staff Attendance"),
 	Learner_Attendance("Learner Attendance"),
 	Head_Teacher_Supervision("Staff Daily Attendance SuperVision"),
-	STAFF_DAILY_TIMETABLE_LESSONS("Staff Daily Timetable Lessons"),
-	STAFF_DAILY_ATTENDANCE_SUPERVISION("Staff Daily Attendance Supervision"),
 	Staff_Daily_Task("Staff Daily Lessons"),
 	Staff_Enrollement("Staff Enrollment"),
 	Learner_Enrollement("Learner Enrollment"),
 	TimeTable("TimeTable"),
 	Users("System Users"),
-	MESSAGING("Messaging");
-
-
+	School_Performace("School Performance"),
+	District_Reports("District Performance"),
+	National_Reports("National Performance"),
+	STAFF_DAILY_TIMETABLE_LESSONS("Staff Daily Timetable Lessons");
 
 
 	private String menuItem;

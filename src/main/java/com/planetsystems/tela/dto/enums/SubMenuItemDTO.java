@@ -1,4 +1,4 @@
-package com.planetsystems.tela.dto;
+package com.planetsystems.tela.dto.enums;
 
 public enum SubMenuItemDTO {
 
@@ -24,6 +24,8 @@ public enum SubMenuItemDTO {
 	SubMenuItemDTO(String menuItem) {
 		this.menuItem = menuItem;
 	}
+
+
 
 	public String getSystemMenuItem() {
 		return menuItem;

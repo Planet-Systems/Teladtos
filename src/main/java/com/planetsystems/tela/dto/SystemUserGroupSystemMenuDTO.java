@@ -10,7 +10,10 @@ public class SystemUserGroupSystemMenuDTO extends ParentDTO {
 	private SystemUserGroupDTO systemUserGroupDTO;
 	private SystemMenuDTO systemMenuDTO;
 
-	private boolean disabled;
+	private SystemUserProfileDTO createdBy;
+	private SystemUserProfileDTO updatedBy;
+
+	private boolean selected;
 
 	public SystemUserGroupSystemMenuDTO() {
 
@@ -32,11 +35,27 @@ public class SystemUserGroupSystemMenuDTO extends ParentDTO {
 		this.systemMenuDTO = systemMenuDTO;
 	}
 
-	public boolean isDisabled() {
-		return disabled;
+	public boolean isSelected() {
+		return selected;
 	}
 
-	public void setDisabled(boolean disabled) {
-		this.disabled = disabled;
+	public void setSelected(boolean selected) {
+		this.selected = selected;
+	}
+
+	public SystemUserProfileDTO getCreatedBy() {
+		return createdBy;
+	}
+
+	public void setCreatedBy(SystemUserProfileDTO createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	public SystemUserProfileDTO getUpdatedBy() {
+		return updatedBy;
+	}
+
+	public void setUpdatedBy(SystemUserProfileDTO updatedBy) {
+		this.updatedBy = updatedBy;
 	}
 }
