@@ -9,8 +9,8 @@ public class SchoolEndOfMonthTimeAttendanceDTO implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private String operationYear;
-	private String assessmentPeriod;
+	private String year;
+	private String term;
 
 	private String staff;
 	
@@ -18,6 +18,7 @@ public class SchoolEndOfMonthTimeAttendanceDTO implements Serializable {
 	private String week2;
 	private String week3;
 	private String week4;
+	private String week5;
 
 	private double totalTime; 
 	private double expectedHours;
@@ -28,20 +29,20 @@ public class SchoolEndOfMonthTimeAttendanceDTO implements Serializable {
 
 	}
 
-	public String getOperationYear() {
-		return operationYear;
+	public String getYear() {
+		return year;
 	}
 
-	public void setOperationYear(String operationYear) {
-		this.operationYear = operationYear;
+	public void setYear(String year) {
+		this.year = year;
 	}
 
-	public String getAssessmentPeriod() {
-		return assessmentPeriod;
+	public String getTerm() {
+		return term;
 	}
 
-	public void setAssessmentPeriod(String assessmentPeriod) {
-		this.assessmentPeriod = assessmentPeriod;
+	public void setTerm(String term) {
+		this.term = term;
 	}
 
 	public String getStaff() {
@@ -116,5 +117,11 @@ public class SchoolEndOfMonthTimeAttendanceDTO implements Serializable {
 		this.balance = balance;
 	}
 
-	
+	public String getWeek5() {
+		return week5;
+	}
+
+	public void setWeek5(String week5) {
+		this.week5 = week5;
+	}
 }

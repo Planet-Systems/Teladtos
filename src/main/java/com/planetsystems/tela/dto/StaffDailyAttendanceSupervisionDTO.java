@@ -4,7 +4,7 @@ import java.util.List;
 
 public class StaffDailyAttendanceSupervisionDTO extends ParentDTO{
 
-    private SystemUserDTO supervisorDTO;
+    private SchoolStaffDTO supervisorDTO;
     private SchoolStaffDTO schoolStaffDTO;
 
     private String comment;
@@ -22,11 +22,11 @@ public class StaffDailyAttendanceSupervisionDTO extends ParentDTO{
         super(id);
     }
 
-    public SystemUserDTO getSupervisorDTO() {
+    public SchoolStaffDTO getSupervisorDTO() {
         return supervisorDTO;
     }
 
-    public void setSupervisorDTO(SystemUserDTO supervisorDTO) {
+    public void setSupervisorDTO(SchoolStaffDTO supervisorDTO) {
         this.supervisorDTO = supervisorDTO;
     }
 

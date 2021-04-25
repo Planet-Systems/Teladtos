@@ -12,6 +12,10 @@ public class FilterDTO extends ParentDTO{
     private SubjectCategoryDTO subjectCategoryDTO;
     private  SubjectDTO subjectDTO;
     private String date;
+    private String month;
+    private String week;
+    private String fromDate;
+    private String toDate;
 
     public FilterDTO() {
     }
@@ -104,6 +108,38 @@ public class FilterDTO extends ParentDTO{
         this.date = date;
     }
 
+    public String getFromDate() {
+        return fromDate;
+    }
+
+    public void setFromDate(String fromDate) {
+        this.fromDate = fromDate;
+    }
+
+    public String getToDate() {
+        return toDate;
+    }
+
+    public void setToDate(String toDate) {
+        this.toDate = toDate;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
+
+    public String getWeek() {
+        return week;
+    }
+
+    public void setWeek(String week) {
+        this.week = week;
+    }
+
     @Override
     public String toString() {
         return "FilterDTO{" +
@@ -118,6 +154,10 @@ public class FilterDTO extends ParentDTO{
                 ", subjectCategoryDTO=" + subjectCategoryDTO +
                 ", subjectDTO=" + subjectDTO +
                 ", date='" + date + '\'' +
+                ", month='" + month + '\'' +
+                ", week='" + week + '\'' +
+                ", fromDate='" + fromDate + '\'' +
+                ", toDate='" + toDate + '\'' +
                 '}';
     }
 }

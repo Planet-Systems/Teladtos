@@ -1,8 +1,5 @@
 package com.planetsystems.tela.dto;
 
-import io.swagger.annotations.ApiModel;
-
-@ApiModel("System user dto details")
 public class SystemUserDTO extends ParentDTO{
     /**
 	 * 

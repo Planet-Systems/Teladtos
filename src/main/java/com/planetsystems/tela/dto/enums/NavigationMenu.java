@@ -37,9 +37,8 @@ public enum NavigationMenu {
 
 	public static NavigationMenu getNavigationMenu(String menu) {
 		for (NavigationMenu navigationMenu : NavigationMenu.values()) {
-			if (navigationMenu.getNavigationMenu().equalsIgnoreCase(menu)) {
+			if (navigationMenu.getNavigationMenu().equalsIgnoreCase(menu))
 				return navigationMenu;
-			}
 		}
 		return null;
 	}
