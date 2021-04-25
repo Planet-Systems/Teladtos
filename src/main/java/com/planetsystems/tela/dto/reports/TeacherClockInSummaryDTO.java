@@ -9,8 +9,10 @@ public class TeacherClockInSummaryDTO implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private String operationYear; //academic year
-	private String assessmentPeriod;// academic term
+
+	private String year;
+	private String term;
+
 	private String school;
 
 	private String taskDay; //lesson day
@@ -29,20 +31,20 @@ public class TeacherClockInSummaryDTO implements Serializable {
 
 	}
 
-	public String getOperationYear() {
-		return operationYear;
+	public String getYear() {
+		return year;
 	}
 
-	public void setOperationYear(String operationYear) {
-		this.operationYear = operationYear;
+	public void setYear(String year) {
+		this.year = year;
 	}
 
-	public String getAssessmentPeriod() {
-		return assessmentPeriod;
+	public String getTerm() {
+		return term;
 	}
 
-	public void setAssessmentPeriod(String assessmentPeriod) {
-		this.assessmentPeriod = assessmentPeriod;
+	public void setTerm(String term) {
+		this.term = term;
 	}
 
 	public String getSchool() {

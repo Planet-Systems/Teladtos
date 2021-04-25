@@ -1,9 +1,7 @@
 package com.planetsystems.tela.dto;
 
 public class SystemUserDTO extends ParentDTO {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 	private String userName;
