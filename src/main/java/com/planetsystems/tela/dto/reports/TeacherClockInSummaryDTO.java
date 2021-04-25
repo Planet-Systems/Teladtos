@@ -9,11 +9,11 @@ public class TeacherClockInSummaryDTO implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private String operationYear;
-	private String assessmentPeriod;
+	private String operationYear; //academic year
+	private String assessmentPeriod;// academic term
 	private String school;
 
-	private String taskDay;
+	private String taskDay; //lesson day
 	private String staff;
 
 	private String clockInDate;
@@ -21,7 +21,7 @@ public class TeacherClockInSummaryDTO implements Serializable {
 	private String clockOutTime;
 
 	private double totalWorkHours;
-	private double expectedHours;
+	private double expectedHours; //8
 	private double percentage;
 	private double balance;
 
