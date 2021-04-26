@@ -18,8 +18,8 @@ public class DistrictEndOfMonthTimeAttendanceDTO implements Serializable {
 	private String week2;
 	private String week3;
 	private String week4;
-	private double totalTime;
-
+	
+	private double totalTime; 
 	private double expectedHours;
 	private double percentage;
 	private double balance;
