@@ -2,33 +2,32 @@ package com.planetsystems.tela.dto.reports;
 
 import java.io.Serializable;
 
-public class TeacherClockInSummaryDTO implements Serializable {
+public class DistrictEndOfWeekTimeAttendanceDTO implements Serializable{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
-
+	
 	private String year;
 	private String term;
-
 	private String school;
 
-	private String taskDay; //lesson day
-	private String staff;
-
-	private String clockInDate;
-	private String clockInTime;
-	private String clockOutTime;
+	private String mon;
+	private String tue;
+	private String wed;
+	private String thur;
+	private String fri;
+	private String sat;
+	private String sun;
 
 	private double totalWorkHours;
-	private double expectedHours; //8
+	private double expectedHours;
 	private double percentage;
 	private double balance;
-
-	public TeacherClockInSummaryDTO() {
-
+	
+	public DistrictEndOfWeekTimeAttendanceDTO() {
+		
 	}
 
 	public String getYear() {
@@ -55,44 +54,60 @@ public class TeacherClockInSummaryDTO implements Serializable {
 		this.school = school;
 	}
 
-	public String getTaskDay() {
-		return taskDay;
+	public String getMon() {
+		return mon;
 	}
 
-	public void setTaskDay(String taskDay) {
-		this.taskDay = taskDay;
+	public void setMon(String mon) {
+		this.mon = mon;
 	}
 
-	public String getStaff() {
-		return staff;
+	public String getTue() {
+		return tue;
 	}
 
-	public void setStaff(String staff) {
-		this.staff = staff;
+	public void setTue(String tue) {
+		this.tue = tue;
 	}
 
-	public String getClockInDate() {
-		return clockInDate;
+	public String getWed() {
+		return wed;
 	}
 
-	public void setClockInDate(String clockInDate) {
-		this.clockInDate = clockInDate;
+	public void setWed(String wed) {
+		this.wed = wed;
 	}
 
-	public String getClockInTime() {
-		return clockInTime;
+	public String getThur() {
+		return thur;
 	}
 
-	public void setClockInTime(String clockInTime) {
-		this.clockInTime = clockInTime;
+	public void setThur(String thur) {
+		this.thur = thur;
 	}
 
-	public String getClockOutTime() {
-		return clockOutTime;
+	public String getFri() {
+		return fri;
 	}
 
-	public void setClockOutTime(String clockOutTime) {
-		this.clockOutTime = clockOutTime;
+	public void setFri(String fri) {
+		this.fri = fri;
+	}
+
+	public String getSat() {
+		return sat;
+	}
+
+	public void setSat(String sat) {
+		this.sat = sat;
+	}
+
+	public String getSun() {
+		return sun;
+	}
+
+	public void setSun(String sun) {
+		this.sun = sun;
 	}
 
 	public double getTotalWorkHours() {
@@ -126,5 +141,6 @@ public class TeacherClockInSummaryDTO implements Serializable {
 	public void setBalance(double balance) {
 		this.balance = balance;
 	}
-
+	
+	
 }
