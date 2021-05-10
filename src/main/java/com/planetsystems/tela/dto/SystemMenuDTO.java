@@ -41,7 +41,7 @@ public class SystemMenuDTO extends ParentDTO {
 
 		List<SystemMenuDTO> attendanceSidNavMenu = new ArrayList<>();
 		attendanceSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ATTENDANCE.getNavigationMenu() , SubMenuItem.Learner_Attendance.getSystemMenuItem() ));
-		attendanceSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ATTENDANCE.getNavigationMenu() , SubMenuItem.Staff_Enrollement.getSystemMenuItem() ));
+		attendanceSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ATTENDANCE.getNavigationMenu() , SubMenuItem.Staff_Attendance.getSystemMenuItem() ));
 		attendanceSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ATTENDANCE.getNavigationMenu() , SubMenuItem.STAFF_DAILY_TIMETABLE_LESSONS.getSystemMenuItem() ));
 		attendanceSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ATTENDANCE.getNavigationMenu() , SubMenuItem.Head_Teacher_Supervision.getSystemMenuItem() ));
 
