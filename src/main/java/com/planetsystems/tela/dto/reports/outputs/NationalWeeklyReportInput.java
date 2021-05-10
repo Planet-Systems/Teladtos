@@ -16,6 +16,7 @@ public class NationalWeeklyReportInput implements Serializable {
 	private String w; // wed
 	private String th; // thurs
 	private String f; // fri
+	
 	private String ths; // totalHours
 	private String ex; // expectedHours
 	private String vr; // variance
