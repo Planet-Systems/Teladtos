@@ -11,12 +11,24 @@ public class SchoolClass implements Serializable {
 
 	private String id;
 	private String code;
-	private String className;
+	private String name;
 	private String schoolId;
 
 	private String dateCreated;
 	private String dateUpdated;
 	private String status;
+
+	private String academicTermId;
+	private String created;
+	
+	private String createdDateTime;
+	private boolean deleted;
+	private String localId; 
+	private boolean updated;
+	private String updatedDateTime;
+	
+	private String classId;
+	private String classIdLocal;
 
 	public SchoolClass() {
 
@@ -38,12 +50,12 @@ public class SchoolClass implements Serializable {
 		this.code = code;
 	}
 
-	public String getClassName() {
-		return className;
+	public String getName() {
+		return name;
 	}
 
-	public void setClassName(String className) {
-		this.className = className;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getSchoolId() {
@@ -77,5 +89,80 @@ public class SchoolClass implements Serializable {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+
+	public String getAcademicTermId() {
+		return academicTermId;
+	}
+
+	public void setAcademicTermId(String academicTermId) {
+		this.academicTermId = academicTermId;
+	}
+
+	public String getCreated() {
+		return created;
+	}
+
+	public void setCreated(String created) {
+		this.created = created;
+	}
+
+	public String getCreatedDateTime() {
+		return createdDateTime;
+	}
+
+	public void setCreatedDateTime(String createdDateTime) {
+		this.createdDateTime = createdDateTime;
+	}
+
+	public boolean isDeleted() {
+		return deleted;
+	}
+
+	public void setDeleted(boolean deleted) {
+		this.deleted = deleted;
+	}
+
+	public String getLocalId() {
+		return localId;
+	}
+
+	public void setLocalId(String localId) {
+		this.localId = localId;
+	}
+ 
+
+	public boolean isUpdated() {
+		return updated;
+	}
+
+	public void setUpdated(boolean updated) {
+		this.updated = updated;
+	}
+
+	public String getUpdatedDateTime() {
+		return updatedDateTime;
+	}
+
+	public void setUpdatedDateTime(String updatedDateTime) {
+		this.updatedDateTime = updatedDateTime;
+	}
+
+	public String getClassId() {
+		return classId;
+	}
+
+	public void setClassId(String classId) {
+		this.classId = classId;
+	}
+
+	public String getClassIdLocal() {
+		return classIdLocal;
+	}
+
+	public void setClassIdLocal(String classIdLocal) {
+		this.classIdLocal = classIdLocal;
+	}
+	
+	
 
 }

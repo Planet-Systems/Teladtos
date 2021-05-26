@@ -15,6 +15,7 @@ public class StaffEnrolmentModel implements Serializable{
 	private long totalFemale;
 	private long totalStaff;
 	private String submissionDate;
+	private String localId;
 	
 	public StaffEnrolmentModel() {
 		
@@ -66,6 +67,14 @@ public class StaffEnrolmentModel implements Serializable{
 
 	public void setSubmissionDate(String submissionDate) {
 		this.submissionDate = submissionDate;
+	}
+
+	public String getLocalId() {
+		return localId;
+	}
+
+	public void setLocalId(String localId) {
+		this.localId = localId;
 	}
 	
 	

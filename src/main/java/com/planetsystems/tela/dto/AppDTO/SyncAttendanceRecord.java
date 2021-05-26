@@ -8,8 +8,9 @@ public class SyncAttendanceRecord implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private String deploymentUnitId;
-	private String deploymentUnit;
+	private String id;
+	private String classId;
+	private String className;
 	private long malePresent;
 	private long femalePresent;
 	private long maleAbsent;
@@ -18,30 +19,42 @@ public class SyncAttendanceRecord implements Serializable {
 	private String submissionDate;
 	private String taskDay;
 	private String supervisorId;
+	private String staffId;
+
 	
-	private String id;
 	private String dateCreated;
 	private String dateUpdated;
-	private String status;
+	private String status; 
+	private String localId;
+
+	private String academicTermId;
+	private String classIdLocal;
+	private boolean created;
+	private String createdDateTime;
+	private boolean deleted;
+	private String message;
+	
+	private boolean updated;
+	private String updatedDateTime;
 
 	public SyncAttendanceRecord() {
 
 	}
 
-	public String getDeploymentUnitId() {
-		return deploymentUnitId;
+	public String getClassId() {
+		return classId;
 	}
 
-	public void setDeploymentUnitId(String deploymentUnitId) {
-		this.deploymentUnitId = deploymentUnitId;
+	public void setClassId(String classId) {
+		this.classId = classId;
 	}
 
-	public String getDeploymentUnit() {
-		return deploymentUnit;
+	public String getClassName() {
+		return className;
 	}
 
-	public void setDeploymentUnit(String deploymentUnit) {
-		this.deploymentUnit = deploymentUnit;
+	public void setClassName(String className) {
+		this.className = className;
 	}
 
 	public long getMalePresent() {
@@ -138,6 +151,86 @@ public class SyncAttendanceRecord implements Serializable {
 
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getLocalId() {
+		return localId;
+	}
+
+	public void setLocalId(String localId) {
+		this.localId = localId;
+	}
+
+	public String getAcademicTermId() {
+		return academicTermId;
+	}
+
+	public void setAcademicTermId(String academicTermId) {
+		this.academicTermId = academicTermId;
+	}
+
+	public String getClassIdLocal() {
+		return classIdLocal;
+	}
+
+	public void setClassIdLocal(String classIdLocal) {
+		this.classIdLocal = classIdLocal;
+	}
+
+	public boolean isCreated() {
+		return created;
+	}
+
+	public void setCreated(boolean created) {
+		this.created = created;
+	}
+
+	public String getCreatedDateTime() {
+		return createdDateTime;
+	}
+
+	public void setCreatedDateTime(String createdDateTime) {
+		this.createdDateTime = createdDateTime;
+	}
+
+	public boolean isDeleted() {
+		return deleted;
+	}
+
+	public void setDeleted(boolean deleted) {
+		this.deleted = deleted;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public String getStaffId() {
+		return staffId;
+	}
+
+	public void setStaffId(String staffId) {
+		this.staffId = staffId;
+	}
+
+	public boolean isUpdated() {
+		return updated;
+	}
+
+	public void setUpdated(boolean updated) {
+		this.updated = updated;
+	}
+
+	public String getUpdatedDateTime() {
+		return updatedDateTime;
+	}
+
+	public void setUpdatedDateTime(String updatedDateTime) {
+		this.updatedDateTime = updatedDateTime;
 	}
 
 }

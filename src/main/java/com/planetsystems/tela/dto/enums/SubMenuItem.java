@@ -20,7 +20,7 @@ public enum SubMenuItem {
 	Staff_Daily_Task("Staff Daily Lessons"),
 	Staff_Enrollement("Staff Enrollment"),
 	Learner_Enrollement("Learner Enrollment"),
-	TimeTable("TimeTable"),
+	TimeTable("TimeTables"),
 	Users("System Users"),
 	School_Performace("School Performance"),
 	District_Reports("District Performance"),

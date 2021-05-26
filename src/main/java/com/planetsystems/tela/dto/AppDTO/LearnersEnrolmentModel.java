@@ -2,20 +2,31 @@ package com.planetsystems.tela.dto.AppDTO;
 
 import java.io.Serializable;
 
-public class LearnersEnrolmentModel implements Serializable{
+public class LearnersEnrolmentModel implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
-	private String classId;  
+
+	private String id;
 	private long totalMale;
-	private long totalFemale; 
+	private long totalFemale;
 	private String submissionDate;
 	
+	private String localId;
+	private String createdDateTime;
+	private boolean deleted;
+	private boolean updated;
+	private String updatedDateTime;
+	private String classId;
+	private String classIdLocal;
+	private int enrollmentStatus;
+	private boolean created;
+	private String schoolId;
+
 	public LearnersEnrolmentModel() {
-		
+
 	}
 
 	public String getClassId() {
@@ -49,6 +60,85 @@ public class LearnersEnrolmentModel implements Serializable{
 	public void setSubmissionDate(String submissionDate) {
 		this.submissionDate = submissionDate;
 	}
-	
-	
+
+	public String getLocalId() {
+		return localId;
+	}
+
+	public void setLocalId(String localId) {
+		this.localId = localId;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getCreatedDateTime() {
+		return createdDateTime;
+	}
+
+	public void setCreatedDateTime(String createdDateTime) {
+		this.createdDateTime = createdDateTime;
+	}
+
+	public boolean isDeleted() {
+		return deleted;
+	}
+
+	public void setDeleted(boolean deleted) {
+		this.deleted = deleted;
+	}
+
+	public boolean isUpdated() {
+		return updated;
+	}
+
+	public void setUpdated(boolean updated) {
+		this.updated = updated;
+	}
+
+	public String getUpdatedDateTime() {
+		return updatedDateTime;
+	}
+
+	public void setUpdatedDateTime(String updatedDateTime) {
+		this.updatedDateTime = updatedDateTime;
+	}
+
+	public String getClassIdLocal() {
+		return classIdLocal;
+	}
+
+	public void setClassIdLocal(String classIdLocal) {
+		this.classIdLocal = classIdLocal;
+	}
+
+	public int getEnrollmentStatus() {
+		return enrollmentStatus;
+	}
+
+	public void setEnrollmentStatus(int enrollmentStatus) {
+		this.enrollmentStatus = enrollmentStatus;
+	}
+
+	public boolean isCreated() {
+		return created;
+	}
+
+	public void setCreated(boolean created) {
+		this.created = created;
+	}
+
+	public String getSchoolId() {
+		return schoolId;
+	}
+
+	public void setSchoolId(String schoolId) {
+		this.schoolId = schoolId;
+	}
+
 }
