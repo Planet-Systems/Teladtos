@@ -9,12 +9,11 @@ public class SyncSMC implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private String deploymentUnitId; // deploymentSiteId
-	private String deploymentUnit; // deploymentSite
+	private String schoolId; // deploymentSiteId
 	private String smcCode;
-	private String staffPresent;
-	private String staffTeaching;
-	private String staffNotTeaching;
+	private long staffPresent;
+	private long staffTeaching;
+	private long staffNotTeaching;
 	private String p1;
 	private String p2;
 	private String p3;
@@ -36,20 +35,12 @@ public class SyncSMC implements Serializable {
 
 	}
 
-	public String getDeploymentUnitId() {
-		return deploymentUnitId;
+	public String getSchoolId() {
+		return schoolId;
 	}
 
-	public void setDeploymentUnitId(String deploymentUnitId) {
-		this.deploymentUnitId = deploymentUnitId;
-	}
-
-	public String getDeploymentUnit() {
-		return deploymentUnit;
-	}
-
-	public void setDeploymentUnit(String deploymentUnit) {
-		this.deploymentUnit = deploymentUnit;
+	public void setSchoolId(String schoolId) {
+		this.schoolId = schoolId;
 	}
 
 	public String getSmcCode() {
@@ -60,27 +51,27 @@ public class SyncSMC implements Serializable {
 		this.smcCode = smcCode;
 	}
 
-	public String getStaffPresent() {
+	public long getStaffPresent() {
 		return staffPresent;
 	}
 
-	public void setStaffPresent(String staffPresent) {
+	public void setStaffPresent(long staffPresent) {
 		this.staffPresent = staffPresent;
 	}
 
-	public String getStaffTeaching() {
+	public long getStaffTeaching() {
 		return staffTeaching;
 	}
 
-	public void setStaffTeaching(String staffTeaching) {
+	public void setStaffTeaching(long staffTeaching) {
 		this.staffTeaching = staffTeaching;
 	}
 
-	public String getStaffNotTeaching() {
+	public long getStaffNotTeaching() {
 		return staffNotTeaching;
 	}
 
-	public void setStaffNotTeaching(String staffNotTeaching) {
+	public void setStaffNotTeaching(long staffNotTeaching) {
 		this.staffNotTeaching = staffNotTeaching;
 	}
 

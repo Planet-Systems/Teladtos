@@ -2,23 +2,28 @@ package com.planetsystems.tela.dto.AppDTO;
 
 import java.io.Serializable;
 
-public class StaffEnrolmentModel implements Serializable{
+public class StaffEnrolmentModel implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
-	private String schoolId; 
-	private String deviceNo; 
+
+	private String id;
+	private String schoolId;
+	private String deviceNo;
 	private long totalMale;
 	private long totalFemale;
 	private long totalStaff;
 	private String submissionDate;
 	private String localId;
-	
+
+	private String created;
+	private String updated;
+	private String deleted;
+
 	public StaffEnrolmentModel() {
-		
+
 	}
 
 	public String getSchoolId() {
@@ -76,6 +81,37 @@ public class StaffEnrolmentModel implements Serializable{
 	public void setLocalId(String localId) {
 		this.localId = localId;
 	}
-	
-	
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getCreated() {
+		return created;
+	}
+
+	public void setCreated(String created) {
+		this.created = created;
+	}
+
+	public String getUpdated() {
+		return updated;
+	}
+
+	public void setUpdated(String updated) {
+		this.updated = updated;
+	}
+
+	public String getDeleted() {
+		return deleted;
+	}
+
+	public void setDeleted(String deleted) {
+		this.deleted = deleted;
+	}
+
 }
