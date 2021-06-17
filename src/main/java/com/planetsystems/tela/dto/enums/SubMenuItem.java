@@ -24,8 +24,7 @@ public enum SubMenuItem {
 	Users("System Users"),
 	School_Performace("School Performance"),
 	District_Reports("District Performance"),
-	National_Reports("National Performance"),
-	STAFF_DAILY_TIMETABLE_LESSONS("Staff Daily Timetable Lessons");
+	National_Reports("National Performance");
 
 
 	private String menuItem;

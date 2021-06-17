@@ -1,14 +1,16 @@
 package com.planetsystems.tela.dto;
 
 public enum NavigationMenuDTO {
-	
- 
+	 
 	SYSTEM_CONFIGURATION("System configuration"),
 	ENROLLMENT("Enrollment"),
 	ATTENDANCE("Attendance"),
 	TIMETABLE("Timetables"),
 	SYSTEM_USERS("System Users"),
-	GENERATE_REPORTS("Reports");
+	GENERATE_REPORTS("Reports"),
+	CURRICULUM_COVERAGE("Curriculum Coverage"),
+	INCENTIVES("Incentives"),
+	UTILITY_MANAGER("Utility Manager");
 
 	private String menu;
 

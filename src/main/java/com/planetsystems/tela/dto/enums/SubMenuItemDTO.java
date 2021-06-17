@@ -23,9 +23,8 @@ public enum SubMenuItemDTO {
 
 	SubMenuItemDTO(String menuItem) {
 		this.menuItem = menuItem;
-	}
-
-
+	} 
+	
 
 	public String getSystemMenuItem() {
 		return menuItem;

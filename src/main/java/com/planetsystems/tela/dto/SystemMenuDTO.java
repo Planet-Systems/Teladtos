@@ -42,7 +42,7 @@ public class SystemMenuDTO extends ParentDTO {
 		List<SystemMenuDTO> attendanceSidNavMenu = new ArrayList<>();
 		attendanceSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ATTENDANCE.getNavigationMenu() , SubMenuItem.Learner_Attendance.getSystemMenuItem() ));
 		attendanceSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ATTENDANCE.getNavigationMenu() , SubMenuItem.Staff_Attendance.getSystemMenuItem() ));
-		attendanceSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ATTENDANCE.getNavigationMenu() , SubMenuItem.STAFF_DAILY_TIMETABLE_LESSONS.getSystemMenuItem() ));
+		//attendanceSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ATTENDANCE.getNavigationMenu() , SubMenuItem.Staff_Daily_Task.getSystemMenuItem()));
 		attendanceSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ATTENDANCE.getNavigationMenu() , SubMenuItem.Head_Teacher_Supervision.getSystemMenuItem() ));
 
 		List<SystemMenuDTO> timetableSidNavMenu = new ArrayList();
@@ -55,6 +55,23 @@ public class SystemMenuDTO extends ParentDTO {
 		reports.add(new SystemMenuDTO(NavigationMenu.GENERATE_REPORTS.getNavigationMenu(), SubMenuItem.School_Performace.getSystemMenuItem()));
 		reports.add(new SystemMenuDTO(NavigationMenu.GENERATE_REPORTS.getNavigationMenu(), SubMenuItem.District_Reports.getSystemMenuItem()));
 		reports.add(new SystemMenuDTO(NavigationMenu.GENERATE_REPORTS.getNavigationMenu(), SubMenuItem.National_Reports.getSystemMenuItem()));
+		
+		
+		/*List<SystemMenuDTO> incentives = new ArrayList<>();
+		incentives.add(new SystemMenuDTO(NavigationMenu.INCENTIVES.getNavigationMenu(), SubMenuItem.School_Performace.getSystemMenuItem()));
+		incentives.add(new SystemMenuDTO(NavigationMenu.INCENTIVES.getNavigationMenu(), SubMenuItem.District_Reports.getSystemMenuItem()));
+		incentives.add(new SystemMenuDTO(NavigationMenu.INCENTIVES.getNavigationMenu(), SubMenuItem.National_Reports.getSystemMenuItem()));
+		
+		
+		List<SystemMenuDTO> curriculumCoverage = new ArrayList<>();
+		curriculumCoverage.add(new SystemMenuDTO(NavigationMenu.CURRICULUM_COVERAGE.getNavigationMenu(), SubMenuItem.School_Performace.getSystemMenuItem()));
+		curriculumCoverage.add(new SystemMenuDTO(NavigationMenu.CURRICULUM_COVERAGE.getNavigationMenu(), SubMenuItem.District_Reports.getSystemMenuItem()));
+		curriculumCoverage.add(new SystemMenuDTO(NavigationMenu.CURRICULUM_COVERAGE.getNavigationMenu(), SubMenuItem.National_Reports.getSystemMenuItem()));
+		
+		List<SystemMenuDTO> utilityManager = new ArrayList<>();
+		utilityManager.add(new SystemMenuDTO(NavigationMenu.UTILITY_MANAGER.getNavigationMenu(), SubMenuItem.School_Performace.getSystemMenuItem()));
+		utilityManager.add(new SystemMenuDTO(NavigationMenu.UTILITY_MANAGER.getNavigationMenu(), SubMenuItem.District_Reports.getSystemMenuItem()));
+		utilityManager.add(new SystemMenuDTO(NavigationMenu.UTILITY_MANAGER.getNavigationMenu(), SubMenuItem.National_Reports.getSystemMenuItem()));*/
 
 
 		List<SystemMenuDTO> systemMenuDTOList = new ArrayList<>();
@@ -63,7 +80,13 @@ public class SystemMenuDTO extends ParentDTO {
 		systemMenuDTOList.addAll(enrollmentSidNavMenu);
 		systemMenuDTOList.addAll(timetableSidNavMenu);
 		systemMenuDTOList.addAll(systemUserSidNavMenu);
+		
+		//systemMenuDTOList.addAll(incentives);
+		//systemMenuDTOList.addAll(curriculumCoverage);
+		//systemMenuDTOList.addAll(utilityManager);
+		
 		systemMenuDTOList.addAll(reports);
+		
 		return systemMenuDTOList;
 	}
 
