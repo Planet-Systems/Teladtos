@@ -8,10 +8,6 @@ public class SubjectDTO extends  ParentDTO {
     public SubjectDTO() {
     }
 
-    public SubjectDTO(String id) {
-        super(id);
-    }
-
     public String getCode() {
         return code;
     }
@@ -34,14 +30,5 @@ public class SubjectDTO extends  ParentDTO {
 
     public void setSubjectCategory(SubjectCategoryDTO subjectCategory) {
         this.subjectCategory = subjectCategory;
-    }
-
-    @Override
-    public String toString() {
-        return "SubjectDTO{" +
-                "code='" + code + '\'' +
-                ", name='" + name + '\'' +
-                ", subjectCategory=" + subjectCategory +
-                '}';
     }
 }

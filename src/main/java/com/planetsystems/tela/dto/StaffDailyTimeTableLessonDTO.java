@@ -1,23 +1,16 @@
 package com.planetsystems.tela.dto;
 
+
 public class StaffDailyTimeTableLessonDTO extends ParentDTO{
-
     private SchoolClassDTO schoolClassDTO;
-
     private SubjectDTO subjectDTO;
-
     private String startTime;
     private String endTime;
     private String dailyTimeTableLessonStatus;
     private String lessonDate;
-
     private StaffDailyTimeTableDTO staffDailyTimeTableDTO;
 
     public StaffDailyTimeTableLessonDTO() {
-    }
-
-    public StaffDailyTimeTableLessonDTO(String id) {
-        super(id);
     }
 
     public SchoolClassDTO getSchoolClassDTO() {
@@ -34,14 +27,6 @@ public class StaffDailyTimeTableLessonDTO extends ParentDTO{
 
     public void setSubjectDTO(SubjectDTO subjectDTO) {
         this.subjectDTO = subjectDTO;
-    }
-
-    public String getLessonDate() {
-        return lessonDate;
-    }
-
-    public void setLessonDate(String lessonDate) {
-        this.lessonDate = lessonDate;
     }
 
     public String getStartTime() {
@@ -68,24 +53,19 @@ public class StaffDailyTimeTableLessonDTO extends ParentDTO{
         this.dailyTimeTableLessonStatus = dailyTimeTableLessonStatus;
     }
 
+    public String getLessonDate() {
+        return lessonDate;
+    }
+
+    public void setLessonDate(String lessonDate) {
+        this.lessonDate = lessonDate;
+    }
+
     public StaffDailyTimeTableDTO getStaffDailyTimeTableDTO() {
         return staffDailyTimeTableDTO;
     }
 
     public void setStaffDailyTimeTableDTO(StaffDailyTimeTableDTO staffDailyTimeTableDTO) {
         this.staffDailyTimeTableDTO = staffDailyTimeTableDTO;
-    }
-
-    @Override
-    public String toString() {
-        return "StaffDailyTimeTableLessonDTO{" +
-                "schoolClassDTO=" + schoolClassDTO +
-                ", subjectDTO=" + subjectDTO +
-                ", startTime='" + startTime + '\'' +
-                ", endTime='" + endTime + '\'' +
-                ", dailyTimeTableLessonStatus='" + dailyTimeTableLessonStatus + '\'' +
-                ", lessonDate='" + lessonDate + '\'' +
-                ", staffDailyTimeTableDTO=" + staffDailyTimeTableDTO +
-                '}';
     }
 }

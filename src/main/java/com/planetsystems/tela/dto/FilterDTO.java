@@ -108,22 +108,6 @@ public class FilterDTO extends ParentDTO{
         this.date = date;
     }
 
-    public String getFromDate() {
-        return fromDate;
-    }
-
-    public void setFromDate(String fromDate) {
-        this.fromDate = fromDate;
-    }
-
-    public String getToDate() {
-        return toDate;
-    }
-
-    public void setToDate(String toDate) {
-        this.toDate = toDate;
-    }
-
     public String getMonth() {
         return month;
     }
@@ -140,24 +124,19 @@ public class FilterDTO extends ParentDTO{
         this.week = week;
     }
 
-    @Override
-    public String toString() {
-        return "FilterDTO{" +
-                "academicYearDTO=" + academicYearDTO +
-                ", academicTermDTO=" + academicTermDTO +
-                ", regionDto=" + regionDto +
-                ", districtDTO=" + districtDTO +
-                ", schoolCategoryDTO=" + schoolCategoryDTO +
-                ", schoolClassDTO=" + schoolClassDTO +
-                ", schoolDTO=" + schoolDTO +
-                ", schoolStaffDTO=" + schoolStaffDTO +
-                ", subjectCategoryDTO=" + subjectCategoryDTO +
-                ", subjectDTO=" + subjectDTO +
-                ", date='" + date + '\'' +
-                ", month='" + month + '\'' +
-                ", week='" + week + '\'' +
-                ", fromDate='" + fromDate + '\'' +
-                ", toDate='" + toDate + '\'' +
-                '}';
+    public String getFromDate() {
+        return fromDate;
+    }
+
+    public void setFromDate(String fromDate) {
+        this.fromDate = fromDate;
+    }
+
+    public String getToDate() {
+        return toDate;
+    }
+
+    public void setToDate(String toDate) {
+        this.toDate = toDate;
     }
 }

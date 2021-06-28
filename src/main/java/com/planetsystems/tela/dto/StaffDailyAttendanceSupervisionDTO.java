@@ -1,25 +1,17 @@
 package com.planetsystems.tela.dto;
 
+
 import java.util.List;
-
 public class StaffDailyAttendanceSupervisionDTO extends ParentDTO{
-
     private SchoolStaffDTO supervisorDTO;
     private SchoolStaffDTO schoolStaffDTO;
-
     private String comment;
-
     private String supervisionDate;
-
     private String supervisionTime;
-
    private List<StaffDailyAttendanceTaskSupervisionDTO> staffDailyAttendanceTaskSupervisionDTOS;
 
-    public StaffDailyAttendanceSupervisionDTO() {
-    }
 
-    public StaffDailyAttendanceSupervisionDTO(String id) {
-        super(id);
+    public StaffDailyAttendanceSupervisionDTO() {
     }
 
     public SchoolStaffDTO getSupervisorDTO() {
@@ -28,6 +20,14 @@ public class StaffDailyAttendanceSupervisionDTO extends ParentDTO{
 
     public void setSupervisorDTO(SchoolStaffDTO supervisorDTO) {
         this.supervisorDTO = supervisorDTO;
+    }
+
+    public SchoolStaffDTO getSchoolStaffDTO() {
+        return schoolStaffDTO;
+    }
+
+    public void setSchoolStaffDTO(SchoolStaffDTO schoolStaffDTO) {
+        this.schoolStaffDTO = schoolStaffDTO;
     }
 
     public String getComment() {
@@ -60,25 +60,5 @@ public class StaffDailyAttendanceSupervisionDTO extends ParentDTO{
 
     public void setStaffDailyAttendanceTaskSupervisionDTOS(List<StaffDailyAttendanceTaskSupervisionDTO> staffDailyAttendanceTaskSupervisionDTOS) {
         this.staffDailyAttendanceTaskSupervisionDTOS = staffDailyAttendanceTaskSupervisionDTOS;
-    }
-
-    public SchoolStaffDTO getSchoolStaffDTO() {
-        return schoolStaffDTO;
-    }
-
-    public void setSchoolStaffDTO(SchoolStaffDTO schoolStaffDTO) {
-        this.schoolStaffDTO = schoolStaffDTO;
-    }
-
-    @Override
-    public String toString() {
-        return "StaffDailyAttendanceSupervisionDTO{" +
-                "supervisorDTO=" + supervisorDTO +
-                ", schoolStaffDTO=" + schoolStaffDTO +
-                ", comment='" + comment + '\'' +
-                ", supervisionDate='" + supervisionDate + '\'' +
-                ", supervisionTime='" + supervisionTime + '\'' +
-                ", staffDailyAttendanceTaskSupervisionDTOS=" + staffDailyAttendanceTaskSupervisionDTOS +
-                '}';
     }
 }

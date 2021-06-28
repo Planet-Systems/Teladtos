@@ -1,21 +1,14 @@
 package com.planetsystems.tela.dto;
 
+
 public class SystemUserGroupPermissionDTO extends ParentDTO {
     private SystemUserGroupDTO systemUserGroup;
-
     private String systemPermission;
-
     private String permissionType;
-
     private SystemUserDTO createdBy;
-
     private SystemUserDTO updatedBy;
 
     public SystemUserGroupPermissionDTO() {
-    }
-
-    public SystemUserGroupPermissionDTO(String id) {
-        super(id);
     }
 
     public SystemUserGroupDTO getSystemUserGroup() {
@@ -56,16 +49,5 @@ public class SystemUserGroupPermissionDTO extends ParentDTO {
 
     public void setUpdatedBy(SystemUserDTO updatedBy) {
         this.updatedBy = updatedBy;
-    }
-
-    @Override
-    public String toString() {
-        return "SystemUserGroupPermissionDTO{" +
-                "systemUserGroup=" + systemUserGroup +
-                ", systemPermission='" + systemPermission + '\'' +
-                ", permissionType='" + permissionType + '\'' +
-                ", createdBy=" + createdBy +
-                ", updatedBy=" + updatedBy +
-                '}';
     }
 }

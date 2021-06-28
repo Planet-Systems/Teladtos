@@ -5,24 +5,18 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ParentDTO implements Serializable {
-    /**
-	 * 
-	 */
+public abstract class ParentDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
-
 	private String id;
-
     private String createdDateTime;
     private String updatedDateTime;
     private String status;
 
-
     public ParentDTO() {
     }
 
-    public ParentDTO(String id) {
-        this.id = id;
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
     }
 
     public String getId() {
@@ -31,15 +25,6 @@ public class ParentDTO implements Serializable {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
     }
 
     public String getCreatedDateTime() {
@@ -58,13 +43,11 @@ public class ParentDTO implements Serializable {
         this.updatedDateTime = updatedDateTime;
     }
 
-    @Override
-    public String toString() {
-        return "ParentDTO{" +
-                "id='" + id + '\'' +
-                ", createdDateTime='" + createdDateTime + '\'' +
-                ", updatedDateTime='" + updatedDateTime + '\'' +
-                ", status='" + status + '\'' +
-                '}';
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

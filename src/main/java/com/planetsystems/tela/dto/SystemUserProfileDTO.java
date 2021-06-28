@@ -1,23 +1,17 @@
 package com.planetsystems.tela.dto;
 
+
 public class SystemUserProfileDTO extends ParentDTO {
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-	
-
 	private SystemUserDTO systemUserDTO;
-
     private SystemUserGroupDTO systemUserGroupDTO;
-
     private GeneralUserDetailDTO generalUserDetailDTO;
 
     public SystemUserProfileDTO() {
     }
 
-    public SystemUserProfileDTO(String id) {
-        super(id);
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
     }
 
     public SystemUserDTO getSystemUserDTO() {
@@ -42,14 +36,5 @@ public class SystemUserProfileDTO extends ParentDTO {
 
     public void setGeneralUserDetailDTO(GeneralUserDetailDTO generalUserDetailDTO) {
         this.generalUserDetailDTO = generalUserDetailDTO;
-    }
-
-    @Override
-    public String toString() {
-        return "SystemUserProfileDTO{" +
-                "systemUserDTO=" + systemUserDTO +
-                ", systemUserGroupDTO=" + systemUserGroupDTO +
-                ", generalUserDetailDTO=" + generalUserDetailDTO +
-                '}';
     }
 }

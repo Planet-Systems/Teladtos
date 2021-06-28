@@ -1,4 +1,4 @@
-package com.planetsystems.tela.dto;
+package com.planetsystems.tela.dto.enums;
 
 public enum NavigationMenuDTO {
 	 

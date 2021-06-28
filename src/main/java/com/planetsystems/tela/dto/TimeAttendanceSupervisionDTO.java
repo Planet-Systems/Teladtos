@@ -1,29 +1,16 @@
 package com.planetsystems.tela.dto;
 
-import java.time.LocalTime;
-import java.util.Date;
 
 public class TimeAttendanceSupervisionDTO extends ParentDTO {
-
     private String supervisionDate;
-
     private String supervisionTime;
-
     private String comment;
-
      private SchoolDTO schoolDTO;
-
     private SchoolStaffDTO schoolStaffDTO;
-
     private String attendanceStatus;
-
    private SystemUserDTO supervisor;
 
     public TimeAttendanceSupervisionDTO() {
-    }
-
-    public TimeAttendanceSupervisionDTO(String id) {
-        super(id);
     }
 
     public String getSupervisionDate() {
@@ -80,18 +67,5 @@ public class TimeAttendanceSupervisionDTO extends ParentDTO {
 
     public void setSupervisor(SystemUserDTO supervisor) {
         this.supervisor = supervisor;
-    }
-
-    @Override
-    public String toString() {
-        return "TimeAttendanceSupervisionDTO{" +
-                "supervisionDate='" + supervisionDate + '\'' +
-                ", supervisionTime='" + supervisionTime + '\'' +
-                ", comment='" + comment + '\'' +
-                ", schoolDTO=" + schoolDTO +
-                ", schoolStaffDTO=" + schoolStaffDTO +
-                ", attendanceStatus='" + attendanceStatus + '\'' +
-                ", supervisor=" + supervisor +
-                '}';
     }
 }

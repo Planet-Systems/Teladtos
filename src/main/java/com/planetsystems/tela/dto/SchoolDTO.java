@@ -17,12 +17,7 @@ public class SchoolDTO extends ParentDTO{
 
     private String activationStatus;
 
-
     public SchoolDTO() {
-    }
-
-    public SchoolDTO(String id) {
-        super(id);
     }
 
     public String getCode() {
@@ -95,21 +90,5 @@ public class SchoolDTO extends ParentDTO{
 
     public void setActivationStatus(String activationStatus) {
         this.activationStatus = activationStatus;
-    }
-
-
-    @Override
-    public String toString() {
-        return "SchoolDTO{" +
-                "code='" + code + '\'' +
-                ", name='" + name + '\'' +
-                ", schoolCategoryDTO=" + schoolCategoryDTO +
-                ", latitude='" + latitude + '\'' +
-                ", longitude='" + longitude + '\'' +
-                ", districtDTO=" + districtDTO +
-                ", deviceNumber='" + deviceNumber + '\'' +
-                ", attendanceTracked=" + attendanceTracked +
-                ", activationStatus='" + activationStatus + '\'' +
-                '}';
     }
 }

@@ -1,9 +1,8 @@
-package com.planetsystems.tela.dto;
+package com.planetsystems.tela.dto.response;
 
 import java.io.Serializable;
-import java.util.List;
 
-
+@Deprecated
 public class SystemResponseDTO<T> implements Serializable {
     private String message;
     private T data;
@@ -51,14 +50,5 @@ public class SystemResponseDTO<T> implements Serializable {
 
     public void setStatus(boolean status) {
         this.status = status;
-    }
-
-    @Override
-    public String toString() {
-        return "SystemResponseDTO{" +
-                "message='" + message + '\'' +
-                ", data=" + data +
-                ", status=" + status +
-                '}';
     }
 }

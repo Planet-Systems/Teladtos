@@ -7,7 +7,6 @@ public class LearnerEnrollmentDTO extends ParentDTO {
     private long totalGirls;
     private String status;
 
-
     public LearnerEnrollmentDTO() {
     }
 

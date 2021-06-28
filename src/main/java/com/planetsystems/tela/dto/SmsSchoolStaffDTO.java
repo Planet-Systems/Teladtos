@@ -3,7 +3,7 @@ package com.planetsystems.tela.dto;
 import java.io.Serializable;
 import java.util.List;
 
-public class SmsSchoolStaffDTO implements Serializable{
+public class SmsSchoolStaffDTO implements Serializable {
     private SystemUserProfileDTO systemUserProfileDTO;
     private List<SchoolStaffDTO> schoolStaffDTOS;
     private String message;

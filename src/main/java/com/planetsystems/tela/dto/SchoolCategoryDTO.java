@@ -7,10 +7,6 @@ public class SchoolCategoryDTO extends ParentDTO {
     public SchoolCategoryDTO() {
     }
 
-    public SchoolCategoryDTO(String id) {
-        super(id);
-    }
-
     public String getCode() {
         return code;
     }
@@ -25,13 +21,5 @@ public class SchoolCategoryDTO extends ParentDTO {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "SchoolCategoryDTO{" +
-                "code='" + code + '\'' +
-                ", name='" + name + '\'' +
-                '}';
     }
 }

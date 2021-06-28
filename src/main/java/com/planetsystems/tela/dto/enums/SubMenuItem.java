@@ -6,7 +6,7 @@ package com.planetsystems.tela.dto.enums;
  *
  *rename to SideNavItem
  */
-@Deprecated
+
 public enum SubMenuItem {
 
 	Dashboard("Dashboard"),

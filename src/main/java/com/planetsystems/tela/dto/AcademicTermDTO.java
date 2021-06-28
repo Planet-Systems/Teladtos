@@ -4,10 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AcademicTermDTO extends ParentDTO{
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	private String code;
     private String term;
@@ -17,13 +13,7 @@ public class AcademicTermDTO extends ParentDTO{
 
     private AcademicYearDTO academicYearDTO;
 
-
     public AcademicTermDTO() {
-    }
-
-
-    public AcademicTermDTO(String id) {
-        super(id);
     }
 
     public String getCode() {
@@ -74,15 +64,4 @@ public class AcademicTermDTO extends ParentDTO{
         this.academicYearDTO = academicYearDTO;
     }
 
-   /* @Override
-    public String toString() {
-        return "AcademicTermDTO{" +
-                "code='" + code + '\'' +
-                ", term='" + term + '\'' +
-                ", activationStatus='" + activationStatus + '\'' +
-                ", startDate='" + startDate + '\'' +
-                ", endDate='" + endDate + '\'' +
-                ", academicYearDTO=" + academicYearDTO +
-                '}';
-    }*/
 }

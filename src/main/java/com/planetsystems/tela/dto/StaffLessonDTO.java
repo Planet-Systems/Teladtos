@@ -1,11 +1,9 @@
 package com.planetsystems.tela.dto;
 
+
 public class StaffLessonDTO extends ParentDTO{
-
     private SchoolDTO schoolDTO;
-
     private AcademicTermDTO academicTermDTO;
-
     private SchoolStaffDTO schoolStaffDTO;
 
     public StaffLessonDTO() {
@@ -33,14 +31,5 @@ public class StaffLessonDTO extends ParentDTO{
 
     public void setSchoolStaffDTO(SchoolStaffDTO schoolStaffDTO) {
         this.schoolStaffDTO = schoolStaffDTO;
-    }
-
-    @Override
-    public String toString() {
-        return "StaffLessonDTO{" +
-                "schoolDTO=" + schoolDTO +
-                ", academicTermDTO=" + academicTermDTO +
-                ", schoolStaffDTO=" + schoolStaffDTO +
-                '}';
     }
 }

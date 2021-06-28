@@ -1,19 +1,14 @@
 package com.planetsystems.tela.dto;
 
+
 public class SchoolStaffDTO extends ParentDTO {
     private String staffCode;
     private String staffType;
     private boolean registered;
-
-
     private GeneralUserDetailDTO generalUserDetailDTO;
     private SchoolDTO schoolDTO;
 
     public SchoolStaffDTO() {
-    }
-
-    public SchoolStaffDTO(String id) {
-        super(id);
     }
 
     public String getStaffCode() {
@@ -40,8 +35,6 @@ public class SchoolStaffDTO extends ParentDTO {
         this.registered = registered;
     }
 
-
-
     public GeneralUserDetailDTO getGeneralUserDetailDTO() {
         return generalUserDetailDTO;
     }
@@ -56,16 +49,5 @@ public class SchoolStaffDTO extends ParentDTO {
 
     public void setSchoolDTO(SchoolDTO schoolDTO) {
         this.schoolDTO = schoolDTO;
-    }
-
-    @Override
-    public String toString() {
-        return "SchoolStaffDTO{" +
-                ", staffCode='" + staffCode + '\'' +
-                ", staffType='" + staffType + '\'' +
-                ", registered=" + registered +
-                ", generalUserDetailDTO=" + generalUserDetailDTO +
-                ", schoolDTO=" + schoolDTO +
-                '}';
     }
 }

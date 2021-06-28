@@ -1,5 +1,6 @@
 package com.planetsystems.tela.dto;
 
+
 public class AbsentDTO extends ParentDTO{
 
     private AcademicTermDTO academicTermDTO;
@@ -32,6 +33,13 @@ public class AbsentDTO extends ParentDTO{
         this.schoolStaffDTO = schoolStaffDTO;
     }
 
+    public SchoolDTO getSchoolDTO() {
+        return schoolDTO;
+    }
+
+    public void setSchoolDTO(SchoolDTO schoolDTO) {
+        this.schoolDTO = schoolDTO;
+    }
 
     public String getComment() {
         return comment;
@@ -65,24 +73,4 @@ public class AbsentDTO extends ParentDTO{
         this.status = status;
     }
 
-    public SchoolDTO getSchoolDTO() {
-		return schoolDTO;
-	}
-
-	public void setSchoolDTO(SchoolDTO schoolDTO) {
-		this.schoolDTO = schoolDTO;
-	}
-
-    @Override
-    public String toString() {
-        return "AbsentDTO{" +
-                "academicTermDTO=" + academicTermDTO +
-                ", schoolStaffDTO=" + schoolStaffDTO +
-                ", schoolDTO=" + schoolDTO +
-                ", comment='" + comment + '\'' +
-                ", latitude='" + latitude + '\'' +
-                ", longitude='" + longitude + '\'' +
-                ", status='" + status + '\'' +
-                '}';
-    }
 }

@@ -4,11 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ClockInDTO extends ParentDTO{
-
-     
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	private AcademicTermDTO academicTermDTO;
@@ -43,12 +38,28 @@ public class ClockInDTO extends ParentDTO{
         this.schoolStaffDTO = schoolStaffDTO;
     }
 
+    public SchoolDTO getSchoolDTO() {
+        return schoolDTO;
+    }
+
+    public void setSchoolDTO(SchoolDTO schoolDTO) {
+        this.schoolDTO = schoolDTO;
+    }
+
     public String getClockInDate() {
         return clockInDate;
     }
 
     public void setClockInDate(String clockInDate) {
         this.clockInDate = clockInDate;
+    }
+
+    public String getClockInTime() {
+        return clockInTime;
+    }
+
+    public void setClockInTime(String clockInTime) {
+        this.clockInTime = clockInTime;
     }
 
     public String getComment() {
@@ -82,35 +93,4 @@ public class ClockInDTO extends ParentDTO{
     public void setStatus(String status) {
         this.status = status;
     }
-
-    public String getClockInTime() {
-        return clockInTime;
-    }
-
-    public void setClockInTime(String clockInTime) {
-        this.clockInTime = clockInTime;
-    }
-
-    public SchoolDTO getSchoolDTO() {
-		return schoolDTO;
-	}
-
-	public void setSchoolDTO(SchoolDTO schoolDTO) {
-		this.schoolDTO = schoolDTO;
-	}
-
-	/*@Override
-    public String toString() {
-        return "ClockInDTO{" +
-                "academicTermDTO=" + academicTermDTO +
-                ", schoolStaffDTO=" + schoolStaffDTO +
-                ", clockInDate='" + clockInDate + '\'' +
-                ", clockInTime='" + clockInTime + '\'' +
-                ", comment='" + comment + '\'' +
-                ", latitude='" + latitude + '\'' +
-                ", longitude='" + longitude + '\'' +
-                ", status='" + status + '\'' +
-                ", createdDate= "+super.getCreatedDateTime()+
-                '}';
-    }*/
 }

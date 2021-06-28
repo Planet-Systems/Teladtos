@@ -7,14 +7,6 @@ public class RegionDto extends ParentDTO {
     public RegionDto() {
     }
 
-    public RegionDto(String id) {
-        super(id);
-    }
-
-    public String getName() {
-        return name;
-    }
-
     public String getCode() {
         return code;
     }
@@ -23,15 +15,11 @@ public class RegionDto extends ParentDTO {
         this.code = code;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 
-    @Override
-    public String toString() {
-        return "RegionDto{" +
-                "code='" + code + '\'' +
-                ", name='" + name + '\'' +
-                '}';
+    public void setName(String name) {
+        this.name = name;
     }
 }

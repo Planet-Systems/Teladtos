@@ -1,18 +1,11 @@
 package com.planetsystems.tela.dto;
 
 public class StaffEnrollmentDto extends ParentDTO {
-
     private SchoolDTO schoolDTO;
-
     private AcademicTermDTO academicTermDTO;
-
-
     private long  totalMale;
-
     private long totalFemale;
-
     private String status;
-
 
     public StaffEnrollmentDto() {
     }

@@ -1,15 +1,11 @@
 package com.planetsystems.tela.dto;
 
+
 import java.util.List;
 
 public class TimeTableDTO extends ParentDTO {
-
     private SchoolDTO schoolDTO;
-
-
     private AcademicTermDTO academicTermDTO;
-
-
     private List<TimeTableLessonDTO> timeTableLessonDTOS;
 
     public TimeTableDTO() {
@@ -37,14 +33,5 @@ public class TimeTableDTO extends ParentDTO {
 
     public void setTimeTableLessonDTOS(List<TimeTableLessonDTO> timeTableLessonDTOS) {
         this.timeTableLessonDTOS = timeTableLessonDTOS;
-    }
-
-    @Override
-    public String toString() {
-        return "TimeTableDTO{" +
-                "schoolDTO=" + schoolDTO +
-                ", academicTermDTO=" + academicTermDTO +
-                ", timeTableLessonDTOS=" + timeTableLessonDTOS +
-                '}';
     }
 }

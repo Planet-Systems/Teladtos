@@ -1,7 +1,5 @@
 package com.planetsystems.tela.dto;
 
-import java.util.Date;
-
 public class GeneralUserDetailDTO extends ParentDTO {
     private String firstName;
     private String lastName;
@@ -13,10 +11,6 @@ public class GeneralUserDetailDTO extends ParentDTO {
     private String nameAbbrev;
 
     public GeneralUserDetailDTO() {
-    }
-
-    public GeneralUserDetailDTO(String id) {
-        super(id);
     }
 
     public String getFirstName() {
@@ -75,26 +69,11 @@ public class GeneralUserDetailDTO extends ParentDTO {
         this.gender = gender;
     }
 
-
     public String getNameAbbrev() {
         return nameAbbrev;
     }
 
     public void setNameAbbrev(String nameAbbrev) {
         this.nameAbbrev = nameAbbrev;
-    }
-
-    @Override
-    public String toString() {
-        return "GeneralUserDetailDTO{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", email='" + email + '\'' +
-                ", dob='" + dob + '\'' +
-                ", nationalId='" + nationalId + '\'' +
-                ", gender='" + gender + '\'' +
-                ", nameAbbrev='" + nameAbbrev + '\'' +
-                '}';
     }
 }

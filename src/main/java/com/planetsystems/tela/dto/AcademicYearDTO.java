@@ -1,12 +1,8 @@
 package com.planetsystems.tela.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AcademicYearDTO extends ParentDTO{
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private String code;
     private String name;
@@ -14,14 +10,7 @@ public class AcademicYearDTO extends ParentDTO{
     private String startDate;
     private String endDate;
 
-
-
-
     public AcademicYearDTO() {
-    }
-
-    public AcademicYearDTO(String id) {
-        super(id);
     }
 
     public String getCode() {
@@ -62,16 +51,5 @@ public class AcademicYearDTO extends ParentDTO{
 
     public void setEndDate(String endDate) {
         this.endDate = endDate;
-    }
-
-    @Override
-    public String toString() {
-        return "AcademicYearDTO{" +
-                "code='" + code + '\'' +
-                ", name='" + name + '\'' +
-                ", activationStatus='" + activationStatus + '\'' +
-                ", startDate='" + startDate + '\'' +
-                ", endDate='" + endDate + '\'' +
-                '}';
     }
 }

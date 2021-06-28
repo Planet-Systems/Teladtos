@@ -1,21 +1,13 @@
-package com.planetsystems.tela.dto;
+package com.planetsystems.tela.dto.response;
 
 import java.io.Serializable;
 
+@Deprecated
 public class SystemErrorDTO implements Serializable {
-
     private String message;
     private int errorCode;
-    
-
     public SystemErrorDTO() {
         this.message = "An error occurred while initiating transaction. Please try again";
-    }
-
-
-    public SystemErrorDTO(String message, int errorCode) {
-        this.message = message;
-        this.errorCode = errorCode;
     }
 
     public String getMessage() {
@@ -32,13 +24,5 @@ public class SystemErrorDTO implements Serializable {
 
     public void setErrorCode(int errorCode) {
         this.errorCode = errorCode;
-    }
-
-    @Override
-    public String toString() {
-        return "SystemErrorDTO{" +
-                "message='" + message + '\'' +
-                ", errorCode=" + errorCode +
-                '}';
     }
 }

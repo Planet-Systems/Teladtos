@@ -1,9 +1,7 @@
 package com.planetsystems.tela.dto;
 
 public class SystemUserDTO extends ParentDTO {
-
 	private static final long serialVersionUID = 1L;
-
 	private String userName;
 	private String password;
 	private boolean enabled;
@@ -12,8 +10,8 @@ public class SystemUserDTO extends ParentDTO {
 	public SystemUserDTO() {
 	}
 
-	public SystemUserDTO(String id) {
-		super(id);
+	public static long getSerialVersionUID() {
+		return serialVersionUID;
 	}
 
 	public String getUserName() {
@@ -46,11 +44,5 @@ public class SystemUserDTO extends ParentDTO {
 
 	public void setConfigRole(String configRole) {
 		this.configRole = configRole;
-	}
-
-	@Override
-	public String toString() {
-		return "SystemUserDTO{" + "userName='" + userName + '\'' + ", password='" + password + '\'' + ", enabled="
-				+ enabled + ", configRole='" + configRole + '\'' + '}';
 	}
 }

@@ -7,19 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SystemMenuDTO extends ParentDTO {
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-
 	private String navigationMenu;
 	private String subMenuItem;
 	private String activativationSatus;
-
-	public SystemMenuDTO() {
-
-	}
 
 	public SystemMenuDTO(String navigationMenu, String subMenuItem) {
 		this.navigationMenu = navigationMenu;
@@ -90,6 +81,11 @@ public class SystemMenuDTO extends ParentDTO {
 		return systemMenuDTOList;
 	}
 
+
+	public static long getSerialVersionUID() {
+		return serialVersionUID;
+	}
+
 	public String getNavigationMenu() {
 		return navigationMenu;
 	}
@@ -113,5 +109,4 @@ public class SystemMenuDTO extends ParentDTO {
 	public void setActivativationSatus(String activativationSatus) {
 		this.activativationSatus = activativationSatus;
 	}
-
 }

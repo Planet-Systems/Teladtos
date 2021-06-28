@@ -5,13 +5,8 @@ public class SchoolClassDTO extends ParentDTO {
     private String name;
     private SchoolDTO schoolDTO;
     private AcademicTermDTO  academicTermDTO;
- 
 
     public SchoolClassDTO() {
-    }
-
-    public SchoolClassDTO(String id) {
-        super(id);
     }
 
     public String getCode() {
@@ -44,16 +39,5 @@ public class SchoolClassDTO extends ParentDTO {
 
     public void setAcademicTermDTO(AcademicTermDTO academicTermDTO) {
         this.academicTermDTO = academicTermDTO;
-    }
-
-
-    @Override
-    public String toString() {
-        return "SchoolClassDTO{" +
-                "code='" + code + '\'' +
-                ", name='" + name + '\'' +
-                ", schoolDTO=" + schoolDTO +
-                ", academicTermDTO=" + academicTermDTO +
-                '}';
     }
 }

@@ -1,11 +1,10 @@
-package com.planetsystems.tela.dto;
+package com.planetsystems.tela.dto.response;
+
 import java.io.Serializable;
 
-
+@Deprecated
 public class SystemFeedbackDTO implements Serializable {
-
 	private static final long serialVersionUID = 1L;
-
 	private String message;
 	private String id;
 	private boolean response;
@@ -20,9 +19,6 @@ public class SystemFeedbackDTO implements Serializable {
 		this.response = response;
 	}
 
-	public SystemFeedbackDTO(String message) {
-		this.message = message;
-	}
 
 	public String getMessage() {
 		return message;
@@ -30,14 +26,6 @@ public class SystemFeedbackDTO implements Serializable {
 
 	public void setMessage(String message) {
 		this.message = message;
-	}
-
-	public boolean isResponse() {
-		return response;
-	}
-
-	public void setResponse(boolean response) {
-		this.response = response;
 	}
 
 	public String getId() {
@@ -48,13 +36,11 @@ public class SystemFeedbackDTO implements Serializable {
 		this.id = id;
 	}
 
+	public boolean isResponse() {
+		return response;
+	}
 
-	@Override
-	public String toString() {
-		return "SystemFeedbackDTO{" +
-				"message='" + message + '\'' +
-				", id='" + id + '\'' +
-				", response=" + response +
-				'}';
+	public void setResponse(boolean response) {
+		this.response = response;
 	}
 }
