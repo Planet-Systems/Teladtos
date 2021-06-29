@@ -1,16 +1,18 @@
 package com.planetsystems.tela.dto.enums;
-
+@Deprecated
 public enum NavigationMenuDTO {
 	 
-	SYSTEM_CONFIGURATION("System configuration"),
+	SYSTEM_CONFIGURATION("System Configuration"),
 	ENROLLMENT("Enrollment"),
 	ATTENDANCE("Attendance"),
-	TIMETABLE("Timetables"),
+	TIMETABLE("TimeTable"),
 	SYSTEM_USERS("System Users"),
 	GENERATE_REPORTS("Reports"),
+	SUPERVISION("Supervision"),
 	CURRICULUM_COVERAGE("Curriculum Coverage"),
 	INCENTIVES("Incentives"),
 	UTILITY_MANAGER("Utility Manager");
+
 
 	private String menu;
 

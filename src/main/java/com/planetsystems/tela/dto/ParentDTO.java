@@ -15,6 +15,10 @@ public abstract class ParentDTO implements Serializable {
     public ParentDTO() {
     }
 
+    public ParentDTO(String id) {
+        this.id = id;
+    }
+
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
@@ -49,5 +53,16 @@ public abstract class ParentDTO implements Serializable {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("ParentDTO{");
+        sb.append("id='").append(id).append('\'');
+        sb.append(", createdDateTime='").append(createdDateTime).append('\'');
+        sb.append(", updatedDateTime='").append(updatedDateTime).append('\'');
+        sb.append(", status='").append(status).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

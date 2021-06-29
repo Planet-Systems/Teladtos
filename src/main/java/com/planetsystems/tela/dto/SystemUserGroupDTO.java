@@ -20,6 +20,10 @@ public class SystemUserGroupDTO extends ParentDTO {
     public SystemUserGroupDTO() {
     }
 
+    public SystemUserGroupDTO(String id) {
+        super(id);
+    }
+
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
@@ -86,5 +90,20 @@ public class SystemUserGroupDTO extends ParentDTO {
 
     public void setUpdatedBy(SystemUserProfileDTO updatedBy) {
         this.updatedBy = updatedBy;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("SystemUserGroupDTO{");
+        sb.append("code='").append(code).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", description='").append(description).append('\'');
+        sb.append(", defaultGroup=").append(defaultGroup);
+        sb.append(", receiveAlerts=").append(receiveAlerts);
+        sb.append(", administrativeRole=").append(administrativeRole);
+        sb.append(", createdBy=").append(createdBy);
+        sb.append(", updatedBy=").append(updatedBy);
+        sb.append('}');
+        return sb.toString();
     }
 }

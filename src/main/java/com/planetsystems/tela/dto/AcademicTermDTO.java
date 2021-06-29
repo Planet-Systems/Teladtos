@@ -16,6 +16,10 @@ public class AcademicTermDTO extends ParentDTO{
     public AcademicTermDTO() {
     }
 
+    public AcademicTermDTO(String id) {
+        super(id);
+    }
+
     public String getCode() {
         return code;
     }
@@ -64,4 +68,16 @@ public class AcademicTermDTO extends ParentDTO{
         this.academicYearDTO = academicYearDTO;
     }
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("AcademicTermDTO{");
+        sb.append("code='").append(code).append('\'');
+        sb.append(", term='").append(term).append('\'');
+        sb.append(", activationStatus='").append(activationStatus).append('\'');
+        sb.append(", startDate='").append(startDate).append('\'');
+        sb.append(", endDate='").append(endDate).append('\'');
+        sb.append(", academicYearDTO=").append(academicYearDTO);
+        sb.append('}');
+        return sb.toString();
+    }
 }

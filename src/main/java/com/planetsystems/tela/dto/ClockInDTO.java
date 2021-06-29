@@ -22,6 +22,10 @@ public class ClockInDTO extends ParentDTO{
     public ClockInDTO() {
     }
 
+    public ClockInDTO(String id) {
+        super(id);
+    }
+
     public AcademicTermDTO getAcademicTermDTO() {
         return academicTermDTO;
     }
@@ -92,5 +96,21 @@ public class ClockInDTO extends ParentDTO{
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("ClockInDTO{");
+        sb.append("academicTermDTO=").append(academicTermDTO);
+        sb.append(", schoolStaffDTO=").append(schoolStaffDTO);
+        sb.append(", schoolDTO=").append(schoolDTO);
+        sb.append(", clockInDate='").append(clockInDate).append('\'');
+        sb.append(", clockInTime='").append(clockInTime).append('\'');
+        sb.append(", comment='").append(comment).append('\'');
+        sb.append(", latitude='").append(latitude).append('\'');
+        sb.append(", longitude='").append(longitude).append('\'');
+        sb.append(", status='").append(status).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

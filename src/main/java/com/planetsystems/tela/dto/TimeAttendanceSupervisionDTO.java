@@ -13,6 +13,11 @@ public class TimeAttendanceSupervisionDTO extends ParentDTO {
     public TimeAttendanceSupervisionDTO() {
     }
 
+    public TimeAttendanceSupervisionDTO(String id) {
+
+        super(id);
+    }
+
     public String getSupervisionDate() {
         return supervisionDate;
     }
@@ -67,5 +72,19 @@ public class TimeAttendanceSupervisionDTO extends ParentDTO {
 
     public void setSupervisor(SystemUserDTO supervisor) {
         this.supervisor = supervisor;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("TimeAttendanceSupervisionDTO{");
+        sb.append("supervisionDate='").append(supervisionDate).append('\'');
+        sb.append(", supervisionTime='").append(supervisionTime).append('\'');
+        sb.append(", comment='").append(comment).append('\'');
+        sb.append(", schoolDTO=").append(schoolDTO);
+        sb.append(", schoolStaffDTO=").append(schoolStaffDTO);
+        sb.append(", attendanceStatus='").append(attendanceStatus).append('\'');
+        sb.append(", supervisor=").append(supervisor);
+        sb.append('}');
+        return sb.toString();
     }
 }

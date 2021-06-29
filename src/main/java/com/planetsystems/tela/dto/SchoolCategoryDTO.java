@@ -7,6 +7,10 @@ public class SchoolCategoryDTO extends ParentDTO {
     public SchoolCategoryDTO() {
     }
 
+    public SchoolCategoryDTO(String id) {
+        super(id);
+    }
+
     public String getCode() {
         return code;
     }
@@ -21,5 +25,14 @@ public class SchoolCategoryDTO extends ParentDTO {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("SchoolCategoryDTO{");
+        sb.append("code='").append(code).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

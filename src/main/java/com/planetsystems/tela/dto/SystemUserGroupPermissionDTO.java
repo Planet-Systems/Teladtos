@@ -11,6 +11,10 @@ public class SystemUserGroupPermissionDTO extends ParentDTO {
     public SystemUserGroupPermissionDTO() {
     }
 
+    public SystemUserGroupPermissionDTO(String id) {
+        super(id);
+    }
+
     public SystemUserGroupDTO getSystemUserGroup() {
         return systemUserGroup;
     }
@@ -49,5 +53,18 @@ public class SystemUserGroupPermissionDTO extends ParentDTO {
 
     public void setUpdatedBy(SystemUserDTO updatedBy) {
         this.updatedBy = updatedBy;
+    }
+
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("SystemUserGroupPermissionDTO{");
+        sb.append("systemUserGroup=").append(systemUserGroup);
+        sb.append(", systemPermission='").append(systemPermission).append('\'');
+        sb.append(", permissionType='").append(permissionType).append('\'');
+        sb.append(", createdBy=").append(createdBy);
+        sb.append(", updatedBy=").append(updatedBy);
+        sb.append('}');
+        return sb.toString();
     }
 }

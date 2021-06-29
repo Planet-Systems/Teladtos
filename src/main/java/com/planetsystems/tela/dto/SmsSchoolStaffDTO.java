@@ -11,6 +11,8 @@ public class SmsSchoolStaffDTO implements Serializable {
     public SmsSchoolStaffDTO() {
     }
 
+
+
     public SystemUserProfileDTO getSystemUserProfileDTO() {
         return systemUserProfileDTO;
     }
@@ -33,5 +35,15 @@ public class SmsSchoolStaffDTO implements Serializable {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("SmsSchoolStaffDTO{");
+        sb.append("systemUserProfileDTO=").append(systemUserProfileDTO);
+        sb.append(", schoolStaffDTOS=").append(schoolStaffDTOS);
+        sb.append(", message='").append(message).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

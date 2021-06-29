@@ -10,6 +10,11 @@ public class SystemErrorDTO implements Serializable {
         this.message = "An error occurred while initiating transaction. Please try again";
     }
 
+    public SystemErrorDTO(String message, int errorCode) {
+        this.message = message;
+        this.errorCode = errorCode;
+    }
+
     public String getMessage() {
         return message;
     }

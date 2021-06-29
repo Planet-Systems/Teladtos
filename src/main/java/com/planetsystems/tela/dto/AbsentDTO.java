@@ -1,6 +1,10 @@
 package com.planetsystems.tela.dto;
 
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
+import java.util.StringJoiner;
+
 public class AbsentDTO extends ParentDTO{
 
     private AcademicTermDTO academicTermDTO;
@@ -13,6 +17,10 @@ public class AbsentDTO extends ParentDTO{
     private String latitude;
     private String longitude;
     private String status;
+
+    public AbsentDTO(String id) {
+        super(id);
+    }
 
     public AbsentDTO() {
     }
@@ -73,4 +81,17 @@ public class AbsentDTO extends ParentDTO{
         this.status = status;
     }
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("AbsentDTO{");
+        sb.append("academicTermDTO=").append(academicTermDTO);
+        sb.append(", schoolStaffDTO=").append(schoolStaffDTO);
+        sb.append(", schoolDTO=").append(schoolDTO);
+        sb.append(", comment='").append(comment).append('\'');
+        sb.append(", latitude='").append(latitude).append('\'');
+        sb.append(", longitude='").append(longitude).append('\'');
+        sb.append(", status='").append(status).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }

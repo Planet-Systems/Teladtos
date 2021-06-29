@@ -12,6 +12,10 @@ public class SystemUserGroupSystemMenuDTO extends ParentDTO {
 	public SystemUserGroupSystemMenuDTO() {
 	}
 
+	public SystemUserGroupSystemMenuDTO(String id) {
+		super(id);
+	}
+
 	public static long getSerialVersionUID() {
 		return serialVersionUID;
 	}
@@ -54,5 +58,18 @@ public class SystemUserGroupSystemMenuDTO extends ParentDTO {
 
 	public void setSelected(boolean selected) {
 		this.selected = selected;
+	}
+
+
+	@Override
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("SystemUserGroupSystemMenuDTO{");
+		sb.append("systemUserGroupDTO=").append(systemUserGroupDTO);
+		sb.append(", systemMenuDTO=").append(systemMenuDTO);
+		sb.append(", createdBy=").append(createdBy);
+		sb.append(", updatedBy=").append(updatedBy);
+		sb.append(", selected=").append(selected);
+		sb.append('}');
+		return sb.toString();
 	}
 }

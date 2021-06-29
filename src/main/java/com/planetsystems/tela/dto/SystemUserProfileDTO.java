@@ -10,6 +10,10 @@ public class SystemUserProfileDTO extends ParentDTO {
     public SystemUserProfileDTO() {
     }
 
+    public SystemUserProfileDTO(String id) {
+        super(id);
+    }
+
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
@@ -36,5 +40,15 @@ public class SystemUserProfileDTO extends ParentDTO {
 
     public void setGeneralUserDetailDTO(GeneralUserDetailDTO generalUserDetailDTO) {
         this.generalUserDetailDTO = generalUserDetailDTO;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("SystemUserProfileDTO{");
+        sb.append("systemUserDTO=").append(systemUserDTO);
+        sb.append(", systemUserGroupDTO=").append(systemUserGroupDTO);
+        sb.append(", generalUserDetailDTO=").append(generalUserDetailDTO);
+        sb.append('}');
+        return sb.toString();
     }
 }

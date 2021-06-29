@@ -9,6 +9,10 @@ public class DistrictDTO extends ParentDTO {
     public DistrictDTO() {
     }
 
+    public DistrictDTO(String id) {
+        super(id);
+    }
+
     public RegionDto getRegion() {
         return region;
     }
@@ -39,5 +43,16 @@ public class DistrictDTO extends ParentDTO {
 
     public void setRolledOut(boolean rolledOut) {
         this.rolledOut = rolledOut;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("DistrictDTO{");
+        sb.append("region=").append(region);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", code='").append(code).append('\'');
+        sb.append(", rolledOut=").append(rolledOut);
+        sb.append('}');
+        return sb.toString();
     }
 }

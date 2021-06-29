@@ -12,6 +12,10 @@ public class StaffDailyTimeTableDTO extends ParentDTO {
     public StaffDailyTimeTableDTO() {
     }
 
+    public StaffDailyTimeTableDTO(String id) {
+        super(id);
+    }
+
     public AcademicTermDTO getAcademicTermDTO() {
         return academicTermDTO;
     }
@@ -50,5 +54,17 @@ public class StaffDailyTimeTableDTO extends ParentDTO {
 
     public void setStaffDailyTimeTableLessonDTOS(List<StaffDailyTimeTableLessonDTO> staffDailyTimeTableLessonDTOS) {
         this.staffDailyTimeTableLessonDTOS = staffDailyTimeTableLessonDTOS;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("StaffDailyTimeTableDTO{");
+        sb.append("academicTermDTO=").append(academicTermDTO);
+        sb.append(", schoolStaffDTO=").append(schoolStaffDTO);
+        sb.append(", comment='").append(comment).append('\'');
+        sb.append(", lessonDate='").append(lessonDate).append('\'');
+        sb.append(", staffDailyTimeTableLessonDTOS=").append(staffDailyTimeTableLessonDTOS);
+        sb.append('}');
+        return sb.toString();
     }
 }

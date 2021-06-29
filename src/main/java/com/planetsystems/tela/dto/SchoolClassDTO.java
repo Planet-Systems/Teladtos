@@ -9,6 +9,10 @@ public class SchoolClassDTO extends ParentDTO {
     public SchoolClassDTO() {
     }
 
+    public SchoolClassDTO(String id) {
+        super(id);
+    }
+
     public String getCode() {
         return code;
     }
@@ -39,5 +43,16 @@ public class SchoolClassDTO extends ParentDTO {
 
     public void setAcademicTermDTO(AcademicTermDTO academicTermDTO) {
         this.academicTermDTO = academicTermDTO;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("SchoolClassDTO{");
+        sb.append("code='").append(code).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", schoolDTO=").append(schoolDTO);
+        sb.append(", academicTermDTO=").append(academicTermDTO);
+        sb.append('}');
+        return sb.toString();
     }
 }

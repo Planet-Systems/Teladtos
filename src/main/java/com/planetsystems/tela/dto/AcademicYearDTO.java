@@ -13,6 +13,10 @@ public class AcademicYearDTO extends ParentDTO{
     public AcademicYearDTO() {
     }
 
+    public AcademicYearDTO(String id) {
+        super(id);
+    }
+
     public String getCode() {
         return code;
     }
@@ -51,5 +55,17 @@ public class AcademicYearDTO extends ParentDTO{
 
     public void setEndDate(String endDate) {
         this.endDate = endDate;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("AcademicYearDTO{");
+        sb.append("code='").append(code).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", activationStatus='").append(activationStatus).append('\'');
+        sb.append(", startDate='").append(startDate).append('\'');
+        sb.append(", endDate='").append(endDate).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

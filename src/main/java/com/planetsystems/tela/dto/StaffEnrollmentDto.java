@@ -10,6 +10,10 @@ public class StaffEnrollmentDto extends ParentDTO {
     public StaffEnrollmentDto() {
     }
 
+    public StaffEnrollmentDto(String id) {
+        super(id);
+    }
+
     public SchoolDTO getSchoolDTO() {
         return schoolDTO;
     }
@@ -50,5 +54,17 @@ public class StaffEnrollmentDto extends ParentDTO {
     @Override
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("StaffEnrollmentDto{");
+        sb.append("schoolDTO=").append(schoolDTO);
+        sb.append(", academicTermDTO=").append(academicTermDTO);
+        sb.append(", totalMale=").append(totalMale);
+        sb.append(", totalFemale=").append(totalFemale);
+        sb.append(", status='").append(status).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

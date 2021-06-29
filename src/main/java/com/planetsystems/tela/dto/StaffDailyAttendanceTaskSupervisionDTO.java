@@ -11,6 +11,10 @@ public class StaffDailyAttendanceTaskSupervisionDTO extends ParentDTO {
    public StaffDailyAttendanceTaskSupervisionDTO() {
    }
 
+   public StaffDailyAttendanceTaskSupervisionDTO(String id) {
+      super(id);
+   }
+
    public StaffDailyAttendanceSupervisionDTO getStaffDailyAttendanceSupervisionDTO() {
       return staffDailyAttendanceSupervisionDTO;
    }
@@ -41,5 +45,16 @@ public class StaffDailyAttendanceTaskSupervisionDTO extends ParentDTO {
 
    public void setTeachingTimeStatus(String teachingTimeStatus) {
       this.teachingTimeStatus = teachingTimeStatus;
+   }
+
+   @Override
+   public String toString() {
+      final StringBuilder sb = new StringBuilder("StaffDailyAttendanceTaskSupervisionDTO{");
+      sb.append("staffDailyAttendanceSupervisionDTO=").append(staffDailyAttendanceSupervisionDTO);
+      sb.append(", staffDailyTimeTableDTO=").append(staffDailyTimeTableDTO);
+      sb.append(", teachingStatus='").append(teachingStatus).append('\'');
+      sb.append(", teachingTimeStatus='").append(teachingTimeStatus).append('\'');
+      sb.append('}');
+      return sb.toString();
    }
 }

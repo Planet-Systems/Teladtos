@@ -20,6 +20,10 @@ public class SchoolDTO extends ParentDTO{
     public SchoolDTO() {
     }
 
+    public SchoolDTO(String id) {
+        super(id);
+    }
+
     public String getCode() {
         return code;
     }
@@ -90,5 +94,21 @@ public class SchoolDTO extends ParentDTO{
 
     public void setActivationStatus(String activationStatus) {
         this.activationStatus = activationStatus;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("SchoolDTO{");
+        sb.append("code='").append(code).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", schoolCategoryDTO=").append(schoolCategoryDTO);
+        sb.append(", latitude='").append(latitude).append('\'');
+        sb.append(", longitude='").append(longitude).append('\'');
+        sb.append(", districtDTO=").append(districtDTO);
+        sb.append(", deviceNumber='").append(deviceNumber).append('\'');
+        sb.append(", attendanceTracked=").append(attendanceTracked);
+        sb.append(", activationStatus='").append(activationStatus).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

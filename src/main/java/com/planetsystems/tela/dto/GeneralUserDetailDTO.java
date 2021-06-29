@@ -13,6 +13,10 @@ public class GeneralUserDetailDTO extends ParentDTO {
     public GeneralUserDetailDTO() {
     }
 
+    public GeneralUserDetailDTO(String id) {
+        super(id);
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -75,5 +79,20 @@ public class GeneralUserDetailDTO extends ParentDTO {
 
     public void setNameAbbrev(String nameAbbrev) {
         this.nameAbbrev = nameAbbrev;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("GeneralUserDetailDTO{");
+        sb.append("firstName='").append(firstName).append('\'');
+        sb.append(", lastName='").append(lastName).append('\'');
+        sb.append(", phoneNumber='").append(phoneNumber).append('\'');
+        sb.append(", email='").append(email).append('\'');
+        sb.append(", dob='").append(dob).append('\'');
+        sb.append(", nationalId='").append(nationalId).append('\'');
+        sb.append(", gender='").append(gender).append('\'');
+        sb.append(", nameAbbrev='").append(nameAbbrev).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

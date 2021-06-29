@@ -13,6 +13,10 @@ public class TimeTableLessonDTO extends ParentDTO{
     public TimeTableLessonDTO() {
     }
 
+    public TimeTableLessonDTO(String id) {
+        super(id);
+    }
+
     public String getLessonDay() {
         return lessonDay;
     }
@@ -67,5 +71,19 @@ public class TimeTableLessonDTO extends ParentDTO{
 
     public void setTimeTableDTO(TimeTableDTO timeTableDTO) {
         this.timeTableDTO = timeTableDTO;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("TimeTableLessonDTO{");
+        sb.append("lessonDay='").append(lessonDay).append('\'');
+        sb.append(", schoolClassDTO=").append(schoolClassDTO);
+        sb.append(", subjectDTO=").append(subjectDTO);
+        sb.append(", startTime='").append(startTime).append('\'');
+        sb.append(", endTime='").append(endTime).append('\'');
+        sb.append(", schoolStaffDTO=").append(schoolStaffDTO);
+        sb.append(", timeTableDTO=").append(timeTableDTO);
+        sb.append('}');
+        return sb.toString();
     }
 }

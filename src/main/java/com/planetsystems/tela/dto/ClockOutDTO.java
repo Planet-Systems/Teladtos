@@ -10,6 +10,10 @@ public class ClockOutDTO extends ParentDTO{
     public ClockOutDTO() {
     }
 
+    public ClockOutDTO(String id) {
+        super(id);
+    }
+
     public String getComment() {
         return comment;
     }
@@ -48,5 +52,17 @@ public class ClockOutDTO extends ParentDTO{
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("ClockOutDTO{");
+        sb.append("comment='").append(comment).append('\'');
+        sb.append(", clockInDTO=").append(clockInDTO);
+        sb.append(", clockOutDate='").append(clockOutDate).append('\'');
+        sb.append(", clockOutTime='").append(clockOutTime).append('\'');
+        sb.append(", status='").append(status).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

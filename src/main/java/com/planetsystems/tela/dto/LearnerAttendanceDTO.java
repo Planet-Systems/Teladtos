@@ -18,6 +18,10 @@ public class LearnerAttendanceDTO extends  ParentDTO {
     public LearnerAttendanceDTO() {
     }
 
+    public LearnerAttendanceDTO(String id) {
+        super(id);
+    }
+
     public SchoolClassDTO getSchoolClassDTO() {
         return schoolClassDTO;
     }
@@ -88,5 +92,21 @@ public class LearnerAttendanceDTO extends  ParentDTO {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("LearnerAttendanceDTO{");
+        sb.append("schoolClassDTO=").append(schoolClassDTO);
+        sb.append(", academicTermDTO=").append(academicTermDTO);
+        sb.append(", schoolStaffDTO=").append(schoolStaffDTO);
+        sb.append(", attendanceDate='").append(attendanceDate).append('\'');
+        sb.append(", girlsPresent=").append(girlsPresent);
+        sb.append(", boysPresent=").append(boysPresent);
+        sb.append(", boysAbsent=").append(boysAbsent);
+        sb.append(", girlsAbsent=").append(girlsAbsent);
+        sb.append(", comment='").append(comment).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

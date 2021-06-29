@@ -10,6 +10,10 @@ public class SystemUserDTO extends ParentDTO {
 	public SystemUserDTO() {
 	}
 
+	public SystemUserDTO(String id) {
+		super(id);
+	}
+
 	public static long getSerialVersionUID() {
 		return serialVersionUID;
 	}
@@ -44,5 +48,16 @@ public class SystemUserDTO extends ParentDTO {
 
 	public void setConfigRole(String configRole) {
 		this.configRole = configRole;
+	}
+
+	@Override
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("SystemUserDTO{");
+		sb.append("userName='").append(userName).append('\'');
+		sb.append(", password='").append(password).append('\'');
+		sb.append(", enabled=").append(enabled);
+		sb.append(", configRole='").append(configRole).append('\'');
+		sb.append('}');
+		return sb.toString();
 	}
 }

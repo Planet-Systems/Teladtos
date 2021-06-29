@@ -20,6 +20,10 @@ public class FilterDTO extends ParentDTO{
     public FilterDTO() {
     }
 
+    public FilterDTO(String id) {
+        super(id);
+    }
+
     public AcademicYearDTO getAcademicYearDTO() {
         return academicYearDTO;
     }
@@ -138,5 +142,27 @@ public class FilterDTO extends ParentDTO{
 
     public void setToDate(String toDate) {
         this.toDate = toDate;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("FilterDTO{");
+        sb.append("academicYearDTO=").append(academicYearDTO);
+        sb.append(", academicTermDTO=").append(academicTermDTO);
+        sb.append(", regionDto=").append(regionDto);
+        sb.append(", districtDTO=").append(districtDTO);
+        sb.append(", schoolCategoryDTO=").append(schoolCategoryDTO);
+        sb.append(", schoolClassDTO=").append(schoolClassDTO);
+        sb.append(", schoolDTO=").append(schoolDTO);
+        sb.append(", schoolStaffDTO=").append(schoolStaffDTO);
+        sb.append(", subjectCategoryDTO=").append(subjectCategoryDTO);
+        sb.append(", subjectDTO=").append(subjectDTO);
+        sb.append(", date='").append(date).append('\'');
+        sb.append(", month='").append(month).append('\'');
+        sb.append(", week='").append(week).append('\'');
+        sb.append(", fromDate='").append(fromDate).append('\'');
+        sb.append(", toDate='").append(toDate).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

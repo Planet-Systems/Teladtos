@@ -13,6 +13,8 @@ public class AuthenticationDTO implements Serializable {
 	public AuthenticationDTO() {
 	}
 
+
+
 	public static long getSerialVersionUID() {
 		return serialVersionUID;
 	}
@@ -39,5 +41,15 @@ public class AuthenticationDTO implements Serializable {
 
 	public void setOldPassword(String oldPassword) {
 		this.oldPassword = oldPassword;
+	}
+
+	@Override
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("AuthenticationDTO{");
+		sb.append("userName='").append(userName).append('\'');
+		sb.append(", password='").append(password).append('\'');
+		sb.append(", oldPassword='").append(oldPassword).append('\'');
+		sb.append('}');
+		return sb.toString();
 	}
 }

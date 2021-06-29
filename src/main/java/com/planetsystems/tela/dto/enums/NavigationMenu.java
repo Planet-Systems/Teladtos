@@ -9,17 +9,17 @@ package com.planetsystems.tela.dto.enums;
  * rename to SideNavTitle
  */
 public enum NavigationMenu {
-	 
-	SYSTEM_CONFIGURATION("System configuration"),
+
+	SYSTEM_CONFIGURATION("System Configuration"),
 	ENROLLMENT("Enrollment"),
 	ATTENDANCE("Attendance"),
-	TIMETABLE("Timetables"),
+	TIMETABLE("TimeTable"),
 	SYSTEM_USERS("System Users"),
-	GENERATE_REPORTS("Reports"),
-	MESSAGING("Messaging");
-	/*CURRICULUM_COVERAGE("Curriculum Coverage"),
+	SUPERVISION("Supervision"),
+	GENERATE_REPORTS("Supervision"),
+	CURRICULUM_COVERAGE("Curriculum Coverage"),
 	INCENTIVES("Incentives"),
-	UTILITY_MANAGER("Utility Manager");*/
+	UTILITY_MANAGER("Utility Manager");
  
 	private String menu;
 

@@ -9,6 +9,10 @@ public class StaffLessonDTO extends ParentDTO{
     public StaffLessonDTO() {
     }
 
+    public StaffLessonDTO(String id) {
+        super(id);
+    }
+
     public SchoolDTO getSchoolDTO() {
         return schoolDTO;
     }
@@ -31,5 +35,15 @@ public class StaffLessonDTO extends ParentDTO{
 
     public void setSchoolStaffDTO(SchoolStaffDTO schoolStaffDTO) {
         this.schoolStaffDTO = schoolStaffDTO;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("StaffLessonDTO{");
+        sb.append("schoolDTO=").append(schoolDTO);
+        sb.append(", academicTermDTO=").append(academicTermDTO);
+        sb.append(", schoolStaffDTO=").append(schoolStaffDTO);
+        sb.append('}');
+        return sb.toString();
     }
 }
