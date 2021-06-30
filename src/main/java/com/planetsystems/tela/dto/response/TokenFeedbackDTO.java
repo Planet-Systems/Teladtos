@@ -44,4 +44,14 @@ public class TokenFeedbackDTO implements Serializable {
 	public void setResponse(boolean response) {
 		this.response = response;
 	}
+
+	@Override
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("TokenFeedbackDTO{");
+		sb.append("message='").append(message).append('\'');
+		sb.append(", token='").append(token).append('\'');
+		sb.append(", response=").append(response);
+		sb.append('}');
+		return sb.toString();
+	}
 }

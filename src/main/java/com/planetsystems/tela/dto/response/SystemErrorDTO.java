@@ -6,6 +6,7 @@ import java.io.Serializable;
 public class SystemErrorDTO implements Serializable {
     private String message;
     private int errorCode;
+
     public SystemErrorDTO() {
         this.message = "An error occurred while initiating transaction. Please try again";
     }
@@ -29,5 +30,14 @@ public class SystemErrorDTO implements Serializable {
 
     public void setErrorCode(int errorCode) {
         this.errorCode = errorCode;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("SystemErrorDTO{");
+        sb.append("message='").append(message).append('\'');
+        sb.append(", errorCode=").append(errorCode);
+        sb.append('}');
+        return sb.toString();
     }
 }

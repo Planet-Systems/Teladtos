@@ -43,4 +43,14 @@ public class SystemFeedbackDTO implements Serializable {
 	public void setResponse(boolean response) {
 		this.response = response;
 	}
+
+	@Override
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("SystemFeedbackDTO{");
+		sb.append("message='").append(message).append('\'');
+		sb.append(", id='").append(id).append('\'');
+		sb.append(", response=").append(response);
+		sb.append('}');
+		return sb.toString();
+	}
 }

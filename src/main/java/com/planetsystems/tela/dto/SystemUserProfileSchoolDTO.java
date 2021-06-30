@@ -2,7 +2,7 @@ package com.planetsystems.tela.dto;
 
 import java.io.Serializable;
 
-public class SystemUserProfileSchoolDTO extends ParentDTO implements Serializable {
+public class SystemUserProfileSchoolDTO extends ParentDTO {
 
     private SystemUserProfileDTO systemUserProfileDTO;
 
