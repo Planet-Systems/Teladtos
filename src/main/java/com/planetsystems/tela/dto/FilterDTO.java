@@ -11,11 +11,20 @@ public class FilterDTO extends ParentDTO{
     private SchoolStaffDTO schoolStaffDTO;
     private SubjectCategoryDTO subjectCategoryDTO;
     private  SubjectDTO subjectDTO;
+    private TimeTableDTO timeTableDTO;
+    private TimeTableLessonDTO timeTableLessonDTO;
+    private StaffDailyTimeTableDTO staffDailyTimeTableDTO;
+    private StaffDailyTimeTableLessonDTO staffDailyTimeTableLessonDTO;
+    private StaffDailyAttendanceSupervisionDTO staffDailyAttendanceSupervisionDTO;
+    private StaffDailyAttendanceTaskSupervisionDTO staffDailyAttendanceTaskSupervisionDTO;
     private String date;
     private String month;
     private String week;
     private String fromDate;
     private String toDate;
+    private String day;
+    private String startTime;
+    private String endTime;
 
     public FilterDTO() {
     }
@@ -144,6 +153,78 @@ public class FilterDTO extends ParentDTO{
         this.toDate = toDate;
     }
 
+    public String getDay() {
+        return day;
+    }
+
+    public void setDay(String day) {
+        this.day = day;
+    }
+
+    public TimeTableDTO getTimeTableDTO() {
+        return timeTableDTO;
+    }
+
+    public void setTimeTableDTO(TimeTableDTO timeTableDTO) {
+        this.timeTableDTO = timeTableDTO;
+    }
+
+    public TimeTableLessonDTO getTimeTableLessonDTO() {
+        return timeTableLessonDTO;
+    }
+
+    public void setTimeTableLessonDTO(TimeTableLessonDTO timeTableLessonDTO) {
+        this.timeTableLessonDTO = timeTableLessonDTO;
+    }
+
+    public String getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(String startTime) {
+        this.startTime = startTime;
+    }
+
+    public String getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(String endTime) {
+        this.endTime = endTime;
+    }
+
+    public StaffDailyAttendanceSupervisionDTO getStaffDailyAttendanceSupervisionDTO() {
+        return staffDailyAttendanceSupervisionDTO;
+    }
+
+    public void setStaffDailyAttendanceSupervisionDTO(StaffDailyAttendanceSupervisionDTO staffDailyAttendanceSupervisionDTO) {
+        this.staffDailyAttendanceSupervisionDTO = staffDailyAttendanceSupervisionDTO;
+    }
+
+    public StaffDailyAttendanceTaskSupervisionDTO getStaffDailyAttendanceTaskSupervisionDTO() {
+        return staffDailyAttendanceTaskSupervisionDTO;
+    }
+
+    public void setStaffDailyAttendanceTaskSupervisionDTO(StaffDailyAttendanceTaskSupervisionDTO staffDailyAttendanceTaskSupervisionDTO) {
+        this.staffDailyAttendanceTaskSupervisionDTO = staffDailyAttendanceTaskSupervisionDTO;
+    }
+
+    public StaffDailyTimeTableDTO getStaffDailyTimeTableDTO() {
+        return staffDailyTimeTableDTO;
+    }
+
+    public void setStaffDailyTimeTableDTO(StaffDailyTimeTableDTO staffDailyTimeTableDTO) {
+        this.staffDailyTimeTableDTO = staffDailyTimeTableDTO;
+    }
+
+    public StaffDailyTimeTableLessonDTO getStaffDailyTimeTableLessonDTO() {
+        return staffDailyTimeTableLessonDTO;
+    }
+
+    public void setStaffDailyTimeTableLessonDTO(StaffDailyTimeTableLessonDTO staffDailyTimeTableLessonDTO) {
+        this.staffDailyTimeTableLessonDTO = staffDailyTimeTableLessonDTO;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("FilterDTO{");
@@ -157,11 +238,20 @@ public class FilterDTO extends ParentDTO{
         sb.append(", schoolStaffDTO=").append(schoolStaffDTO);
         sb.append(", subjectCategoryDTO=").append(subjectCategoryDTO);
         sb.append(", subjectDTO=").append(subjectDTO);
+        sb.append(", timeTableDTO=").append(timeTableDTO);
+        sb.append(", timeTableLessonDTO=").append(timeTableLessonDTO);
+        sb.append(", staffDailyTimeTableDTO=").append(staffDailyTimeTableDTO);
+        sb.append(", staffDailyTimeTableLessonDTO=").append(staffDailyTimeTableLessonDTO);
+        sb.append(", staffDailyAttendanceSupervisionDTO=").append(staffDailyAttendanceSupervisionDTO);
+        sb.append(", staffDailyAttendanceTaskSupervisionDTO=").append(staffDailyAttendanceTaskSupervisionDTO);
         sb.append(", date='").append(date).append('\'');
         sb.append(", month='").append(month).append('\'');
         sb.append(", week='").append(week).append('\'');
         sb.append(", fromDate='").append(fromDate).append('\'');
         sb.append(", toDate='").append(toDate).append('\'');
+        sb.append(", day='").append(day).append('\'');
+        sb.append(", startTime='").append(startTime).append('\'');
+        sb.append(", endTime='").append(endTime).append('\'');
         sb.append('}');
         return sb.toString();
     }
