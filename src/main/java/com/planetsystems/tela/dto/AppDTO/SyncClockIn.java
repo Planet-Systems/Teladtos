@@ -4,6 +4,11 @@ import java.io.Serializable;
 
 public class SyncClockIn implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private String id;
 	private String employeeNo;
 	private String employeeId;
@@ -24,6 +29,11 @@ public class SyncClockIn implements Serializable {
 	private String dateUpdated;
 	private String status;
 	private String genId;
+	
+	private String localId;
+	private boolean deleted;
+	private boolean updated; 
+	private boolean created; 
 
 	public SyncClockIn() {
 
@@ -164,5 +174,39 @@ public class SyncClockIn implements Serializable {
 	public void setGenId(String genId) {
 		this.genId = genId;
 	}
+
+	public String getLocalId() {
+		return localId;
+	}
+
+	public void setLocalId(String localId) {
+		this.localId = localId;
+	}
+
+	public boolean isDeleted() {
+		return deleted;
+	}
+
+	public void setDeleted(boolean deleted) {
+		this.deleted = deleted;
+	}
+
+	public boolean isUpdated() {
+		return updated;
+	}
+
+	public void setUpdated(boolean updated) {
+		this.updated = updated;
+	}
+
+	public boolean isCreated() {
+		return created;
+	}
+
+	public void setCreated(boolean created) {
+		this.created = created;
+	}
+	
+	
 
 }

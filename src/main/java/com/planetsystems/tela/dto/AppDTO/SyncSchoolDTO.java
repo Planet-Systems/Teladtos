@@ -3,7 +3,7 @@ package com.planetsystems.tela.dto.AppDTO;
 import java.io.Serializable;
  
 
-public class SchoolModel implements Serializable {
+public class SyncSchoolDTO implements Serializable {
 
 	/**
 	 * 
@@ -20,7 +20,7 @@ public class SchoolModel implements Serializable {
 	private String latitude;
 	private String longtitude; 
 
-	public SchoolModel() {
+	public SyncSchoolDTO() {
 
 	}
 
