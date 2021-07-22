@@ -1,6 +1,6 @@
 package com.planetsystems.tela.dto.AppDTO;
 
-import java.io.Serializable; 
+import java.io.Serializable;
 
 public class SyncTeacher implements Serializable {
 
@@ -27,14 +27,18 @@ public class SyncTeacher implements Serializable {
 
 	private String role;
 
-	private byte[] fingerPrint;
+	// private byte[] fingerPrint;
 
-	private String fingerPrintImage;
-	
+	// private String fingerPrintImage;
+
 	private String dateCreated;
 	private String dateUpdated;
 	private String status;
 
+	private String localId;
+	private boolean deleted;
+	private boolean updated;
+	private boolean created;
 
 	public SyncTeacher() {
 
@@ -144,28 +148,12 @@ public class SyncTeacher implements Serializable {
 		MPSComputerNumber = mPSComputerNumber;
 	}
 
-	public byte[] getFingerPrint() {
-		return fingerPrint;
-	}
-
-	public void setFingerPrint(byte[] fingerPrint) {
-		this.fingerPrint = fingerPrint;
-	}
-
 	public String getRole() {
 		return role;
 	}
 
 	public void setRole(String role) {
 		this.role = role;
-	}
-
-	public String getFingerPrintImage() {
-		return fingerPrintImage;
-	}
-
-	public void setFingerPrintImage(String fingerPrintImage) {
-		this.fingerPrintImage = fingerPrintImage;
 	}
 
 	public String getDateCreated() {
@@ -190,6 +178,38 @@ public class SyncTeacher implements Serializable {
 
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getLocalId() {
+		return localId;
+	}
+
+	public void setLocalId(String localId) {
+		this.localId = localId;
+	}
+
+	public boolean isDeleted() {
+		return deleted;
+	}
+
+	public void setDeleted(boolean deleted) {
+		this.deleted = deleted;
+	}
+
+	public boolean isUpdated() {
+		return updated;
+	}
+
+	public void setUpdated(boolean updated) {
+		this.updated = updated;
+	}
+
+	public boolean isCreated() {
+		return created;
+	}
+
+	public void setCreated(boolean created) {
+		this.created = created;
 	}
 
 }

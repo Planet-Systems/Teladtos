@@ -16,15 +16,22 @@ public class SyncConfirmTimeOnTaskAttendance implements Serializable {
 	private String startTime;
 	private String endTime;
 	private String supervisionStatus;
+	private String timeStatus;
 	private String comment;
 
 	private String transactionDate;
+	private String transactionTime;
 	private String supervisorId;
 
 	private String id;
 	private String dateCreated;
 	private String dateUpdated;
 	private String status;
+
+	private String localId;
+	private boolean deleted;
+	private boolean updated;
+	private boolean created;
 
 	public SyncConfirmTimeOnTaskAttendance() {
 
@@ -140,6 +147,54 @@ public class SyncConfirmTimeOnTaskAttendance implements Serializable {
 
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getLocalId() {
+		return localId;
+	}
+
+	public void setLocalId(String localId) {
+		this.localId = localId;
+	}
+
+	public boolean isDeleted() {
+		return deleted;
+	}
+
+	public void setDeleted(boolean deleted) {
+		this.deleted = deleted;
+	}
+
+	public boolean isUpdated() {
+		return updated;
+	}
+
+	public void setUpdated(boolean updated) {
+		this.updated = updated;
+	}
+
+	public boolean isCreated() {
+		return created;
+	}
+
+	public void setCreated(boolean created) {
+		this.created = created;
+	}
+
+	public String getTransactionTime() {
+		return transactionTime;
+	}
+
+	public void setTransactionTime(String transactionTime) {
+		this.transactionTime = transactionTime;
+	}
+
+	public String getTimeStatus() {
+		return timeStatus;
+	}
+
+	public void setTimeStatus(String timeStatus) {
+		this.timeStatus = timeStatus;
 	}
 
 }

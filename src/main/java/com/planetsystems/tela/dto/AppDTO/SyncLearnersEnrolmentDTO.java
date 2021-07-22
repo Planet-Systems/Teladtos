@@ -2,7 +2,7 @@ package com.planetsystems.tela.dto.AppDTO;
 
 import java.io.Serializable;
 
-public class LearnersEnrolmentModel implements Serializable {
+public class SyncLearnersEnrolmentDTO implements Serializable {
 
 	/**
 	 * 
@@ -25,7 +25,7 @@ public class LearnersEnrolmentModel implements Serializable {
 	private boolean created;
 	private String schoolId;
 
-	public LearnersEnrolmentModel() {
+	public SyncLearnersEnrolmentDTO() {
 
 	}
 
