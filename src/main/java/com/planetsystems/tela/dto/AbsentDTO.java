@@ -54,7 +54,6 @@ public class AbsentDTO extends ParentDTO{
         this.longitude = longitude;
     }
 
-    @Override
     public String getStatus() {
         return status;
     }

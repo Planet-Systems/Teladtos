@@ -39,6 +39,10 @@ public class ParentDTO implements Serializable {
         this.status = status;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
     public String getCreatedDateTime() {
         return createdDateTime;
     }
