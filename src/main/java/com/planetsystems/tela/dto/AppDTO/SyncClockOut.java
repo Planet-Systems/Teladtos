@@ -31,6 +31,11 @@ public class SyncClockOut implements Serializable{
 	private String dateUpdated;
 	private String status;
 	
+	private String localId; 
+	private boolean deleted;
+	private boolean updated; 
+	private boolean created; 
+	
 	public SyncClockOut() {
 		
 	}
@@ -169,6 +174,38 @@ public class SyncClockOut implements Serializable{
 
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getLocalId() {
+		return localId;
+	}
+
+	public void setLocalId(String localId) {
+		this.localId = localId;
+	}
+
+	public boolean isDeleted() {
+		return deleted;
+	}
+
+	public void setDeleted(boolean deleted) {
+		this.deleted = deleted;
+	}
+
+	public boolean isUpdated() {
+		return updated;
+	}
+
+	public void setUpdated(boolean updated) {
+		this.updated = updated;
+	}
+
+	public boolean isCreated() {
+		return created;
+	}
+
+	public void setCreated(boolean created) {
+		this.created = created;
 	}
 	
 	

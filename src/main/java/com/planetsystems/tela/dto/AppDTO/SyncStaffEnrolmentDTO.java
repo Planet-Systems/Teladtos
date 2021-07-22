@@ -2,7 +2,7 @@ package com.planetsystems.tela.dto.AppDTO;
 
 import java.io.Serializable;
 
-public class StaffEnrolmentModel implements Serializable {
+public class SyncStaffEnrolmentDTO implements Serializable {
 
 	/**
 	 * 
@@ -22,7 +22,7 @@ public class StaffEnrolmentModel implements Serializable {
 	private String updated;
 	private String deleted;
 
-	public StaffEnrolmentModel() {
+	public SyncStaffEnrolmentDTO() {
 
 	}
 

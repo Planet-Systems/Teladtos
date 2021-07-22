@@ -2,7 +2,7 @@ package com.planetsystems.tela.dto.AppDTO;
 
 import java.io.Serializable;
 
-public class SchoolClass implements Serializable {
+public class SyncSchoolClassDTO implements Serializable {
 
 	/**
 	 * 
@@ -30,7 +30,7 @@ public class SchoolClass implements Serializable {
 	private String classId;
 	private String classIdLocal;
 
-	public SchoolClass() {
+	public SyncSchoolClassDTO() {
 
 	}
 

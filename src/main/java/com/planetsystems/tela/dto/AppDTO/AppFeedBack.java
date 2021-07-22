@@ -15,11 +15,11 @@ public class AppFeedBack implements Serializable {
 
 	private List<SyncTeacher> teachers;
 
-	private SchoolModel school;
+	private SyncSchoolDTO school;
 
 	private List<SyncTimetable> timetables;
 
-	private List<SchoolClass> schoolClasses;
+	private List<SyncSchoolClassDTO> schoolClasses;
 
 	private SyncTeacher teacher;
 
@@ -27,7 +27,7 @@ public class AppFeedBack implements Serializable {
 
 	private AcademicTermDTO academicTermDTO;
 
-	private SchoolClass schoolClass;
+	private SyncSchoolClassDTO schoolClass;
 	
 	
 
@@ -59,11 +59,11 @@ public class AppFeedBack implements Serializable {
 		this.teachers = teachers;
 	}
 
-	public SchoolModel getSchool() {
+	public SyncSchoolDTO getSchool() {
 		return school;
 	}
 
-	public void setSchool(SchoolModel school) {
+	public void setSchool(SyncSchoolDTO school) {
 		this.school = school;
 	}
 
@@ -75,11 +75,11 @@ public class AppFeedBack implements Serializable {
 		this.timetables = timetables;
 	}
 
-	public List<SchoolClass> getSchoolClasses() {
+	public List<SyncSchoolClassDTO> getSchoolClasses() {
 		return schoolClasses;
 	}
 
-	public void setSchoolClasses(List<SchoolClass> schoolClasses) {
+	public void setSchoolClasses(List<SyncSchoolClassDTO> schoolClasses) {
 		this.schoolClasses = schoolClasses;
 	}
 
@@ -107,11 +107,11 @@ public class AppFeedBack implements Serializable {
 		this.academicTermDTO = academicTermDTO;
 	}
 
-	public SchoolClass getSchoolClass() {
+	public SyncSchoolClassDTO getSchoolClass() {
 		return schoolClass;
 	}
 
-	public void setSchoolClass(SchoolClass schoolClass) {
+	public void setSchoolClass(SyncSchoolClassDTO schoolClass) {
 		this.schoolClass = schoolClass;
 	}
 
