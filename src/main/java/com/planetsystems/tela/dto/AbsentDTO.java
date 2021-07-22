@@ -13,9 +13,6 @@ public class AbsentDTO extends ParentDTO{
     private String longitude;
     private String status;
 
-    public AbsentDTO() {
-    }
-
     public AcademicTermDTO getAcademicTermDTO() {
         return academicTermDTO;
     }
@@ -57,10 +54,12 @@ public class AbsentDTO extends ParentDTO{
         this.longitude = longitude;
     }
 
+    @Override
     public String getStatus() {
         return status;
     }
 
+    @Override
     public void setStatus(String status) {
         this.status = status;
     }
