@@ -25,6 +25,7 @@ public class FilterDTO extends ParentDTO{
     private String day;
     private String startTime;
     private String endTime;
+    private String staffType;
 
     public FilterDTO() {
     }
@@ -225,6 +226,14 @@ public class FilterDTO extends ParentDTO{
         this.staffDailyTimeTableLessonDTO = staffDailyTimeTableLessonDTO;
     }
 
+    public String getStaffType() {
+        return staffType;
+    }
+
+    public void setStaffType(String staffType) {
+        this.staffType = staffType;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("FilterDTO{");
@@ -252,6 +261,7 @@ public class FilterDTO extends ParentDTO{
         sb.append(", day='").append(day).append('\'');
         sb.append(", startTime='").append(startTime).append('\'');
         sb.append(", endTime='").append(endTime).append('\'');
+        sb.append(", staffType='").append(staffType).append('\'');
         sb.append('}');
         return sb.toString();
     }

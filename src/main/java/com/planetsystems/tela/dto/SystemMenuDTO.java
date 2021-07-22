@@ -44,10 +44,10 @@ public class SystemMenuDTO extends ParentDTO {
 		attendanceSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ATTENDANCE.getNavigationMenu() , SubMenuItem.STAFF_DAILY_TIMETABLE_LESSONS.getSystemMenuItem()));
 
 
-		List<SystemMenuDTO> timetableSidNavMenu = new ArrayList();
+		List<SystemMenuDTO> timetableSidNavMenu = new ArrayList<SystemMenuDTO>();
 		timetableSidNavMenu.add(new SystemMenuDTO(NavigationMenu.TIMETABLE.getNavigationMenu() , SubMenuItem.TIMETABLE.getSystemMenuItem()));
 
-		List<SystemMenuDTO> systemUserSidNavMenu = new ArrayList();
+		List<SystemMenuDTO> systemUserSidNavMenu = new ArrayList<SystemMenuDTO>();
 		timetableSidNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_USERS.getNavigationMenu() , SubMenuItem.SYSTEM_USERS.getSystemMenuItem()));
 
 		List<SystemMenuDTO> reports = new ArrayList<>();
