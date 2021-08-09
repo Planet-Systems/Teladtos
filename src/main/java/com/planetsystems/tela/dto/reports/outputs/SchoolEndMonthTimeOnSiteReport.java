@@ -17,7 +17,7 @@ public class SchoolEndMonthTimeOnSiteReport implements Serializable{
 	private String month;
 	private String ot; // overall total
 
-	private List<SchoolEndWeekTimeOnSiteReportInput> mrow_inputs;
+	private List<SchoolEndMonthTimeOnSiteReportInput> mrow_inputs;
 
 	public SchoolEndMonthTimeOnSiteReport() {
 
@@ -71,11 +71,11 @@ public class SchoolEndMonthTimeOnSiteReport implements Serializable{
 		this.ot = ot;
 	}
 
-	public List<SchoolEndWeekTimeOnSiteReportInput> getMrow_inputs() {
+	public List<SchoolEndMonthTimeOnSiteReportInput> getMrow_inputs() {
 		return mrow_inputs;
 	}
 
-	public void setMrow_inputs(List<SchoolEndWeekTimeOnSiteReportInput> mrow_inputs) {
+	public void setMrow_inputs(List<SchoolEndMonthTimeOnSiteReportInput> mrow_inputs) {
 		this.mrow_inputs = mrow_inputs;
 	}
 
