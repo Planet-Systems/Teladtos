@@ -10,16 +10,17 @@ package com.planetsystems.tela.dto.enums;
  */
 public enum NavigationMenu {
 	 
-	SYSTEM_CONFIGURATION("System configuration"),
+	SYSTEM_CONFIGURATION("System Administration"),
 	ENROLLMENT("Enrollment"),
 	ATTENDANCE("Attendance"),
 	TIMETABLE("Timetables"),
 	SYSTEM_USERS("System Users"),
-	GENERATE_REPORTS("Reports"),
-	MESSAGING("Messaging");
-	/*CURRICULUM_COVERAGE("Curriculum Coverage"),
+	GENERATE_REPORTS("Performance Reports"),
+    MESSAGING("Messaging"),
+    CURRICULUM_COVERAGE("Curriculum Coverage"),
 	INCENTIVES("Incentives"),
-	UTILITY_MANAGER("Utility Manager");*/
+	UTILITY_MANAGER("Utility Manager"),
+	SUPERVISION("Supervision");
  
 	private String menu;
 
