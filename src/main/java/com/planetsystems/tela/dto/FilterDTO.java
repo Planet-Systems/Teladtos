@@ -16,6 +16,7 @@ public class FilterDTO extends ParentDTO{
     private String week;
     private String fromDate;
     private String toDate;
+    private StaffDailyAttendanceSupervisionDTO staffDailyAttendanceSupervisionDTO;
 
     public FilterDTO() {
     }
@@ -139,8 +140,19 @@ public class FilterDTO extends ParentDTO{
     public void setWeek(String week) {
         this.week = week;
     }
+    
+    
 
-    @Override
+    public StaffDailyAttendanceSupervisionDTO getStaffDailyAttendanceSupervisionDTO() {
+		return staffDailyAttendanceSupervisionDTO;
+	}
+
+	public void setStaffDailyAttendanceSupervisionDTO(
+			StaffDailyAttendanceSupervisionDTO staffDailyAttendanceSupervisionDTO) {
+		this.staffDailyAttendanceSupervisionDTO = staffDailyAttendanceSupervisionDTO;
+	}
+
+	@Override
     public String toString() {
         return "FilterDTO{" +
                 "academicYearDTO=" + academicYearDTO +
