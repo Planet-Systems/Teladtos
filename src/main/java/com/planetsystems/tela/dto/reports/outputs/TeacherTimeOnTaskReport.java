@@ -19,8 +19,6 @@ public class TeacherTimeOnTaskReport implements Serializable {
 	private String teacherName;
 	private String teacherCode;
 
-	private List<TeacherTimeOnTaskReportInput> mrow_inputs;
-
 	private List<SubjectsTeachingStatusInput> mrow_subjects;
 
 	public TeacherTimeOnTaskReport() {
@@ -89,14 +87,6 @@ public class TeacherTimeOnTaskReport implements Serializable {
 
 	public void setTeacherCode(String teacherCode) {
 		this.teacherCode = teacherCode;
-	}
-
-	public List<TeacherTimeOnTaskReportInput> getMrow_inputs() {
-		return mrow_inputs;
-	}
-
-	public void setMrow_inputs(List<TeacherTimeOnTaskReportInput> mrow_inputs) {
-		this.mrow_inputs = mrow_inputs;
 	}
 
 	public List<SubjectsTeachingStatusInput> getMrow_subjects() {
