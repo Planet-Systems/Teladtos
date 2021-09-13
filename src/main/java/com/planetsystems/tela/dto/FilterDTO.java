@@ -1,151 +1,157 @@
 package com.planetsystems.tela.dto;
 
-public class FilterDTO extends ParentDTO{
-    private AcademicYearDTO academicYearDTO;
-    private AcademicTermDTO academicTermDTO;
-    private  RegionDto regionDto;
-    private DistrictDTO districtDTO;
-    private SchoolCategoryDTO schoolCategoryDTO;
-    private SchoolClassDTO schoolClassDTO;
-    private SchoolDTO schoolDTO;
-    private SchoolStaffDTO schoolStaffDTO;
-    private SubjectCategoryDTO subjectCategoryDTO;
-    private  SubjectDTO subjectDTO;
-    private String date;
-    private String month;
-    private String week;
-    private String fromDate;
-    private String toDate;
-    private StaffDailyAttendanceSupervisionDTO staffDailyAttendanceSupervisionDTO;
-    
-    private StaffDailyTimeTableDTO staffDailyTimeTableDTO;
+public class FilterDTO extends ParentDTO {
+	private AcademicYearDTO academicYearDTO;
+	private AcademicTermDTO academicTermDTO;
+	private RegionDto regionDto;
+	private DistrictDTO districtDTO;
+	private SchoolCategoryDTO schoolCategoryDTO;
+	private SchoolClassDTO schoolClassDTO;
+	private SchoolDTO schoolDTO;
+	private SchoolStaffDTO schoolStaffDTO;
+	private SubjectCategoryDTO subjectCategoryDTO;
+	private SubjectDTO subjectDTO;
+	private TimeTableDTO timeTableDTO;
+	private TimeTableLessonDTO timeTableLessonDTO;
+	private StaffDailyTimeTableDTO staffDailyTimeTableDTO;
+	private StaffDailyTimeTableLessonDTO staffDailyTimeTableLessonDTO;
+	private StaffDailyAttendanceSupervisionDTO staffDailyAttendanceSupervisionDTO;
+	private StaffDailyAttendanceTaskSupervisionDTO staffDailyAttendanceTaskSupervisionDTO;
+	private String date;
+	private String month;
+	private String week;
+	private String fromDate;
+	private String toDate;
 
-    public FilterDTO() {
-    }
+	private String day;
+	private String startTime;
+	private String endTime;
+	private String staffType;
 
-    public AcademicYearDTO getAcademicYearDTO() {
-        return academicYearDTO;
-    }
+	public FilterDTO() {
+	}
 
-    public void setAcademicYearDTO(AcademicYearDTO academicYearDTO) {
-        this.academicYearDTO = academicYearDTO;
-    }
+	public AcademicYearDTO getAcademicYearDTO() {
+		return academicYearDTO;
+	}
 
-    public AcademicTermDTO getAcademicTermDTO() {
-        return academicTermDTO;
-    }
+	public void setAcademicYearDTO(AcademicYearDTO academicYearDTO) {
+		this.academicYearDTO = academicYearDTO;
+	}
 
-    public void setAcademicTermDTO(AcademicTermDTO academicTermDTO) {
-        this.academicTermDTO = academicTermDTO;
-    }
+	public AcademicTermDTO getAcademicTermDTO() {
+		return academicTermDTO;
+	}
 
-    public RegionDto getRegionDto() {
-        return regionDto;
-    }
+	public void setAcademicTermDTO(AcademicTermDTO academicTermDTO) {
+		this.academicTermDTO = academicTermDTO;
+	}
 
-    public void setRegionDto(RegionDto regionDto) {
-        this.regionDto = regionDto;
-    }
+	public RegionDto getRegionDto() {
+		return regionDto;
+	}
 
-    public DistrictDTO getDistrictDTO() {
-        return districtDTO;
-    }
+	public void setRegionDto(RegionDto regionDto) {
+		this.regionDto = regionDto;
+	}
 
-    public void setDistrictDTO(DistrictDTO districtDTO) {
-        this.districtDTO = districtDTO;
-    }
+	public DistrictDTO getDistrictDTO() {
+		return districtDTO;
+	}
 
-    public SchoolCategoryDTO getSchoolCategoryDTO() {
-        return schoolCategoryDTO;
-    }
+	public void setDistrictDTO(DistrictDTO districtDTO) {
+		this.districtDTO = districtDTO;
+	}
 
-    public void setSchoolCategoryDTO(SchoolCategoryDTO schoolCategoryDTO) {
-        this.schoolCategoryDTO = schoolCategoryDTO;
-    }
+	public SchoolCategoryDTO getSchoolCategoryDTO() {
+		return schoolCategoryDTO;
+	}
 
-    public SchoolClassDTO getSchoolClassDTO() {
-        return schoolClassDTO;
-    }
+	public void setSchoolCategoryDTO(SchoolCategoryDTO schoolCategoryDTO) {
+		this.schoolCategoryDTO = schoolCategoryDTO;
+	}
 
-    public void setSchoolClassDTO(SchoolClassDTO schoolClassDTO) {
-        this.schoolClassDTO = schoolClassDTO;
-    }
+	public SchoolClassDTO getSchoolClassDTO() {
+		return schoolClassDTO;
+	}
 
-    public SchoolDTO getSchoolDTO() {
-        return schoolDTO;
-    }
+	public void setSchoolClassDTO(SchoolClassDTO schoolClassDTO) {
+		this.schoolClassDTO = schoolClassDTO;
+	}
 
-    public void setSchoolDTO(SchoolDTO schoolDTO) {
-        this.schoolDTO = schoolDTO;
-    }
+	public SchoolDTO getSchoolDTO() {
+		return schoolDTO;
+	}
 
-    public SchoolStaffDTO getSchoolStaffDTO() {
-        return schoolStaffDTO;
-    }
+	public void setSchoolDTO(SchoolDTO schoolDTO) {
+		this.schoolDTO = schoolDTO;
+	}
 
-    public void setSchoolStaffDTO(SchoolStaffDTO schoolStaffDTO) {
-        this.schoolStaffDTO = schoolStaffDTO;
-    }
+	public SchoolStaffDTO getSchoolStaffDTO() {
+		return schoolStaffDTO;
+	}
 
-    public SubjectCategoryDTO getSubjectCategoryDTO() {
-        return subjectCategoryDTO;
-    }
+	public void setSchoolStaffDTO(SchoolStaffDTO schoolStaffDTO) {
+		this.schoolStaffDTO = schoolStaffDTO;
+	}
 
-    public void setSubjectCategoryDTO(SubjectCategoryDTO subjectCategoryDTO) {
-        this.subjectCategoryDTO = subjectCategoryDTO;
-    }
+	public SubjectCategoryDTO getSubjectCategoryDTO() {
+		return subjectCategoryDTO;
+	}
 
-    public SubjectDTO getSubjectDTO() {
-        return subjectDTO;
-    }
+	public void setSubjectCategoryDTO(SubjectCategoryDTO subjectCategoryDTO) {
+		this.subjectCategoryDTO = subjectCategoryDTO;
+	}
 
-    public void setSubjectDTO(SubjectDTO subjectDTO) {
-        this.subjectDTO = subjectDTO;
-    }
+	public SubjectDTO getSubjectDTO() {
+		return subjectDTO;
+	}
 
-    public String getDate() {
-        return date;
-    }
+	public void setSubjectDTO(SubjectDTO subjectDTO) {
+		this.subjectDTO = subjectDTO;
+	}
 
-    public void setDate(String date) {
-        this.date = date;
-    }
+	public String getDate() {
+		return date;
+	}
 
-    public String getFromDate() {
-        return fromDate;
-    }
+	public void setDate(String date) {
+		this.date = date;
+	}
 
-    public void setFromDate(String fromDate) {
-        this.fromDate = fromDate;
-    }
+	public String getFromDate() {
+		return fromDate;
+	}
 
-    public String getToDate() {
-        return toDate;
-    }
+	public void setFromDate(String fromDate) {
+		this.fromDate = fromDate;
+	}
 
-    public void setToDate(String toDate) {
-        this.toDate = toDate;
-    }
+	public String getToDate() {
+		return toDate;
+	}
 
-    public String getMonth() {
-        return month;
-    }
+	public void setToDate(String toDate) {
+		this.toDate = toDate;
+	}
 
-    public void setMonth(String month) {
-        this.month = month;
-    }
+	public String getMonth() {
+		return month;
+	}
 
-    public String getWeek() {
-        return week;
-    }
+	public void setMonth(String month) {
+		this.month = month;
+	}
 
-    public void setWeek(String week) {
-        this.week = week;
-    }
-    
-    
+	public String getWeek() {
+		return week;
+	}
 
-    public StaffDailyAttendanceSupervisionDTO getStaffDailyAttendanceSupervisionDTO() {
+	public void setWeek(String week) {
+		this.week = week;
+	}
+
+	public StaffDailyAttendanceSupervisionDTO getStaffDailyAttendanceSupervisionDTO() {
 		return staffDailyAttendanceSupervisionDTO;
 	}
 
@@ -153,8 +159,6 @@ public class FilterDTO extends ParentDTO{
 			StaffDailyAttendanceSupervisionDTO staffDailyAttendanceSupervisionDTO) {
 		this.staffDailyAttendanceSupervisionDTO = staffDailyAttendanceSupervisionDTO;
 	}
-	
-	
 
 	public StaffDailyTimeTableDTO getStaffDailyTimeTableDTO() {
 		return staffDailyTimeTableDTO;
@@ -164,24 +168,101 @@ public class FilterDTO extends ParentDTO{
 		this.staffDailyTimeTableDTO = staffDailyTimeTableDTO;
 	}
 
+	public TimeTableDTO getTimeTableDTO() {
+		return timeTableDTO;
+	}
+
+	public void setTimeTableDTO(TimeTableDTO timeTableDTO) {
+		this.timeTableDTO = timeTableDTO;
+	}
+
+	public TimeTableLessonDTO getTimeTableLessonDTO() {
+		return timeTableLessonDTO;
+	}
+
+	public void setTimeTableLessonDTO(TimeTableLessonDTO timeTableLessonDTO) {
+		this.timeTableLessonDTO = timeTableLessonDTO;
+	}
+
+	public StaffDailyTimeTableLessonDTO getStaffDailyTimeTableLessonDTO() {
+		return staffDailyTimeTableLessonDTO;
+	}
+
+	public void setStaffDailyTimeTableLessonDTO(StaffDailyTimeTableLessonDTO staffDailyTimeTableLessonDTO) {
+		this.staffDailyTimeTableLessonDTO = staffDailyTimeTableLessonDTO;
+	}
+
+	public StaffDailyAttendanceTaskSupervisionDTO getStaffDailyAttendanceTaskSupervisionDTO() {
+		return staffDailyAttendanceTaskSupervisionDTO;
+	}
+
+	public void setStaffDailyAttendanceTaskSupervisionDTO(
+			StaffDailyAttendanceTaskSupervisionDTO staffDailyAttendanceTaskSupervisionDTO) {
+		this.staffDailyAttendanceTaskSupervisionDTO = staffDailyAttendanceTaskSupervisionDTO;
+	}
+
+	public String getDay() {
+		return day;
+	}
+
+	public void setDay(String day) {
+		this.day = day;
+	}
+
+	public String getStartTime() {
+		return startTime;
+	}
+
+	public void setStartTime(String startTime) {
+		this.startTime = startTime;
+	}
+
+	public String getEndTime() {
+		return endTime;
+	}
+
+	public void setEndTime(String endTime) {
+		this.endTime = endTime;
+	}
+
+	public String getStaffType() {
+		return staffType;
+	}
+
+	public void setStaffType(String staffType) {
+		this.staffType = staffType;
+	}
+
 	@Override
-    public String toString() {
-        return "FilterDTO{" +
-                "academicYearDTO=" + academicYearDTO +
-                ", academicTermDTO=" + academicTermDTO +
-                ", regionDto=" + regionDto +
-                ", districtDTO=" + districtDTO +
-                ", schoolCategoryDTO=" + schoolCategoryDTO +
-                ", schoolClassDTO=" + schoolClassDTO +
-                ", schoolDTO=" + schoolDTO +
-                ", schoolStaffDTO=" + schoolStaffDTO +
-                ", subjectCategoryDTO=" + subjectCategoryDTO +
-                ", subjectDTO=" + subjectDTO +
-                ", date='" + date + '\'' +
-                ", month='" + month + '\'' +
-                ", week='" + week + '\'' +
-                ", fromDate='" + fromDate + '\'' +
-                ", toDate='" + toDate + '\'' +
-                '}';
-    }
+
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("FilterDTO{");
+		sb.append("academicYearDTO=").append(academicYearDTO);
+		sb.append(", academicTermDTO=").append(academicTermDTO);
+		sb.append(", regionDto=").append(regionDto);
+		sb.append(", districtDTO=").append(districtDTO);
+		sb.append(", schoolCategoryDTO=").append(schoolCategoryDTO);
+		sb.append(", schoolClassDTO=").append(schoolClassDTO);
+		sb.append(", schoolDTO=").append(schoolDTO);
+		sb.append(", schoolStaffDTO=").append(schoolStaffDTO);
+		sb.append(", subjectCategoryDTO=").append(subjectCategoryDTO);
+		sb.append(", subjectDTO=").append(subjectDTO);
+		sb.append(", timeTableDTO=").append(timeTableDTO);
+		sb.append(", timeTableLessonDTO=").append(timeTableLessonDTO);
+		sb.append(", staffDailyTimeTableDTO=").append(staffDailyTimeTableDTO);
+		sb.append(", staffDailyTimeTableLessonDTO=").append(staffDailyTimeTableLessonDTO);
+		sb.append(", staffDailyAttendanceSupervisionDTO=").append(staffDailyAttendanceSupervisionDTO);
+		sb.append(", staffDailyAttendanceTaskSupervisionDTO=").append(staffDailyAttendanceTaskSupervisionDTO);
+		sb.append(", date='").append(date).append('\'');
+		sb.append(", month='").append(month).append('\'');
+		sb.append(", week='").append(week).append('\'');
+		sb.append(", fromDate='").append(fromDate).append('\'');
+		sb.append(", toDate='").append(toDate).append('\'');
+		sb.append(", day='").append(day).append('\'');
+		sb.append(", startTime='").append(startTime).append('\'');
+		sb.append(", endTime='").append(endTime).append('\'');
+		sb.append(", staffType='").append(staffType).append('\'');
+		sb.append('}');
+		return sb.toString();
+	}
 }
