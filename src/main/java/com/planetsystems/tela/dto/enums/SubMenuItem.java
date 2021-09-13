@@ -14,7 +14,7 @@ public enum SubMenuItem {
 	Location("Locations"),
 	Schools("Schools"),
 	Subjects("Subjects"),
-	Staff_Attendance("Teacher Attendance"),
+	Staff_Attendance("Staff Attendance"),
 	Learner_Attendance("Learner Attendance"),
 	Head_Teacher_Supervision("Time Attendance"),
 	Staff_Daily_Task("Task Attendance"),
@@ -24,7 +24,10 @@ public enum SubMenuItem {
 	Users("System Users"),
 	School_Performace("School Performance"),
 	District_Reports("District Performance"),
-	National_Reports("National Performance");
+	National_Reports("National Performance"),
+	HT_Reports("HeadTeacher Performance"),
+	SMC_Supervision("SMC Supervision"),
+	SMC_Reports("SMC Performance");
 
 
 	private String menuItem;

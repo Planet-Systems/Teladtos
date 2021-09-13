@@ -53,15 +53,17 @@ public class SystemMenuDTO extends ParentDTO {
 		systemUserSidNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_USERS.getNavigationMenu() , SubMenuItem.Users.getSystemMenuItem()));
 
 		List<SystemMenuDTO> reports = new ArrayList<>();
+		reports.add(new SystemMenuDTO(NavigationMenu.GENERATE_REPORTS.getNavigationMenu(), SubMenuItem.HT_Reports.getSystemMenuItem()));
 		reports.add(new SystemMenuDTO(NavigationMenu.GENERATE_REPORTS.getNavigationMenu(), SubMenuItem.School_Performace.getSystemMenuItem()));
 		reports.add(new SystemMenuDTO(NavigationMenu.GENERATE_REPORTS.getNavigationMenu(), SubMenuItem.District_Reports.getSystemMenuItem()));
 		reports.add(new SystemMenuDTO(NavigationMenu.GENERATE_REPORTS.getNavigationMenu(), SubMenuItem.National_Reports.getSystemMenuItem()));
+		reports.add(new SystemMenuDTO(NavigationMenu.GENERATE_REPORTS.getNavigationMenu(), SubMenuItem.SMC_Reports.getSystemMenuItem()));
 		
 		List<SystemMenuDTO> supervision = new ArrayList<>();
 		supervision.add(new SystemMenuDTO(NavigationMenu.SUPERVISION.getNavigationMenu(), SubMenuItem.Head_Teacher_Supervision.getSystemMenuItem()));
 		supervision.add(new SystemMenuDTO(NavigationMenu.SUPERVISION.getNavigationMenu(), SubMenuItem.Staff_Daily_Task.getSystemMenuItem()));
-		 
-		
+		supervision.add(new SystemMenuDTO(NavigationMenu.SUPERVISION.getNavigationMenu(), SubMenuItem.SMC_Supervision.getSystemMenuItem()));
+		  
 		
 		/*List<SystemMenuDTO> incentives = new ArrayList<>();
 		incentives.add(new SystemMenuDTO(NavigationMenu.INCENTIVES.getNavigationMenu(), SubMenuItem.School_Performace.getSystemMenuItem()));

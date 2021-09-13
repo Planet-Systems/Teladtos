@@ -17,6 +17,8 @@ public class FilterDTO extends ParentDTO{
     private String fromDate;
     private String toDate;
     private StaffDailyAttendanceSupervisionDTO staffDailyAttendanceSupervisionDTO;
+    
+    private StaffDailyTimeTableDTO staffDailyTimeTableDTO;
 
     public FilterDTO() {
     }
@@ -150,6 +152,16 @@ public class FilterDTO extends ParentDTO{
 	public void setStaffDailyAttendanceSupervisionDTO(
 			StaffDailyAttendanceSupervisionDTO staffDailyAttendanceSupervisionDTO) {
 		this.staffDailyAttendanceSupervisionDTO = staffDailyAttendanceSupervisionDTO;
+	}
+	
+	
+
+	public StaffDailyTimeTableDTO getStaffDailyTimeTableDTO() {
+		return staffDailyTimeTableDTO;
+	}
+
+	public void setStaffDailyTimeTableDTO(StaffDailyTimeTableDTO staffDailyTimeTableDTO) {
+		this.staffDailyTimeTableDTO = staffDailyTimeTableDTO;
 	}
 
 	@Override
