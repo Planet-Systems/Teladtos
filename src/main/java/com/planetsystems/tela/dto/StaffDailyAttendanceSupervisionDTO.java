@@ -12,6 +12,10 @@ public class StaffDailyAttendanceSupervisionDTO extends ParentDTO{
     private String supervisionDate;
 
     private String supervisionTime;
+    
+    private String clockinTime;
+    private String clockoutTime;
+    private String supervisionStatus;
 
    private List<StaffDailyAttendanceTaskSupervisionDTO> staffDailyAttendanceTaskSupervisionDTOS;
 
@@ -69,8 +73,36 @@ public class StaffDailyAttendanceSupervisionDTO extends ParentDTO{
     public void setSchoolStaffDTO(SchoolStaffDTO schoolStaffDTO) {
         this.schoolStaffDTO = schoolStaffDTO;
     }
+    
+    
 
-    @Override
+    public String getClockinTime() {
+		return clockinTime;
+	}
+
+	public void setClockinTime(String clockinTime) {
+		this.clockinTime = clockinTime;
+	}
+
+	public String getClockoutTime() {
+		return clockoutTime;
+	}
+
+	public void setClockoutTime(String clockoutTime) {
+		this.clockoutTime = clockoutTime;
+	}
+	
+	
+
+	public String getSupervisionStatus() {
+		return supervisionStatus;
+	}
+
+	public void setSupervisionStatus(String supervisionStatus) {
+		this.supervisionStatus = supervisionStatus;
+	}
+
+	@Override
     public String toString() {
         return "StaffDailyAttendanceSupervisionDTO{" +
                 "supervisorDTO=" + supervisorDTO +
@@ -81,4 +113,5 @@ public class StaffDailyAttendanceSupervisionDTO extends ParentDTO{
                 ", staffDailyAttendanceTaskSupervisionDTOS=" + staffDailyAttendanceTaskSupervisionDTOS +
                 '}';
     }
+    
 }
