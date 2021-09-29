@@ -14,7 +14,7 @@ public enum SubMenuItem {
 	Location("Locations"),
 	Schools("Schools"),
 	Subjects("Subjects"),
-	Staff_Attendance("Staff Attendance"),
+	Staff_Attendance("Teacher Attendance"),
 	Learner_Attendance("Learner Attendance"),
 	Head_Teacher_Supervision("Time Attendance"),
 	Staff_Daily_Task("Task Attendance"),
