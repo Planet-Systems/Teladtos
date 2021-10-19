@@ -1,11 +1,17 @@
 package com.planetsystems.tela.dto;
 
 public class SystemUserProfileDTO extends ParentDTO {
-    private SystemUserDTO systemUser;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 
-    private SystemUserGroupDTO systemUserGroup;
+	private SystemUserDTO systemUserDTO;
 
-    private GeneralUserDetailDTO generalUserDetail;
+    private SystemUserGroupDTO systemUserGroupDTO;
+
+    private GeneralUserDetailDTO generalUserDetailDTO;
 
     public SystemUserProfileDTO() {
     }
@@ -14,36 +20,36 @@ public class SystemUserProfileDTO extends ParentDTO {
         super(id);
     }
 
-    public SystemUserDTO getSystemUser() {
-        return systemUser;
+    public SystemUserDTO getSystemUserDTO() {
+        return systemUserDTO;
     }
 
-    public void setSystemUser(SystemUserDTO systemUser) {
-        this.systemUser = systemUser;
+    public void setSystemUserDTO(SystemUserDTO systemUserDTO) {
+        this.systemUserDTO = systemUserDTO;
     }
 
-    public SystemUserGroupDTO getSystemUserGroup() {
-        return systemUserGroup;
+    public SystemUserGroupDTO getSystemUserGroupDTO() {
+        return systemUserGroupDTO;
     }
 
-    public void setSystemUserGroup(SystemUserGroupDTO systemUserGroup) {
-        this.systemUserGroup = systemUserGroup;
+    public void setSystemUserGroupDTO(SystemUserGroupDTO systemUserGroupDTO) {
+        this.systemUserGroupDTO = systemUserGroupDTO;
     }
 
-    public GeneralUserDetailDTO getGeneralUserDetail() {
-        return generalUserDetail;
+    public GeneralUserDetailDTO getGeneralUserDetailDTO() {
+        return generalUserDetailDTO;
     }
 
-    public void setGeneralUserDetail(GeneralUserDetailDTO generalUserDetail) {
-        this.generalUserDetail = generalUserDetail;
+    public void setGeneralUserDetailDTO(GeneralUserDetailDTO generalUserDetailDTO) {
+        this.generalUserDetailDTO = generalUserDetailDTO;
     }
 
     @Override
     public String toString() {
         return "SystemUserProfileDTO{" +
-                "systemUser=" + systemUser +
-                ", systemUserGroup=" + systemUserGroup +
-                ", generalUserDetail=" + generalUserDetail +
+                "systemUserDTO=" + systemUserDTO +
+                ", systemUserGroupDTO=" + systemUserGroupDTO +
+                ", generalUserDetailDTO=" + generalUserDetailDTO +
                 '}';
     }
 }

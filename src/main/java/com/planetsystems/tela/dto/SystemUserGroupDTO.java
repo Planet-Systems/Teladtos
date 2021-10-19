@@ -1,13 +1,23 @@
 package com.planetsystems.tela.dto;
 
 public class SystemUserGroupDTO extends ParentDTO {
-    private String code;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private String code;
     private String name;
     private String description;
     private boolean defaultGroup = false;
     private boolean receiveAlerts = false;
-    private SystemUserDTO createdBy;
-    private SystemUserDTO updatedBy;
+    private boolean administrativeRole= false;
+    
+//    private SystemUserDTO createdBy;
+//    private SystemUserDTO updatedBy;
+
+    private SystemUserProfileDTO createdBy;
+    private SystemUserProfileDTO updatedBy;
 
     public SystemUserGroupDTO() {
     }
@@ -56,32 +66,28 @@ public class SystemUserGroupDTO extends ParentDTO {
         this.receiveAlerts = receiveAlerts;
     }
 
-    public SystemUserDTO getCreatedBy() {
+    public SystemUserProfileDTO getCreatedBy() {
         return createdBy;
     }
 
-    public void setCreatedBy(SystemUserDTO createdBy) {
+    public void setCreatedBy(SystemUserProfileDTO createdBy) {
         this.createdBy = createdBy;
     }
 
-    public SystemUserDTO getUpdatedBy() {
+    public SystemUserProfileDTO getUpdatedBy() {
         return updatedBy;
     }
 
-    public void setUpdatedBy(SystemUserDTO updatedBy) {
+    public void setUpdatedBy(SystemUserProfileDTO updatedBy) {
         this.updatedBy = updatedBy;
     }
 
-    @Override
-    public String toString() {
-        return "SystemUserGroupDTO{" +
-                "code='" + code + '\'' +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", defaultGroup=" + defaultGroup +
-                ", receiveAlerts=" + receiveAlerts +
-                ", createdBy=" + createdBy +
-                ", updatedBy=" + updatedBy +
-                '}';
-    }
+    public boolean isAdministrativeRole() {
+		return administrativeRole;
+	}
+
+	public void setAdministrativeRole(boolean administrativeRole) {
+		this.administrativeRole = administrativeRole;
+	}
+
 }

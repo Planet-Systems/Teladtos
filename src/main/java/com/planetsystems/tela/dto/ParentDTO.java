@@ -6,7 +6,12 @@ import java.io.Serializable;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ParentDTO implements Serializable {
-    private String id;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private String id;
 
     private String createdDateTime;
     private String updatedDateTime;
@@ -29,12 +34,13 @@ public class ParentDTO implements Serializable {
     }
 
 
-    public String getStatus() {
-        return status;
-    }
-
+    
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getStatus() {
+        return status;
     }
 
     public String getCreatedDateTime() {
