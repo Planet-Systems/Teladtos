@@ -27,7 +27,8 @@ public enum SubMenuItem {
 	National_Reports("National Performance"),
 	HT_Reports("HeadTeacher Performance"),
 	SMC_Supervision("SMC Supervision"),
-	SMC_Reports("SMC Performance");
+	SMC_Reports("SMC Performance"),
+	User_Account_Requests("User Account Requests");
 
 
 	private String menuItem;

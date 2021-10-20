@@ -20,7 +20,8 @@ public enum NavigationMenu {
     CURRICULUM_COVERAGE("Curriculum Coverage"),
 	INCENTIVES("Incentives"),
 	UTILITY_MANAGER("Utility Manager"),
-	SUPERVISION("Supervision");
+	SUPERVISION("Supervision"),
+	APPROVALS("Approvals");
  
 	private String menu;
 

@@ -63,7 +63,12 @@ public class SystemMenuDTO extends ParentDTO {
 		supervision.add(new SystemMenuDTO(NavigationMenu.SUPERVISION.getNavigationMenu(), SubMenuItem.Head_Teacher_Supervision.getSystemMenuItem()));
 		supervision.add(new SystemMenuDTO(NavigationMenu.SUPERVISION.getNavigationMenu(), SubMenuItem.Staff_Daily_Task.getSystemMenuItem()));
 		supervision.add(new SystemMenuDTO(NavigationMenu.SUPERVISION.getNavigationMenu(), SubMenuItem.SMC_Supervision.getSystemMenuItem()));
-		  
+		 
+		
+		List<SystemMenuDTO> approvals = new ArrayList<>();
+		approvals.add(new SystemMenuDTO(NavigationMenu.APPROVALS.getNavigationMenu(), SubMenuItem.User_Account_Requests.getSystemMenuItem()));
+		
+		 
 		
 		/*List<SystemMenuDTO> incentives = new ArrayList<>();
 		incentives.add(new SystemMenuDTO(NavigationMenu.INCENTIVES.getNavigationMenu(), SubMenuItem.School_Performace.getSystemMenuItem()));
@@ -95,8 +100,8 @@ public class SystemMenuDTO extends ParentDTO {
 		
 		systemMenuDTOList.addAll(reports);
 		systemMenuDTOList.addAll(supervision);
-		 
-		
+		systemMenuDTOList.addAll(approvals);
+		  
 		return systemMenuDTOList;
 	}
 
