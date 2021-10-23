@@ -21,7 +21,8 @@ public enum SubMenuItemDTO {
 	HT_Reports("HeadTeacher Performance"),
 	SMC_Supervision("SMC Supervision"),
 	SMC_Reports("SMC Performance"),
-	User_Account_Requests("User Account Requests");
+	User_Account_Requests("User Account Requests"),
+	Daily_Attendace_Dashboard("Daily Attendace Dashboard");
 
 	private String menuItem;
 

@@ -30,6 +30,7 @@ public class SystemMenuDTO extends ParentDTO {
 		//creating system menus
 		List<SystemMenuDTO> configurationSideNavMenu = new ArrayList<>();
 		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Dashboard.getSystemMenuItem()));
+		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Daily_Attendace_Dashboard.getSystemMenuItem()));
 		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.AcademicYear.getSystemMenuItem()));
 		configurationSideNavMenu.add( new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Location.getSystemMenuItem()));
 		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Schools.getSystemMenuItem()));
