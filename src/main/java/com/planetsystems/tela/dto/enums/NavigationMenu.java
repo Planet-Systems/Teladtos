@@ -21,7 +21,9 @@ public enum NavigationMenu {
 	INCENTIVES("Incentives"),
 	UTILITY_MANAGER("Utility Manager"),
 	SUPERVISION("Supervision"),
-	APPROVALS("Approvals");
+	APPROVALS("Approvals"),
+	DASHBOARD("Dashboard"),
+	SCHOOL_STATISTICS("School Statistics");
  
 	private String menu;
 

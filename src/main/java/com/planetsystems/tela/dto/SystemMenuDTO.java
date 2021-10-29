@@ -28,9 +28,7 @@ public class SystemMenuDTO extends ParentDTO {
 
 	public static List<SystemMenuDTO> systemMenuDTOList(){
 		//creating system menus
-		List<SystemMenuDTO> configurationSideNavMenu = new ArrayList<>();
-		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Dashboard.getSystemMenuItem()));
-		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Daily_Attendace_Dashboard.getSystemMenuItem()));
+		List<SystemMenuDTO> configurationSideNavMenu = new ArrayList<>(); 
 		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.AcademicYear.getSystemMenuItem()));
 		configurationSideNavMenu.add( new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Location.getSystemMenuItem()));
 		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Schools.getSystemMenuItem()));
@@ -69,9 +67,13 @@ public class SystemMenuDTO extends ParentDTO {
 		List<SystemMenuDTO> approvals = new ArrayList<>();
 		approvals.add(new SystemMenuDTO(NavigationMenu.APPROVALS.getNavigationMenu(), SubMenuItem.User_Account_Requests.getSystemMenuItem()));
 		
+		List<SystemMenuDTO> dashboard = new ArrayList<>(); 
+		dashboard.add(new SystemMenuDTO(NavigationMenu.DASHBOARD.getNavigationMenu() , SubMenuItem.Dashboard.getSystemMenuItem()));
+		dashboard.add(new SystemMenuDTO(NavigationMenu.DASHBOARD.getNavigationMenu() , SubMenuItem.Daily_Attendace_Dashboard.getSystemMenuItem()));
+		
 		 
 		
-		/*List<SystemMenuDTO> incentives = new ArrayList<>();
+		List<SystemMenuDTO> incentives = new ArrayList<>();
 		incentives.add(new SystemMenuDTO(NavigationMenu.INCENTIVES.getNavigationMenu(), SubMenuItem.School_Performace.getSystemMenuItem()));
 		incentives.add(new SystemMenuDTO(NavigationMenu.INCENTIVES.getNavigationMenu(), SubMenuItem.District_Reports.getSystemMenuItem()));
 		incentives.add(new SystemMenuDTO(NavigationMenu.INCENTIVES.getNavigationMenu(), SubMenuItem.National_Reports.getSystemMenuItem()));
@@ -85,7 +87,7 @@ public class SystemMenuDTO extends ParentDTO {
 		List<SystemMenuDTO> utilityManager = new ArrayList<>();
 		utilityManager.add(new SystemMenuDTO(NavigationMenu.UTILITY_MANAGER.getNavigationMenu(), SubMenuItem.School_Performace.getSystemMenuItem()));
 		utilityManager.add(new SystemMenuDTO(NavigationMenu.UTILITY_MANAGER.getNavigationMenu(), SubMenuItem.District_Reports.getSystemMenuItem()));
-		utilityManager.add(new SystemMenuDTO(NavigationMenu.UTILITY_MANAGER.getNavigationMenu(), SubMenuItem.National_Reports.getSystemMenuItem()));*/
+		utilityManager.add(new SystemMenuDTO(NavigationMenu.UTILITY_MANAGER.getNavigationMenu(), SubMenuItem.National_Reports.getSystemMenuItem())); 
 
 
 		List<SystemMenuDTO> systemMenuDTOList = new ArrayList<>();
@@ -94,14 +96,15 @@ public class SystemMenuDTO extends ParentDTO {
 		systemMenuDTOList.addAll(enrollmentSidNavMenu);
 		systemMenuDTOList.addAll(timetableSidNavMenu);
 		systemMenuDTOList.addAll(systemUserSidNavMenu);
-		
-		//systemMenuDTOList.addAll(incentives);
-		//systemMenuDTOList.addAll(curriculumCoverage);
-		//systemMenuDTOList.addAll(utilityManager);
-		
+		systemMenuDTOList.addAll(dashboard);
+		 
 		systemMenuDTOList.addAll(reports);
 		systemMenuDTOList.addAll(supervision);
 		systemMenuDTOList.addAll(approvals);
+		
+		systemMenuDTOList.addAll(incentives);
+		systemMenuDTOList.addAll(curriculumCoverage);
+		systemMenuDTOList.addAll(utilityManager);
 		  
 		return systemMenuDTOList;
 	}
