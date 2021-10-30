@@ -29,7 +29,8 @@ public enum SubMenuItem {
 	SMC_Supervision("SMC Supervision"),
 	SMC_Reports("SMC Performance"),
 	User_Account_Requests("User Account Requests"),
-	Daily_Attendace_Dashboard("Daily Attendance Dashboard");
+	Daily_Attendace_Dashboard("Daily Attendance Dashboard"),
+	Login_Audits("Login Audits");
 
 
 	private String menuItem;

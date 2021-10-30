@@ -34,6 +34,7 @@ public class SystemMenuDTO extends ParentDTO {
 		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Schools.getSystemMenuItem()));
 		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Subjects.getSystemMenuItem()));
 		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Users.getSystemMenuItem()));
+		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Login_Audits.getSystemMenuItem()));
 
 		List<SystemMenuDTO> enrollmentSidNavMenu = new ArrayList<>();
 		enrollmentSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ENROLLMENT.getNavigationMenu() , SubMenuItem.Learner_Enrollement.getSystemMenuItem()));
