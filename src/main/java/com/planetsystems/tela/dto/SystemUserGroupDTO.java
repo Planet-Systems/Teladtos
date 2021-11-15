@@ -15,6 +15,8 @@ public class SystemUserGroupDTO extends ParentDTO {
     
 //    private SystemUserDTO createdBy;
 //    private SystemUserDTO updatedBy;
+    
+    private String userLevel;
 
     private SystemUserProfileDTO createdBy;
     private SystemUserProfileDTO updatedBy;
@@ -88,6 +90,14 @@ public class SystemUserGroupDTO extends ParentDTO {
 
 	public void setAdministrativeRole(boolean administrativeRole) {
 		this.administrativeRole = administrativeRole;
+	}
+
+	public String getUserLevel() {
+		return userLevel;
+	}
+
+	public void setUserLevel(String userLevel) {
+		this.userLevel = userLevel;
 	}
 
 }
