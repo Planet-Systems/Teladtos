@@ -2,7 +2,7 @@ package com.planetsystems.tela.dto.externalIntegration;
 
 import java.io.Serializable;
 
-public class HeadTeacherAttendanceReport implements Serializable {
+public class DistrictHeadTeacherAttendanceReport implements Serializable{
 
 	/**
 	 * 
@@ -11,10 +11,11 @@ public class HeadTeacherAttendanceReport implements Serializable {
 	
 	private int numberOfTimesPresent;
 	private String term;
+	private String year;
+	private String district;
 	
-
-	public HeadTeacherAttendanceReport() {
-
+	public DistrictHeadTeacherAttendanceReport() {
+		
 	}
 
 	public int getNumberOfTimesPresent() {
@@ -33,4 +34,21 @@ public class HeadTeacherAttendanceReport implements Serializable {
 		this.term = term;
 	}
 
+	public String getYear() {
+		return year;
+	}
+
+	public void setYear(String year) {
+		this.year = year;
+	}
+
+	public String getDistrict() {
+		return district;
+	}
+
+	public void setDistrict(String district) {
+		this.district = district;
+	}
+	
+	
 }
