@@ -39,6 +39,9 @@ public class SyncTeacher implements Serializable {
 	private boolean deleted;
 	private boolean updated;
 	private boolean created;
+	
+	private boolean onPayroll;
+	private boolean teachingStaff;
 
 	public SyncTeacher() {
 
@@ -210,6 +213,22 @@ public class SyncTeacher implements Serializable {
 
 	public void setCreated(boolean created) {
 		this.created = created;
+	}
+
+	public boolean isOnPayroll() {
+		return onPayroll;
+	}
+
+	public void setOnPayroll(boolean onPayroll) {
+		this.onPayroll = onPayroll;
+	}
+
+	public boolean isTeachingStaff() {
+		return teachingStaff;
+	}
+
+	public void setTeachingStaff(boolean teachingStaff) {
+		this.teachingStaff = teachingStaff;
 	}
 
 }
