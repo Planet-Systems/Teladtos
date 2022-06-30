@@ -2,6 +2,8 @@ package com.planetsystems.tela.dto.AppDTO;
 
 import java.io.Serializable;
 
+import com.planetsystems.tela.dto.SchoolClassDTO;
+
 public class SyncSchoolClassDTO implements Serializable {
 
 	/**
@@ -20,15 +22,20 @@ public class SyncSchoolClassDTO implements Serializable {
 
 	private String academicTermId;
 	private String created;
-	
+
 	private String createdDateTime;
 	private boolean deleted;
-	private String localId; 
+	private String localId;
 	private boolean updated;
 	private String updatedDateTime;
-	
+
 	private String classId;
 	private String classIdLocal;
+
+	private boolean hasStreams;
+	private boolean classLevel;
+	private String parentSchoolClassId;
+	private String parentSchoolClassName;
 
 	public SyncSchoolClassDTO() {
 
@@ -129,7 +136,6 @@ public class SyncSchoolClassDTO implements Serializable {
 	public void setLocalId(String localId) {
 		this.localId = localId;
 	}
- 
 
 	public boolean isUpdated() {
 		return updated;
@@ -161,6 +167,38 @@ public class SyncSchoolClassDTO implements Serializable {
 
 	public void setClassIdLocal(String classIdLocal) {
 		this.classIdLocal = classIdLocal;
+	}
+
+	public boolean isHasStreams() {
+		return hasStreams;
+	}
+
+	public void setHasStreams(boolean hasStreams) {
+		this.hasStreams = hasStreams;
+	}
+
+	public boolean isClassLevel() {
+		return classLevel;
+	}
+
+	public void setClassLevel(boolean classLevel) {
+		this.classLevel = classLevel;
+	}
+
+	public String getParentSchoolClassId() {
+		return parentSchoolClassId;
+	}
+
+	public void setParentSchoolClassId(String parentSchoolClassId) {
+		this.parentSchoolClassId = parentSchoolClassId;
+	}
+
+	public String getParentSchoolClassName() {
+		return parentSchoolClassName;
+	}
+
+	public void setParentSchoolClassName(String parentSchoolClassName) {
+		this.parentSchoolClassName = parentSchoolClassName;
 	}
 	
 	

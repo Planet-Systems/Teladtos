@@ -5,7 +5,11 @@ import java.util.List;
 
 
 public class SystemResponseDTO<T> implements Serializable {
-    private String message;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String message;
     private T data;
     private boolean status;
 

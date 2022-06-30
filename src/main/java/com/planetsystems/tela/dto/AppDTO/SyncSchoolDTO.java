@@ -19,6 +19,13 @@ public class SyncSchoolDTO implements Serializable {
 
 	private String latitude;
 	private String longtitude; 
+	
+	
+	private String schoolLevel;
+	private String schoolOwnership;
+	private String schoolType;
+	private String schoolGenderCategory;
+	private boolean licensed;
 
 	public SyncSchoolDTO() {
 
@@ -87,5 +94,46 @@ public class SyncSchoolDTO implements Serializable {
 	public void setId(String id) {
 		this.id = id;
 	}
+
+	public String getSchoolLevel() {
+		return schoolLevel;
+	}
+
+	public void setSchoolLevel(String schoolLevel) {
+		this.schoolLevel = schoolLevel;
+	}
+
+	public String getSchoolOwnership() {
+		return schoolOwnership;
+	}
+
+	public void setSchoolOwnership(String schoolOwnership) {
+		this.schoolOwnership = schoolOwnership;
+	}
+
+	public String getSchoolType() {
+		return schoolType;
+	}
+
+	public void setSchoolType(String schoolType) {
+		this.schoolType = schoolType;
+	}
+
+	public String getSchoolGenderCategory() {
+		return schoolGenderCategory;
+	}
+
+	public void setSchoolGenderCategory(String schoolGenderCategory) {
+		this.schoolGenderCategory = schoolGenderCategory;
+	}
+
+	public boolean isLicensed() {
+		return licensed;
+	}
+
+	public void setLicensed(boolean licensed) {
+		this.licensed = licensed;
+	}
+ 
 
 }
