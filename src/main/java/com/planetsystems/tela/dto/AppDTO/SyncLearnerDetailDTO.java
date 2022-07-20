@@ -9,11 +9,15 @@ public class SyncLearnerDetailDTO implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	private String id;
 	private String learnTelaNo;
 	private String firstName;
 	private String lastName;
+	private String otherName;
+	private String nationality;
+	private String homeDistrictId;
+	private String homeDistrictName;
 	private String dob;
 	private String nationalId;
 	private String gender;
@@ -223,6 +227,38 @@ public class SyncLearnerDetailDTO implements Serializable {
 
 	public void setCreated(boolean created) {
 		this.created = created;
+	}
+
+	public String getOtherName() {
+		return otherName;
+	}
+
+	public void setOtherName(String otherName) {
+		this.otherName = otherName;
+	}
+
+	public String getNationality() {
+		return nationality;
+	}
+
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
+	}
+
+	public String getHomeDistrictId() {
+		return homeDistrictId;
+	}
+
+	public void setHomeDistrictId(String homeDistrictId) {
+		this.homeDistrictId = homeDistrictId;
+	}
+
+	public String getHomeDistrictName() {
+		return homeDistrictName;
+	}
+
+	public void setHomeDistrictName(String homeDistrictName) {
+		this.homeDistrictName = homeDistrictName;
 	}
 
 }

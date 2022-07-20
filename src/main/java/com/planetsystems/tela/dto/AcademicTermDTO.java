@@ -1,6 +1,6 @@
 package com.planetsystems.tela.dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties; 
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AcademicTermDTO extends ParentDTO{
@@ -14,6 +14,9 @@ public class AcademicTermDTO extends ParentDTO{
     private String activationStatus;
     private String startDate;
     private String endDate;
+    
+    private String displayName;
+    private String assessmentPeriodType;
 
     private AcademicYearDTO academicYearDTO;
 
@@ -73,6 +76,28 @@ public class AcademicTermDTO extends ParentDTO{
     public void setAcademicYearDTO(AcademicYearDTO academicYearDTO) {
         this.academicYearDTO = academicYearDTO;
     }
+
+
+	public String getDisplayName() {
+		return displayName;
+	}
+
+
+	public void setDisplayName(String displayName) {
+		this.displayName = displayName;
+	}
+
+
+	public String getAssessmentPeriodType() {
+		return assessmentPeriodType;
+	}
+
+
+	public void setAssessmentPeriodType(String assessmentPeriodType) {
+		this.assessmentPeriodType = assessmentPeriodType;
+	}
+    
+    
 
    /* @Override
     public String toString() {

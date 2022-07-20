@@ -2,13 +2,13 @@ package com.planetsystems.tela.dto.AppDTO;
 
 import java.io.Serializable;
 
-public class SyncLearnersEnrolmentDTO implements Serializable {
-
+public class SyncSNLearnerEnrollmentDTO implements Serializable{
+	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
+	
 	private String id;
 	private long totalMale;
 	private long totalFemale;
@@ -25,17 +25,17 @@ public class SyncLearnersEnrolmentDTO implements Serializable {
 	private boolean created;
 	private String schoolId;
 	private String submitedBy;
-
-	public SyncLearnersEnrolmentDTO() {
-
+	
+	public SyncSNLearnerEnrollmentDTO() {
+		
 	}
 
-	public String getClassId() {
-		return classId;
+	public String getId() {
+		return id;
 	}
 
-	public void setClassId(String classId) {
-		this.classId = classId;
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public long getTotalMale() {
@@ -70,14 +70,6 @@ public class SyncLearnersEnrolmentDTO implements Serializable {
 		this.localId = localId;
 	}
 
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
 	public String getCreatedDateTime() {
 		return createdDateTime;
 	}
@@ -108,6 +100,14 @@ public class SyncLearnersEnrolmentDTO implements Serializable {
 
 	public void setUpdatedDateTime(String updatedDateTime) {
 		this.updatedDateTime = updatedDateTime;
+	}
+
+	public String getClassId() {
+		return classId;
+	}
+
+	public void setClassId(String classId) {
+		this.classId = classId;
 	}
 
 	public String getClassIdLocal() {
@@ -141,5 +141,15 @@ public class SyncLearnersEnrolmentDTO implements Serializable {
 	public void setSchoolId(String schoolId) {
 		this.schoolId = schoolId;
 	}
+
+	public String getSubmitedBy() {
+		return submitedBy;
+	}
+
+	public void setSubmitedBy(String submitedBy) {
+		this.submitedBy = submitedBy;
+	}
+	
+	
 
 }
