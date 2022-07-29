@@ -2,8 +2,8 @@ package com.planetsystems.tela.dto.enums;
 
 public enum OrphanCategory {
  
-	FULL("Full Orphan"),
-	HALF("Half Orphan"),
+	FULL("Maternal orphan"),
+	HALF("Paternal orphan"),
 	NOT("Not Orphan");
 
 	private String category;

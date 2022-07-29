@@ -9,7 +9,7 @@ package com.planetsystems.tela.dto.enums;
 @Deprecated
 public enum SubMenuItem {
 
-	Dashboard("Overall Performance Dashboard"),
+	Dashboard("Overall Performance"),
 	AcademicYear("Assessment Periods"),
 	Location("Locations"),
 	Schools("Schools"),
@@ -29,7 +29,7 @@ public enum SubMenuItem {
 	SMC_Supervision("SMC Supervision"),
 	SMC_Reports("SMC Performance"),
 	User_Account_Requests("User Account Requests"),
-	Daily_Attendace_Dashboard("Daily Attendance Dashboard"),
+	Daily_Attendace_Dashboard("Daily Attendance"),
 	Login_Audits("Login Audits");
 
 

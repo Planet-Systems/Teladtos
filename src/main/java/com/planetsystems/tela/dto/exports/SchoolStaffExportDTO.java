@@ -18,6 +18,10 @@ public class SchoolStaffExportDTO implements Serializable {
 	private String nameAbbrev;
 	private String school;
 	private String district;
+	
+	private String registrationNo;
+	private String nationality;
+	private String type;
 
 	public SchoolStaffExportDTO() {
 
@@ -109,6 +113,30 @@ public class SchoolStaffExportDTO implements Serializable {
 
 	public void setDistrict(String district) {
 		this.district = district;
+	}
+
+	public String getRegistrationNo() {
+		return registrationNo;
+	}
+
+	public void setRegistrationNo(String registrationNo) {
+		this.registrationNo = registrationNo;
+	}
+
+	public String getNationality() {
+		return nationality;
+	}
+
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
 	}
 
 }

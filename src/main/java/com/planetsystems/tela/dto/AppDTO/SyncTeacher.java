@@ -39,9 +39,12 @@ public class SyncTeacher implements Serializable {
 	private boolean deleted;
 	private boolean updated;
 	private boolean created;
-	
+
 	private boolean onPayroll;
 	private boolean teachingStaff;
+
+	private String registrationNo;
+	private String nationality;
 
 	public SyncTeacher() {
 
@@ -229,6 +232,22 @@ public class SyncTeacher implements Serializable {
 
 	public void setTeachingStaff(boolean teachingStaff) {
 		this.teachingStaff = teachingStaff;
+	}
+
+	public String getRegistrationNo() {
+		return registrationNo;
+	}
+
+	public void setRegistrationNo(String registrationNo) {
+		this.registrationNo = registrationNo;
+	}
+
+	public String getNationality() {
+		return nationality;
+	}
+
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
 	}
 
 }

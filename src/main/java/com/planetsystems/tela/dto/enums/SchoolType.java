@@ -2,7 +2,7 @@ package com.planetsystems.tela.dto.enums;
 
 public enum SchoolType {
   
-	BOARDING("Boarding"), DAY("Day"), BOTH("Both");
+	BOARDING("Boarding"), DAY("Day"), BOTH("Day & Boarding");
 
 	private String type;
 
