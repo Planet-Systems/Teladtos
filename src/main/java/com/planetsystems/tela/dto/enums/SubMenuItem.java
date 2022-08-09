@@ -30,7 +30,8 @@ public enum SubMenuItem {
 	SMC_Reports("SMC Performance"),
 	User_Account_Requests("User Account Requests"),
 	Daily_Attendace_Dashboard("Daily Attendance"),
-	Login_Audits("Login Audits");
+	Login_Audits("Login Audits"),
+	Email_Attachment_Downloads("Email Attachment Downloads");
 
 
 	private String menuItem;

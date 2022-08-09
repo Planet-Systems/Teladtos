@@ -86,9 +86,7 @@ public class SystemMenuDTO extends ParentDTO {
 		curriculumCoverage.add(new SystemMenuDTO(NavigationMenu.CURRICULUM_COVERAGE.getNavigationMenu(), SubMenuItem.National_Reports.getSystemMenuItem()));
 		
 		List<SystemMenuDTO> utilityManager = new ArrayList<>();
-		utilityManager.add(new SystemMenuDTO(NavigationMenu.UTILITY_MANAGER.getNavigationMenu(), SubMenuItem.School_Performace.getSystemMenuItem()));
-		utilityManager.add(new SystemMenuDTO(NavigationMenu.UTILITY_MANAGER.getNavigationMenu(), SubMenuItem.District_Reports.getSystemMenuItem()));
-		utilityManager.add(new SystemMenuDTO(NavigationMenu.UTILITY_MANAGER.getNavigationMenu(), SubMenuItem.National_Reports.getSystemMenuItem())); 
+		utilityManager.add(new SystemMenuDTO(NavigationMenu.UTILITY_MANAGER.getNavigationMenu(), SubMenuItem.Email_Attachment_Downloads.getSystemMenuItem()));
 
 
 		List<SystemMenuDTO> systemMenuDTOList = new ArrayList<>();
