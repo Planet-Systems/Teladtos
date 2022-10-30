@@ -1,9 +1,14 @@
 package com.planetsystems.tela.dto;
 
 public class SubjectDTO extends  ParentDTO {
-    private String code;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String code;
     private String name;
     private SubjectCategoryDTO subjectCategory;
+    private String  subjectClassification;
 
     public SubjectDTO() {
     }
@@ -35,8 +40,18 @@ public class SubjectDTO extends  ParentDTO {
     public void setSubjectCategory(SubjectCategoryDTO subjectCategory) {
         this.subjectCategory = subjectCategory;
     }
+    
+    
 
-    @Override
+    public String getSubjectClassification() {
+		return subjectClassification;
+	}
+
+	public void setSubjectClassification(String subjectClassification) {
+		this.subjectClassification = subjectClassification;
+	}
+
+	@Override
     public String toString() {
         return "SubjectDTO{" +
                 "code='" + code + '\'' +

@@ -35,7 +35,8 @@ public class SystemMenuDTO extends ParentDTO {
 		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Subjects.getSystemMenuItem()));
 		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Users.getSystemMenuItem()));
 		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Login_Audits.getSystemMenuItem()));
-
+		configurationSideNavMenu.add(new SystemMenuDTO(NavigationMenu.SYSTEM_CONFIGURATION.getNavigationMenu() , SubMenuItem.Batch_Uploads.getSystemMenuItem()));
+ 
 		List<SystemMenuDTO> enrollmentSidNavMenu = new ArrayList<>();
 		enrollmentSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ENROLLMENT.getNavigationMenu() , SubMenuItem.Learner_Enrollement.getSystemMenuItem()));
 		enrollmentSidNavMenu.add(new SystemMenuDTO(NavigationMenu.ENROLLMENT.getNavigationMenu() , SubMenuItem.Staff_Enrollement.getSystemMenuItem()));
@@ -71,8 +72,9 @@ public class SystemMenuDTO extends ParentDTO {
 		List<SystemMenuDTO> dashboard = new ArrayList<>(); 
 		dashboard.add(new SystemMenuDTO(NavigationMenu.DASHBOARD.getNavigationMenu() , SubMenuItem.Dashboard.getSystemMenuItem()));
 		dashboard.add(new SystemMenuDTO(NavigationMenu.DASHBOARD.getNavigationMenu() , SubMenuItem.Daily_Attendace_Dashboard.getSystemMenuItem()));
+		dashboard.add(new SystemMenuDTO(NavigationMenu.DASHBOARD.getNavigationMenu() , SubMenuItem.Data_Upload_Report.getSystemMenuItem()));
 		
-		 
+		  
 		
 		List<SystemMenuDTO> incentives = new ArrayList<>();
 		incentives.add(new SystemMenuDTO(NavigationMenu.INCENTIVES.getNavigationMenu(), SubMenuItem.School_Performace.getSystemMenuItem()));

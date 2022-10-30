@@ -45,6 +45,8 @@ public class SyncTeacher implements Serializable {
 
 	private String registrationNo;
 	private String nationality;
+	
+	private String fileDownloadUri;
 
 	public SyncTeacher() {
 
@@ -248,6 +250,14 @@ public class SyncTeacher implements Serializable {
 
 	public void setNationality(String nationality) {
 		this.nationality = nationality;
+	}
+
+	public String getFileDownloadUri() {
+		return fileDownloadUri;
+	}
+
+	public void setFileDownloadUri(String fileDownloadUri) {
+		this.fileDownloadUri = fileDownloadUri;
 	}
 
 }

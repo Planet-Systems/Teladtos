@@ -26,10 +26,14 @@ public class SchoolDTO extends ParentDTO {
 	private String schoolType;
 	private String schoolGenderCategory;
 	private String licensed;
-	
+
 	private String rolloutPhase;
-	
+
 	private String telaSchoolNumber;
+
+	private String emisNumber;
+	private String telaSchoolUID;
+	private String telaLicenseKey;
 
 	public SchoolDTO() {
 	}
@@ -173,7 +177,29 @@ public class SchoolDTO extends ParentDTO {
 	public void setTelaSchoolNumber(String telaSchoolNumber) {
 		this.telaSchoolNumber = telaSchoolNumber;
 	}
-	
-	
+
+	public String getEmisNumber() {
+		return emisNumber;
+	}
+
+	public void setEmisNumber(String emisNumber) {
+		this.emisNumber = emisNumber;
+	}
+
+	public String getTelaSchoolUID() {
+		return telaSchoolUID;
+	}
+
+	public void setTelaSchoolUID(String telaSchoolUID) {
+		this.telaSchoolUID = telaSchoolUID;
+	}
+
+	public String getTelaLicenseKey() {
+		return telaLicenseKey;
+	}
+
+	public void setTelaLicenseKey(String telaLicenseKey) {
+		this.telaLicenseKey = telaLicenseKey;
+	}
 
 }

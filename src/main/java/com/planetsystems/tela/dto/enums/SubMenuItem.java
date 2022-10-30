@@ -31,7 +31,9 @@ public enum SubMenuItem {
 	User_Account_Requests("User Account Requests"),
 	Daily_Attendace_Dashboard("Daily Attendance"),
 	Login_Audits("Login Audits"),
-	Email_Attachment_Downloads("Email Attachment Downloads");
+	Email_Attachment_Downloads("Email Attachment Downloads"), 
+	Batch_Uploads("Batch Uploads"),
+	Data_Upload_Report("Data Upload Report");
 
 
 	private String menuItem;

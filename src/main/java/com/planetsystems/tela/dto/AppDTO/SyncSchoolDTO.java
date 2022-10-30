@@ -1,7 +1,6 @@
 package com.planetsystems.tela.dto.AppDTO;
 
 import java.io.Serializable;
- 
 
 public class SyncSchoolDTO implements Serializable {
 
@@ -18,14 +17,17 @@ public class SyncSchoolDTO implements Serializable {
 	private String location;
 
 	private String latitude;
-	private String longtitude; 
-	
-	
+	private String longtitude;
+
 	private String schoolLevel;
 	private String schoolOwnership;
 	private String schoolType;
 	private String schoolGenderCategory;
 	private boolean licensed;
+
+	private String licenseKey;
+	private String districtId;
+	private String district;
 
 	public SyncSchoolDTO() {
 
@@ -86,7 +88,7 @@ public class SyncSchoolDTO implements Serializable {
 	public void setLongtitude(String longtitude) {
 		this.longtitude = longtitude;
 	}
- 
+
 	public String getId() {
 		return id;
 	}
@@ -134,6 +136,29 @@ public class SyncSchoolDTO implements Serializable {
 	public void setLicensed(boolean licensed) {
 		this.licensed = licensed;
 	}
- 
+
+	public String getLicenseKey() {
+		return licenseKey;
+	}
+
+	public void setLicenseKey(String licenseKey) {
+		this.licenseKey = licenseKey;
+	}
+
+	public String getDistrictId() {
+		return districtId;
+	}
+
+	public void setDistrictId(String districtId) {
+		this.districtId = districtId;
+	}
+
+	public String getDistrict() {
+		return district;
+	}
+
+	public void setDistrict(String district) {
+		this.district = district;
+	}
 
 }
