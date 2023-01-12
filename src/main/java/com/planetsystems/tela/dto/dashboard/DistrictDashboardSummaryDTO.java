@@ -70,6 +70,8 @@ public class DistrictDashboardSummaryDTO implements Serializable {
 	private long secondaryTeachersWithoutSpecialNeedslearners;
 
 	private WeeklyAttendanceRateSummaryDTO weeklyAttendanceRateSummaryDTO;
+	
+	
 
 	public DistrictDashboardSummaryDTO() {
 

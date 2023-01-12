@@ -1,8 +1,8 @@
-package com.planetsystems.tela.dto.externalIntegration;
+package com.planetsystems.tela.dto.AppDTO;
 
 import java.io.Serializable;
 
-public class ExDistrictDTO implements Serializable{
+public class SyncDistrictDTO implements Serializable{
 	
 	/**
 	 * 
@@ -12,9 +12,17 @@ public class ExDistrictDTO implements Serializable{
 	private String id;
 	private String code;
 	private String name;
+	
+	public SyncDistrictDTO() {
+		
+	}
 
-	public ExDistrictDTO() {
+	public String getId() {
+		return id;
+	}
 
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public String getCode() {
@@ -32,5 +40,7 @@ public class ExDistrictDTO implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
 
 }

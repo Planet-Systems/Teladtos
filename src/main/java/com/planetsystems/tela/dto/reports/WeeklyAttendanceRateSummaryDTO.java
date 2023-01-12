@@ -8,7 +8,7 @@ public class WeeklyAttendanceRateSummaryDTO implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	private long mondaySchoolsClockedIn;
 	private long mondayStaffClockedIn;
 	private long mondayLearnerRecorded;
@@ -28,6 +28,9 @@ public class WeeklyAttendanceRateSummaryDTO implements Serializable {
 	private long fridaySchoolsClockedIn;
 	private long fridayStaffClockedIn;
 	private long fridayLearnerRecorded;
+
+	private String startDate;
+	private String endDate;
 
 	public WeeklyAttendanceRateSummaryDTO() {
 
@@ -151,6 +154,22 @@ public class WeeklyAttendanceRateSummaryDTO implements Serializable {
 
 	public void setFridayLearnerRecorded(long fridayLearnerRecorded) {
 		this.fridayLearnerRecorded = fridayLearnerRecorded;
+	}
+
+	public String getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;
+	}
+
+	public String getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(String endDate) {
+		this.endDate = endDate;
 	}
 
 }
